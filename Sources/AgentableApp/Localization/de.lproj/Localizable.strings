@@ -1,0 +1,792 @@
+/* German. Keys are fixed (the English text, or a dotted id); values are translated. */
+/* Settings menu: language */
+"Language" = "Sprache";
+"Match the system" = "Wie im System";
+"Restart Agentable to change the language?" = "Agentable neu starten, um die Sprache zu ändern?";
+"Your connections and waiting changes are kept." = "Deine Verbindungen und offenen Änderungen bleiben erhalten.";
+"Restart" = "Neu starten";
+"Later" = "Später";
+"Connections" = "Verbindungen";
+"Connect agents" = "Agenten verbinden";
+"New connection" = "Neue Verbindung";
+
+/* Agent access levels (AgentAccess.label) */
+/* agent access level (Turkish: kapalı) */
+"access.off" = "aus";
+/* agent access level (Turkish: okuma) */
+"access.read" = "Lesen";
+/* agent access level (Turkish: öneri) */
+"access.propose" = "Vorschlag";
+/* agent access level (Turkish: yazma) */
+"access.write" = "Schreiben";
+
+/* App menus and startup */
+"Unknown error" = "Unbekannter Fehler";
+"Changes" = "Änderungen";
+"Save" = "Speichern";
+"Reload" = "Neu laden";
+"Add Row" = "Zeile einfügen";
+"Query" = "Abfrage";
+"Run Statement" = "Anweisung ausführen";
+"Ask an Agent…" = "Agenten fragen …";
+"Show Agent Session" = "Agentensitzung einblenden";
+"Agentable could not start" = "Agentable konnte nicht starten";
+"Could not read saved connections: %@" = "Gespeicherte Verbindungen konnten nicht gelesen werden: %@";
+"let agents %@ on %@" = "Agenten auf %2$@ den Zugriff „%1$@“ zu erlauben";
+
+/* Settings menu */
+"Appearance" = "Erscheinungsbild";
+"Light" = "Hell";
+"Dark" = "Dunkel";
+"Default order" = "Standardreihenfolge";
+"Oldest first" = "Älteste zuerst";
+"Newest first" = "Neueste zuerst";
+"Connect Agents…" = "Agenten verbinden …";
+"Settings" = "Einstellungen";
+
+/* Go to anything */
+"Go to a table or connection" = "Zu Tabelle oder Verbindung springen";
+"Nothing called “%@”" = "Nichts namens „%@“";
+"connection" = "Verbindung";
+"Go to anything" = "Schnellzugriff";
+
+/* Connect agents card */
+"Agents found on this Mac" = "Agenten auf diesem Mac";
+"Connecting adds Agentable as an MCP server in the agent's config. You can remove it anytime." = "Beim Verbinden wird Agentable als MCP-Server in die Konfiguration des Agenten eingetragen. Du kannst es jederzeit entfernen.";
+"Another agent" = "Anderer Agent";
+"Run %@ or copy the MCP config" = "%@ ausführen oder MCP-Konfiguration kopieren";
+"Copy config" = "Konfig kopieren";
+"Copied. Paste it into the agent's MCP settings." = "Kopiert. Setze sie in die MCP-Einstellungen des Agenten ein.";
+"What agents can do by default" = "Was Agenten standardmäßig dürfen";
+"per environment; change it on each connection" = "je Umgebung; pro Verbindung änderbar";
+"never more than propose" = "nie mehr als „Vorschlag“";
+"Not found on this Mac" = "Nicht auf diesem Mac gefunden";
+"Connected" = "Verbunden";
+"Connecting…" = "Verbinden …";
+"Connect" = "Verbinden";
+"%@ default: %@" = "Standard für %1$@: %2$@";
+"Agents get a name for each connection, never the password." = "Agenten erhalten für jede Verbindung einen Namen, nie das Passwort.";
+"Done" = "Fertig";
+"App" = "App";
+"%@ can use Agentable now." = "%@ kann Agentable jetzt nutzen.";
+"Added to Cursor. The old file is saved as mcp.json.agentable-backup." = "Zu Cursor hinzugefügt. Die alte Datei wurde als mcp.json.agentable-backup gesichert.";
+"The agentable command-line tool was not found next to the app." = "Das Befehlszeilenwerkzeug agentable wurde neben der App nicht gefunden.";
+"%@ was not found on this Mac." = "%@ wurde auf diesem Mac nicht gefunden.";
+"The agent's setup command failed." = "Der Einrichtungsbefehl des Agenten ist fehlgeschlagen.";
+"%@ is not valid JSON, so it was left alone." = "%@ ist kein gültiges JSON und wurde nicht verändert.";
+
+/* Connection form */
+"Edit %@" = "%@ bearbeiten";
+"Close" = "Schließen";
+"Paste a URL or a SQLite file path" = "URL oder SQLite-Dateipfad einsetzen";
+"Filled the file path below" = "Dateipfad unten ausgefüllt";
+"Filled host, port, user and database below" = "Host, Port, Benutzer und Datenbank unten ausgefüllt";
+"Name" = "Name";
+"Lower-case letters, digits, - _ and . only. Agents address the connection by this name." = "Nur Kleinbuchstaben, Ziffern sowie - _ und . erlaubt. Agenten sprechen die Verbindung unter diesem Namen an.";
+"File" = "Datei";
+"Choose…" = "Auswählen …";
+"Host" = "Host";
+"Port" = "Port";
+"User" = "Benutzer";
+"Database" = "Datenbank";
+"Password" = "Passwort";
+"Saved in Keychain" = "Im Schlüsselbund gespeichert";
+"Saved to Keychain. Agents never receive it." = "Wird im Schlüsselbund gespeichert. Agenten erhalten es nie.";
+"Off" = "Aus";
+"Prefer" = "Bevorzugen";
+"Require" = "Erzwingen";
+"Verify" = "Prüfen";
+"CA certificate" = "CA-Zertifikat";
+"System roots" = "System-CAs";
+"Not checked" = "Nicht geprüft";
+"Client certificate" = "Client-Zertifikat";
+"Client key" = "Client-Schlüssel";
+"None" = "Keine";
+"Testing…" = "Testet …";
+"Test" = "Testen";
+"Test again" = "Erneut testen";
+"Saving…" = "Speichert …";
+"SSH tunnel" = "SSH-Tunnel";
+"SSH host" = "SSH-Host";
+"bastion or a ~/.ssh/config name" = "Bastion oder Name aus ~/.ssh/config";
+"SSH user" = "SSH-Benutzer";
+"from ~/.ssh/config" = "aus ~/.ssh/config";
+"Key" = "Schlüssel";
+"Uses your SSH agent, ~/.ssh/config and known_hosts. Agents never see it." = "Nutzt deinen SSH-Agent, ~/.ssh/config und known_hosts. Agenten sehen nichts davon.";
+"Environment" = "Umgebung";
+"Production gets review before every write, and agents start at Read." = "In Production wird jeder Schreibvorgang geprüft; Agenten starten mit „Lesen“.";
+"Agents start at Propose: their changes wait for you." = "Agenten starten mit „Vorschlag“: Änderungen warten auf dich.";
+"Agents start at Write." = "Agenten starten mit „Schreiben“.";
+"Agent access" = "Agentenzugriff";
+"%@, the %@ default" = "%1$@, Standard für %2$@";
+"Environment default (%@)" = "Standard der Umgebung (%@)";
+"Change" = "Ändern";
+"Agents cannot see this connection" = "Agenten sehen diese Verbindung nicht";
+"Schema and read-only queries" = "Schema und reine Leseabfragen";
+"Reads, and changes that wait for you" = "Lesen und Änderungen, die auf dich warten";
+"Reads and writes directly" = "Liest und schreibt direkt";
+"Connected · %lld ms" = "Verbunden · %lld ms";
+"Choose a SQLite database file" = "SQLite-Datenbankdatei auswählen";
+"There is already a connection named %@." = "Es gibt bereits eine Verbindung namens %@.";
+
+/* Connections screen */
+"Add Agentable to Claude Code, Codex or Cursor" = "Agentable zu Claude Code, Codex oder Cursor hinzufügen";
+"Back to %@" = "Zurück zu %@";
+"Remove %@?" = "%@ entfernen?";
+"Remove" = "Entfernen";
+"Cancel" = "Abbrechen";
+"The saved settings and the password in Keychain are deleted. Agents can no longer use this name." = "Die gespeicherten Einstellungen und das Passwort im Schlüsselbund werden gelöscht. Agenten können diesen Namen nicht mehr verwenden.";
+"%lld saved · passwords live in Keychain" = "%lld gespeichert · Passwörter im Schlüsselbund";
+"Search by name or host" = "Nach Name oder Host suchen";
+"No connections yet" = "Noch keine Verbindungen";
+"Paste a postgres:// URL or pick a SQLite file." = "Setze eine postgres://-URL ein oder wähle eine SQLite-Datei.";
+"Agents" = "Agenten";
+"Last used" = "Zuletzt";
+"%lld live" = "%lld aktiv";
+"never" = "nie";
+"Edit" = "Bearbeiten";
+"Open" = "Öffnen";
+"Edit…" = "Bearbeiten …";
+"Copy name for agents" = "Namen für Agenten kopieren";
+"Remove…" = "Entfernen …";
+"now" = "jetzt";
+"%lld min ago" = "vor %lld Min.";
+"%lld h ago" = "vor %lld Std.";
+"yesterday" = "gestern";
+"%lld days ago" = "vor %lld Tagen";
+
+/* Welcome */
+"Welcome" = "Willkommen";
+"Connect a database, then let your agents in." = "Verbinde eine Datenbank und lass dann deine Agenten rein.";
+"Two minutes. Agents get a name for each connection, never the password." = "Dauert zwei Minuten. Agenten erhalten für jede Verbindung einen Namen, nie das Passwort.";
+"%@ is saved" = "%@ ist gespeichert";
+"%lld connections saved" = "%lld Verbindungen gespeichert";
+"Passwords are in Keychain. Agents will address it as %@." = "Passwörter liegen im Schlüsselbund. Agenten sprechen die Verbindung als %@ an.";
+"Add another" = "Weitere hinzufügen";
+"Your first database" = "Deine erste Datenbank";
+"PostgreSQL or a SQLite file. You can add more later." = "PostgreSQL oder eine SQLite-Datei. Weitere kannst du später hinzufügen.";
+"Paste a connection URL" = "Verbindungs-URL einsetzen";
+"Open a SQLite file" = "SQLite-Datei öffnen";
+"Enter host and port" = "Host und Port eingeben";
+"Skip for now" = "Vorerst überspringen";
+"Back" = "Zurück";
+"Continue" = "Weiter";
+"Agents get %lld tools:" = "Agenten erhalten %lld Werkzeuge:";
+
+/* Filters: operators from AgentableCore (chip, segment and row labels) */
+"is" = "ist";
+"is not" = "ist nicht";
+"contains" = "enthält";
+"doesn't contain" = "enthält nicht";
+"starts with" = "beginnt mit";
+"between" = "zwischen";
+"in the last" = "jünger als";
+"before" = "vor";
+"after" = "nach";
+"is empty" = "ist leer";
+"is not empty" = "ist nicht leer";
+"empty" = "leer";
+"not empty" = "nicht leer";
+"true" = "wahr";
+"false" = "falsch";
+"last" = "jünger";
+"equals" = "ist gleich";
+"is any of" = "ist einer von";
+"does not equal" = "ist ungleich";
+"is none of" = "ist keiner von";
+"does not contain" = "enthält nicht";
+"is greater than" = "ist größer als";
+"is at least" = "ist mindestens";
+"is less than" = "ist kleiner als";
+"is at most" = "ist höchstens";
+"is between" = "liegt zwischen";
+"is within the last" = "ist jünger als";
+"is before" = "ist vor";
+"is after" = "ist nach";
+"is true" = "ist wahr";
+"is false" = "ist falsch";
+
+/* Filters: and/or, time units, sentences */
+"and" = "und";
+"or" = "oder";
+"%@ or %@" = "%@ oder %@";
+"minutes" = "Minuten";
+"hours" = "Stunden";
+"days" = "Tage";
+"weeks" = "Wochen";
+"months" = "Monate";
+"1 minute" = "1 Minute";
+"1 hour" = "1 Stunde";
+"1 day" = "1 Tag";
+"1 week" = "1 Woche";
+"1 month" = "1 Monat";
+"%lld minutes" = "%lld Minuten";
+"%lld hours" = "%lld Stunden";
+"%lld days" = "%lld Tage";
+"%lld weeks" = "%lld Wochen";
+"%lld months" = "%lld Monate";
+"24 hours" = "24 Stunden";
+"7 days" = "7 Tage";
+"30 days" = "30 Tage";
+"a year" = "1 Jahr";
+
+/* Filter bar */
+"Chips" = "Chips";
+"Advanced" = "Erweitert";
+"Remove filter on %@" = "Filter für %@ entfernen";
+"Clear filter" = "Filter entfernen";
+"Filter" = "Filter";
+"Filter by column" = "Nach Spalte filtern";
+"Search rows" = "Zeilen durchsuchen";
+"Clear search" = "Suche leeren";
+"Find a column" = "Spalte suchen";
+"%lld of %lld shown" = "%lld von %lld sichtbar";
+"%lld of %lld shown · drag headers to reorder" = "%lld von %lld sichtbar · zum Umordnen Spaltenköpfe ziehen";
+"Show all" = "Alle einblenden";
+"Reset layout" = "Layout zurücksetzen";
+"Every column back in the table's order and width, sorted by the default order" = "Alle Spalten wieder in Reihenfolge und Breite der Tabelle, nach Standardreihenfolge sortiert";
+
+/* Value picker */
+"%@ · 50+ values" = "%@ · 50+ Werte";
+"%@ · 1 distinct value" = "%@ · 1 Wert";
+"%@ · %lld distinct values" = "%@ · %lld verschiedene Werte";
+"Press Return to add" = "Mit Return hinzufügen";
+"Counted under your other filters" = "Mit deinen übrigen Filtern gezählt";
+"Applies as you click" = "Gilt beim Klicken";
+"Applies right away" = "Gilt sofort";
+"Press Return to apply" = "Mit Return anwenden";
+"More operators" = "Weitere Operatoren";
+"from" = "von";
+"to" = "bis";
+"text" = "Text";
+"Type or paste values" = "Werte eingeben oder einsetzen";
+"Search values" = "Werte durchsuchen";
+"No values" = "Keine Werte";
+"Nothing matches “%@”" = "Kein Treffer für „%@“";
+"Use “%@”" = "„%@“ verwenden";
+"typed" = "eingegeben";
+
+/* Advanced filter and WHERE */
+"Advanced filter" = "Erweiterter Filter";
+"the same filters as the chips, as rows" = "dieselben Filter wie die Chips, als Zeilen";
+"Condition" = "Bedingung";
+"Group" = "Gruppe";
+"1 row matches" = "1 passende Zeile";
+"%@ rows match" = "%@ passende Zeilen";
+"Clear" = "Leeren";
+"Apply" = "Anwenden";
+"Reads as" = "Im Klartext";
+"Switch off" = "Ausschalten";
+"Switch on" = "Einschalten";
+"any of these" = "eine davon";
+"all of these" = "alle davon";
+"Ungroup" = "Gruppe auflösen";
+"where" = "wo";
+"Switch this level between and / or" = "Diese Ebene zwischen und / oder umschalten";
+"Remove condition" = "Bedingung entfernen";
+"Type a value, then Return" = "Wert eingeben, dann Return";
+"value" = "Wert";
+
+/* Shared controls */
+"Remove %@" = "%@ entfernen";
+"on" = "ein";
+"off" = "aus";
+
+/* Grid: page bar */
+"Page" = "Seite";
+"of" = "von";
+"Go to a page, change rows per page" = "Seite wählen, Zeilen pro Seite ändern";
+"Previous page (⌘[)" = "Vorherige Seite (⌘[)";
+"Next page (⌘])" = "Nächste Seite (⌘])";
+"of %@ rows" = "von %@ Zeilen";
+"of %@ matching" = "von %@ Treffern";
+"Go to page" = "Gehe zu Seite";
+"Go" = "Los";
+"Rows per page" = "Zeilen pro Seite";
+"Other, like 25" = "Andere, z. B. 25";
+"rows" = "Zeilen";
+"Set" = "Festlegen";
+"Counting…" = "Wird gezählt …";
+"The total is an estimate." = "Die Gesamtzahl ist geschätzt.";
+"Count exactly" = "Genau zählen";
+
+/* Grid: export panel */
+"Export" = "Exportieren";
+" · 1 visible column" = " · 1 sichtbare Spalte";
+" · %lld visible columns" = " · %lld sichtbare Spalten";
+"Selected · %@" = "Auswahl · %@";
+"This view · %@" = "Diese Ansicht · %@";
+"This view" = "Diese Ansicht";
+"Whole table" = "Ganze Tabelle";
+"The rows you selected" = "Deine ausgewählten Zeilen";
+"Filters and sort of this view" = "Filter und Sortierung dieser Ansicht";
+"Every row, by primary key" = "Alle Zeilen, nach Primärschlüssel";
+"Every row, in this sort" = "Alle Zeilen, in dieser Sortierung";
+"… %@ more" = "… %@ weitere";
+"Copy" = "Kopieren";
+"Copy as %@" = "Als %@ kopieren";
+"More than %@ rows: save them to a file" = "Mehr als %@ Zeilen: in einer Datei speichern";
+"More than %@ rows: save them to a file." = "Mehr als %@ Zeilen: in einer Datei speichern.";
+"Save…" = "Speichern …";
+"Reading rows…" = "Liest Zeilen …";
+"%@ rows so far…" = "Bisher %@ Zeilen …";
+"Copied 1 row" = "1 Zeile kopiert";
+"Copied %@ rows" = "%@ Zeilen kopiert";
+"Saved 1 row" = "1 Zeile gespeichert";
+"Saved %@ rows" = "%@ Zeilen gespeichert";
+"Show in Finder" = "Im Finder zeigen";
+
+/* Grid: cells and gutter tooltips */
+"Open the row it points to" = "Referenzierte Zeile öffnen";
+"Waiting for your review. Click to open it." = "Wartet auf deine Prüfung. Zum Öffnen klicken.";
+"New row, not saved yet" = "Neue Zeile, noch nicht gespeichert";
+"Edited by you" = "Von dir bearbeitet";
+
+/* Grid: row counts, new-row placeholders, change notes */
+"≈%@ rows" = "≈%@ Zeilen";
+"%@ rows" = "%@ Zeilen";
+"%@ of %@ rows" = "%@ von %@ Zeilen";
+"counting…" = "wird gezählt …";
+"%@+ rows" = "%@+ Zeilen";
+"default" = "Standard";
+"required" = "Pflicht";
+"Copy of %@" = "Kopie von %@";
+
+/* Grid: undo action names */
+"Set to NULL" = "Auf NULL setzen";
+"Delete Row" = "Zeile löschen";
+"Delete Rows" = "Zeilen löschen";
+"New Row" = "Neue Zeile";
+"Duplicate Row" = "Zeile duplizieren";
+"Duplicate Rows" = "Zeilen duplizieren";
+
+/* Grid: column header tooltip and menu */
+"primary key" = "Primärschlüssel";
+"references %@" = "verweist auf %@";
+"Sort A → Z" = "A → Z sortieren";
+"Sort Z → A" = "Z → A sortieren";
+"Clear sort" = "Nicht sortieren";
+"Filter by %@…" = "Nach %@ filtern …";
+"Hide column" = "Spalte ausblenden";
+"Copy column name" = "Spaltennamen kopieren";
+
+/* Grid: row menu */
+"Edit value" = "Wert bearbeiten";
+"Remove new row" = "Neue Zeile entfernen";
+"Only rows with %@" = "Nur Zeilen mit %@";
+"Hide rows with %@" = "Zeilen mit %@ ausblenden";
+"Open %@ %@" = "%1$@ %2$@ öffnen";
+"Copy value" = "Wert kopieren";
+"Copy row" = "Zeile kopieren";
+"Copy %lld rows" = "%lld Zeilen kopieren";
+"Copy row as" = "Zeile kopieren als";
+"Copy %lld rows as" = "%lld Zeilen kopieren als";
+"Duplicate row" = "Zeile duplizieren";
+"Duplicate %lld rows" = "%lld Zeilen duplizieren";
+"Delete row" = "Zeile löschen";
+"Delete %lld rows" = "%lld Zeilen löschen";
+"Undo your change to this row" = "Deine Änderung an dieser Zeile widerrufen";
+"Row details" = "Zeilendetails";
+"Hide row details" = "Zeilendetails ausblenden";
+"Review the agent's change…" = "Änderung des Agenten prüfen …";
+
+/* Grid: agent note row */
+"%@, waiting for your review." = "%@, wartet auf deine Prüfung.";
+"Review" = "Prüfen";
+
+/* Workspace: rail, header, footer, presence */
+"Schema" = "Schema";
+"Review (nothing waiting)" = "Prüfung (nichts offen)";
+"Review, %lld waiting" = "Prüfung, %lld offen";
+"Hide agent session" = "Agentensitzung ausblenden";
+"Show agent session" = "Agentensitzung einblenden";
+"All connections" = "Alle Verbindungen";
+"All connections…" = "Alle Verbindungen …";
+"Connecting to %@…" = "Verbinden mit %@ …";
+"Could not connect to %@" = "Keine Verbindung zu %@ möglich";
+"Try again" = "Erneut versuchen";
+"Edit connection" = "Verbindung bearbeiten";
+"Pick a table on the left." = "Wähle links eine Tabelle.";
+"%@ is working" = "%@ arbeitet";
+"%@ is editing with you" = "%@ bearbeitet mit dir";
+"%@ is waiting for you" = "%@ wartet auf dich";
+"You" = "Du";
+"%@, active" = "%@, aktiv";
+"%@, idle" = "%@, inaktiv";
+"%@ was here" = "%@ war hier";
+"%lld agents here" = "%lld Agenten hier";
+"Review · %lld" = "Prüfung · %lld";
+"Close tab" = "Tab schließen";
+"production writes go through review" = "Schreibzugriffe auf Production werden geprüft";
+"your edits wait for review · agents: %@" = "deine Änderungen warten auf Prüfung · Agenten: %@";
+"Could not read the schema: %@" = "Schema konnte nicht gelesen werden: %@";
+
+/* Schema rail */
+"Filter tables, columns" = "Tabellen, Spalten filtern";
+"1 table" = "1 Tabelle";
+"%lld tables" = "%lld Tabellen";
+"Hide columns" = "Spalten ausblenden";
+"Show columns" = "Spalten einblenden";
+"Hidden from agents" = "Für Agenten verborgen";
+"hidden" = "verborgen";
+"agent" = "Agent";
+"view" = "View";
+
+/* Table screen */
+/* button back to a table (Turkish: %@ tablosuna dön) */
+"back.table" = "Zurück zu %@";
+"view · read-only" = "View · schreibgeschützt";
+"no primary key · read-only" = "kein Primärschlüssel · schreibgeschützt";
+"Rows can only be edited in tables with a primary key." = "Zeilen lassen sich nur in Tabellen mit Primärschlüssel bearbeiten.";
+"Data" = "Daten";
+"Structure" = "Struktur";
+"Row" = "Zeile";
+"Column" = "Spalte";
+"Index" = "Index";
+"Add a row (⌘I)" = "Zeile einfügen (⌘I)";
+"Views don't take new rows" = "Views nehmen keine neuen Zeilen an";
+"Add a column" = "Spalte hinzufügen";
+"Views have no columns of their own" = "Views haben keine eigenen Spalten";
+"Add an index" = "Index hinzufügen";
+"Views have no indexes" = "Views haben keine Indizes";
+"new query" = "neue Abfrage";
+"1 column" = "1 Spalte";
+"%lld columns" = "%lld Spalten";
+"1 index" = "1 Index";
+"%lld indexes" = "%lld Indizes";
+"The query failed" = "Abfrage fehlgeschlagen";
+"Clear filters" = "Filter entfernen";
+"No rows yet" = "Noch keine Zeilen";
+"No rows match" = "Keine passenden Zeilen";
+"Columns" = "Spalten";
+"Columns · %lld hidden" = "Spalten · %lld ausgeblendet";
+"Copy or save these rows as CSV, JSON, SQL or Markdown" = "Diese Zeilen als CSV, JSON, SQL oder Markdown kopieren oder speichern";
+"Copied" = "Kopiert";
+
+/* Row panel */
+"No row selected" = "Keine Zeile ausgewählt";
+"new row" = "neue Zeile";
+"Close (Space)" = "Schließen (Leertaste)";
+/* open a table (Turkish: %@ tablosunu aç) */
+"open.table" = "%@ öffnen";
+"Referenced by" = "Referenziert von";
+"Open %@ rows whose %@ points here" = "Zeilen in %1$@ öffnen, deren %2$@ hierher zeigt";
+
+/* Structure tab */
+"Indexes" = "Indizes";
+"column" = "Spalte";
+"type" = "Typ";
+"null" = "null";
+"keys and checks" = "Schlüssel und Checks";
+"index" = "Index";
+"columns" = "Spalten";
+"kind" = "Art";
+"size" = "Größe";
+"used" = "genutzt";
+"1 scan" = "1 Scan";
+"%@ scans" = "%@ Scans";
+"unique" = "eindeutig";
+"yes" = "ja";
+"no" = "nein";
+"none" = "keine";
+"check · 1 value" = "check · 1 Wert";
+"check · %lld values" = "check · %lld Werte";
+"proposed by %@" = "vorgeschlagen von %@";
+"proposed by an agent" = "von einem Agenten vorgeschlagen";
+"Remove New Column" = "Neue Spalte entfernen";
+"Keep Column" = "Spalte behalten";
+"Drop Column" = "Spalte löschen";
+"Undo Changes" = "Widerrufen";
+"new · not saved" = "neu · nicht gespeichert";
+"dropped · not saved" = "gelöscht · nicht gespeichert";
+"No indexes." = "Keine Indizes.";
+"Review %@'s proposal" = "Vorschlag von %@ prüfen";
+"Review proposed index" = "Vorgeschlagenen Index prüfen";
+"Remove New Index" = "Neuen Index entfernen";
+"Keep Index" = "Index behalten";
+"Review Proposal" = "Vorschlag prüfen";
+"Drop Index" = "Index löschen";
+
+/* Structure side panel */
+"new column" = "neue Spalte";
+"column %lld of %lld" = "Spalte %lld von %lld";
+"name" = "Name";
+"Type" = "Typ";
+"Default" = "Standardwert";
+"Allows empty" = "Leer erlaubt";
+"%@ reads this column, so PostgreSQL won't change its type." = "%@ liest diese Spalte, daher ändert PostgreSQL ihren Typ nicht.";
+"%@ read this column, so PostgreSQL won't change its type." = "%@ lesen diese Spalte, daher ändert PostgreSQL ihren Typ nicht.";
+"SQLite can only rename a saved column." = "SQLite kann eine gespeicherte Spalte nur umbenennen.";
+"Allowed values" = "Erlaubte Werte";
+"In the data" = "In den Daten";
+"Used by" = "Verwendet von";
+"key" = "Schlüssel";
+"foreign key" = "Fremdschlüssel";
+"proposed index" = "vorgeschlagener Index";
+"Remove new column" = "Neue Spalte entfernen";
+"Keep column" = "Spalte behalten";
+"Drop column" = "Spalte löschen";
+"new index" = "neuer Index";
+"index %lld of %lld" = "Index %lld von %lld";
+"Unique" = "Eindeutig";
+"Kind" = "Art";
+"Size" = "Größe";
+"Used" = "Genutzt";
+"Remove new index" = "Neuen Index entfernen";
+"Keep index" = "Index behalten";
+"Review proposal" = "Vorschlag prüfen";
+"Drop index" = "Index löschen";
+"Made by the primary key; it goes with the key." = "Vom Primärschlüssel angelegt; entfällt mit dem Schlüssel.";
+"Made by a unique constraint; it goes with the constraint." = "Von einer Eindeutigkeitsbedingung angelegt; entfällt mit ihr.";
+"Production: every schema change shows its DDL and lock level before it runs." = "Production: Jede Schemaänderung zeigt vor der Ausführung ihre DDL und Sperrstufe.";
+
+/* Undo menu names ("Geri Al: %@") */
+"Remove New Row" = "Neue Zeile entfernen";
+"Undo Change" = "Änderung widerrufen";
+"Discard Changes" = "Änderungen verwerfen";
+"Add Column" = "Spalte hinzufügen";
+"Add Index" = "Index hinzufügen";
+"Edit Column" = "Spalte bearbeiten";
+"Edit Index" = "Index bearbeiten";
+"Change Column" = "Spalte ändern";
+
+/* Review screen */
+"Nothing waiting" = "Nichts offen";
+"Edit a cell, or let an agent propose a change, and it shows up here before anything is written." = "Bearbeite eine Zelle oder lass einen Agenten etwas vorschlagen – es erscheint hier, bevor etwas geschrieben wird.";
+"Discard all %lld changes?" = "Alle %lld Änderungen verwerfen?";
+"Discard all" = "Alle verwerfen";
+"Your edits are dropped and the agents' proposals are turned down. Nothing was written." = "Deine Änderungen werden verworfen und die Vorschläge der Agenten abgelehnt. Es wurde nichts geschrieben.";
+"Review 1 change" = "1 Änderung prüfen";
+"Review %lld changes" = "%lld Änderungen prüfen";
+"They apply together in one transaction. Nothing is written until you apply." = "Sie werden gemeinsam in einer Transaktion angewendet. Erst beim Anwenden wird geschrieben.";
+"Note for %@ if you turn it down (optional)" = "Notiz für %@, falls du ablehnst (optional)";
+"Reject proposal" = "Vorschlag ablehnen";
+"Applying…" = "Wird angewendet …";
+"Apply 1 change" = "1 Änderung anwenden";
+"Apply %lld changes" = "%lld Änderungen anwenden";
+"Edit %@ %@" = "%1$@ %2$@ bearbeiten";
+"Delete %@ %@" = "%1$@ %2$@ löschen";
+"New row in %@" = "Neue Zeile in %@";
+"SQL on %@" = "SQL in %@";
+"%@ on %@" = "%1$@ in %2$@";
+"Leave out of this apply" = "Nicht mit anwenden";
+"Include in this apply" = "Mit anwenden";
+"Applying" = "Wird angewendet";
+"1 row" = "1 Zeile";
+"%lld rows" = "%lld Zeilen";
+"1 row in %@" = "1 Zeile in %@";
+"%lld rows in %@" = "%lld Zeilen in %@";
+"in one transaction on %@" = "in einer Transaktion auf %@";
+"as %@, not as %@" = "als %1$@, nicht als %2$@";
+"you" = "du";
+"with your own credentials" = "mit deinen eigenen Zugangsdaten";
+/* "rows" when the count is unknown (Turkish: satırlar) */
+"proposal.rows" = "Zeilen";
+"Update %@ in %@" = "%1$@ in %2$@ aktualisieren";
+"Update %@" = "%@ aktualisieren";
+"Delete %@ in %@" = "%1$@ in %2$@ löschen";
+"Delete %@" = "%@ löschen";
+"Add %@ in %@" = "%1$@ in %2$@ hinzufügen";
+"Add %@" = "%@ hinzufügen";
+"Change the schema: %@ in %@" = "Schema ändern: %1$@ in %2$@";
+"Change the schema: %@" = "Schema ändern: %@";
+"Run %@ in %@" = "%1$@ in %2$@ ausführen";
+"Run %@" = "%@ ausführen";
+"proposed at %@" = "vorgeschlagen um %@";
+"Waiting for you on %@" = "Wartet auf dich (%@)";
+"Agent's note: " = "Notiz des Agenten: ";
+"After you decide, %@ sees the result the next time it checks its proposals." = "Nach deiner Entscheidung sieht %@ das Ergebnis beim nächsten Abruf der Vorschläge.";
+"Trial run changed 1 row" = "Testlauf hat 1 Zeile geändert";
+"Trial run changed %lld rows" = "Testlauf hat %lld Zeilen geändert";
+"Rolled back after the trial" = "Nach dem Testlauf zurückgesetzt";
+"Showing the first %lld" = "Die ersten %lld werden gezeigt";
+"Applies to production" = "Wird auf Production angewendet";
+"edited at %@" = "bearbeitet um %@";
+/* column header: old value (Turkish: eski) */
+"review.was" = "alt";
+/* column header: new value (Turkish: yeni) */
+"review.now" = "neu";
+"The whole row is deleted." = "Die ganze Zeile wird gelöscht.";
+"Runs as written. The trial run said it %@." = "Läuft wie geschrieben. Testlauf: %@.";
+"Runs as written." = "Läuft wie geschrieben.";
+"Changes the table's structure." = "Ändert die Struktur der Tabelle.";
+"Undo this edit" = "Widerrufen";
+"1 value" = "1 Wert";
+"%lld values" = "%lld Werte";
+"Show SQL" = "SQL zeigen";
+
+/* Structure changes and change summaries (Review/ChangeText.swift) */
+"Add column %@" = "Spalte hinzufügen: %@";
+"Rename column %@ to %@" = "Spalte umbenennen: %1$@ → %2$@";
+"Change column %@" = "Spalte ändern: %@";
+"Drop column %@" = "Spalte löschen: %@";
+"Add index %@" = "Index hinzufügen: %@";
+"Drop index %@" = "Index löschen: %@";
+"Rewrites %@; reads and writes wait until it finishes." = "Schreibt %@ neu; Lesen und Schreiben warten bis zum Ende.";
+"Scans %@; reads and writes wait until it finishes." = "Durchsucht %@; Lesen und Schreiben warten bis zum Ende.";
+"Writes to %@ wait while the index builds." = "Schreibzugriffe auf %@ warten, bis der Index erstellt ist.";
+"Locks %@ briefly." = "Sperrt %@ kurz.";
+"delete row" = "Zeile löschen";
+"insert a row of defaults" = "Zeile mit Standardwerten einfügen";
+"insert %@" = "%@ einfügen";
+
+/* Waiting changes bar */
+"Hide your changes" = "Deine Änderungen ausblenden";
+"Show your changes" = "Deine Änderungen einblenden";
+"%lld yours" = "%lld von dir";
+"%lld from %@" = "%lld von %@";
+"Discard" = "Verwerfen";
+"Review DDL" = "DDL prüfen";
+"Review & apply" = "Prüfen & anwenden";
+"Runs on %@" = "Läuft auf %@";
+"Apply to production" = "Auf Production anwenden";
+"Discard your 1 edit" = "Deine 1 Änderung verwerfen";
+"Discard your %lld edits" = "Deine %lld Änderungen verwerfen";
+"Discard everything, and turn down the agents' proposals" = "Alles verwerfen und die Vorschläge der Agenten ablehnen";
+"Nothing has been written yet. Turned-down proposals are marked rejected, and the agent sees that." = "Noch wurde nichts geschrieben. Abgelehnte Vorschläge werden als abgelehnt markiert, und der Agent sieht das.";
+"1 schema change waiting" = "1 Schemaänderung offen";
+"%lld schema changes waiting" = "%lld Schemaänderungen offen";
+"1 change waiting" = "1 Änderung offen";
+"%lld changes waiting" = "%lld Änderungen offen";
+"Discard 1 change?" = "1 Änderung verwerfen?";
+"Discard %lld changes?" = "%lld Änderungen verwerfen?";
+"Save 1 change" = "1 Änderung speichern";
+"Save %lld changes" = "%lld Änderungen speichern";
+"%@ required" = "%@ erforderlich";
+"Undo this change" = "Diese Änderung widerrufen";
+"%@'s proposal; review it to apply" = "Vorschlag von %@; zum Anwenden prüfen";
+"New row" = "Neue Zeile";
+
+/* Agent session panel */
+"Session" = "Sitzung";
+"today on %@" = "heute auf %@";
+"Hide the session (⌥⌘0, or the agents button in the rail)" = "Sitzung ausblenden (⌥⌘0 oder Agenten-Symbol in der Seitenleiste)";
+"Hide session" = "Sitzung ausblenden";
+"No agent activity today." = "Heute keine Agentenaktivität.";
+"Agents cannot see this connection here." = "Agenten sehen diese Verbindung hier nicht.";
+"Agents only read here." = "Agenten lesen hier nur.";
+"Agents read and propose here." = "Agenten lesen hier und schlagen vor.";
+"Agents read and write here." = "Agenten lesen und schreiben hier.";
+"1 column is masked." = "1 Spalte ist maskiert.";
+"%lld columns are masked." = "%lld Spalten sind maskiert.";
+"1 table is hidden." = "1 Tabelle ist verborgen.";
+"%lld tables are hidden." = "%lld Tabellen sind verborgen.";
+"read %@" = "%@ gelesen";
+/* activity line verb: an agent read tables (Turkish: okudu) */
+"session.read" = "gelesen";
+"changed %@" = "%@ geändert";
+"changed" = "geändert";
+"wrote %@" = "%@ geschrieben";
+"wrote" = "geschrieben";
+"was refused" = "abgewiesen";
+"applied a proposed change to %@" = "Vorschlag für %@ angewendet";
+"applied a proposed change" = "Vorschlag angewendet";
+"applied %@" = "auf %@ angewendet";
+"applied" = "angewendet";
+"turned down a proposed change" = "Vorschlag abgelehnt";
+/* activity line: an agent request failed (Turkish: başarısız oldu) */
+"session.failed" = "fehlgeschlagen";
+"looked at your saved queries" = "gespeicherte Abfragen angesehen";
+"read a saved query" = "gespeicherte Abfrage gelesen";
+"suggested a change to %@" = "Entwurf für %@ erstellt";
+"suggested a change to a saved query" = "Entwurf für gespeicherte Abfrage erstellt";
+"took the suggestion for %@" = "Entwurf für %@ übernommen";
+"took the suggestion for a saved query" = "Entwurf für gespeicherte Abfrage übernommen";
+"dismissed the suggestion for %@" = "Entwurf für %@ ignoriert";
+"dismissed the suggestion for a saved query" = "Entwurf für gespeicherte Abfrage ignoriert";
+"asked %@" = "Frage an %@";
+"asked an agent" = "Frage an einen Agenten";
+"proposed an update to %@" = "Aktualisierung von %@ vorgeschlagen";
+"proposed an update" = "Aktualisierung vorgeschlagen";
+"proposed a delete to %@" = "Löschung in %@ vorgeschlagen";
+"proposed a delete" = "Löschung vorgeschlagen";
+"proposed an insert to %@" = "Einfügen in %@ vorgeschlagen";
+"proposed an insert" = "Einfügen vorgeschlagen";
+"proposed a change to %@" = "Änderung an %@ vorgeschlagen";
+"proposed a change" = "Änderung vorgeschlagen";
+"and %lld earlier" = "und %lld frühere";
+"waiting for your review" = "wartet auf deine Prüfung";
+"working…" = "arbeitet …";
+
+/* Ask (Claude Code from the SQL tab) */
+"Claude Code isn't installed on this Mac. Install it from claude.com/code, then try again." = "Claude Code ist auf diesem Mac nicht installiert. Installiere es über claude.com/code und versuche es erneut.";
+"The agentable command is missing from the app." = "Der Befehl agentable fehlt in der App.";
+"Stopped after 3 minutes without an answer." = "Nach 3 Minuten ohne Antwort gestoppt.";
+"Could not start Claude Code: %@" = "Claude Code konnte nicht gestartet werden: %@";
+"Claude Code stopped with an error." = "Claude Code wurde mit einem Fehler beendet.";
+"Claude Code stopped (exit %lld)." = "Claude Code wurde beendet (Exit-Code %lld).";
+"%@ finished without suggesting a change." = "%@ ist fertig, ohne einen Entwurf zu liefern.";
+"listed saved queries" = "gespeicherte Abfragen aufgelistet";
+"described %@" = "%@ beschrieben";
+"described a table" = "Tabelle beschrieben";
+"searched the schema" = "Schema durchsucht";
+"ran a query" = "Abfrage ausgeführt";
+"checked the plan" = "Plan geprüft";
+"suggested a change" = "Entwurf erstellt";
+"used %@" = "%@ verwendet";
+"Ask" = "Fragen";
+"Ask your agent to change or explain this query" = "Bitte deinen Agenten, diese Abfrage zu ändern oder zu erklären";
+"Make it faster" = "Schneller machen";
+"Explain the plan" = "Plan erklären";
+"Check for mistakes" = "Auf Fehler prüfen";
+"Ask claude-code" = "claude-code fragen";
+"about %@" = "zu %@";
+"this query" = "dieser Abfrage";
+/* placeholder for the file name to save a query as (Turkish: Kayıt adı) */
+"ask.saveAs" = "Speichern unter";
+"What should it do with this query?" = "Was soll er mit dieser Abfrage tun?";
+"Runs your Claude Code with Agentable's tools only. It reads and suggests; nothing runs until you accept." = "Startet dein Claude Code nur mit den Werkzeugen von Agentable. Es liest und entwirft; nichts läuft, bevor du übernimmst.";
+"Claude Code isn't installed on this Mac." = "Claude Code ist auf diesem Mac nicht installiert.";
+"Send" = "Senden";
+"Stop" = "Stoppen";
+"thinking" = "denkt nach";
+"%lld s" = "%lld s";
+"Stopped." = "Gestoppt.";
+
+/* SQL tab */
+"Run" = "Ausführen";
+"Run the statement under the cursor, or the selected one" = "Anweisung am Cursor oder die ausgewählte ausführen";
+"Explain" = "Erklären";
+"Format" = "Formatieren";
+"Reads run directly. Writes go to review." = "Lesen läuft direkt. Schreiben geht in die Prüfung.";
+"Results" = "Ergebnisse";
+"Plan" = "Plan";
+"Messages" = "Meldungen";
+"No plan yet" = "Noch kein Plan";
+"No messages" = "Keine Meldungen";
+"Copy as" = "Kopieren als";
+"Save as" = "Speichern als";
+"Save this query for this connection" = "Diese Abfrage für diese Verbindung speichern";
+"Save query" = "Abfrage speichern";
+"Each run is its own transaction, so %@ isn't needed here." = "Jede Ausführung ist eine eigene Transaktion, %@ ist hier nicht nötig.";
+"More than %@ rows; the first %@ are shown." = "Mehr als %1$@ Zeilen; die ersten %2$@ werden angezeigt.";
+"1 row in %lld ms." = "1 Zeile in %lld ms.";
+"%@ rows in %lld ms." = "%1$@ Zeilen in %2$lld ms.";
+"ran in a trial" = "lief fehlerfrei";
+"would change 1 row" = "würde 1 Zeile ändern";
+"would change %@ rows" = "würde %@ Zeilen ändern";
+"Waiting with your changes: in a trial it %@. ⌘S saves it, after showing you the SQL." = "Wartet mit deinen Änderungen. Testlauf: %@. ⌘S speichert, nachdem das SQL angezeigt wurde.";
+"Waiting with your changes: in a trial it %@. ⌘S saves it." = "Wartet mit deinen Änderungen. Testlauf: %@. ⌘S speichert.";
+"Nothing to run here." = "Hier gibt es nichts auszuführen.";
+"That selection holds %lld statements. Select one, or put the cursor in it." = "Die Auswahl enthält %lld Anweisungen. Wähle eine aus oder setze den Cursor hinein.";
+"Give the query a name." = "Gib der Abfrage einen Namen.";
+"table" = "Tabelle";
+"keyword" = "Schlüsselwort";
+"Accept Suggestion" = "Entwurf übernehmen";
+"Suggested a new version of this query." = "Hat eine neue Fassung dieser Abfrage entworfen.";
+"Made for an earlier version of this query." = "Für eine ältere Fassung dieser Abfrage erstellt.";
+"Accept" = "Übernehmen";
+"Dismiss" = "Ignorieren";
+
+/* Saved queries sidebar */
+"Search queries" = "Abfragen durchsuchen";
+"Saved" = "Gespeichert";
+"New" = "Neu";
+"Start an empty query" = "Leere Abfrage beginnen";
+"No saved queries" = "Keine Abfragen gespeichert";
+"No matches" = "Keine Treffer";
+"%@ · suggested a new query" = "%@ · neue Abfrage entworfen";
+"%@ · suggested a change" = "%@ · Änderung entworfen";
+"you · edited %@" = "du · bearbeitet %@";
+"Recent on %@" = "Zuletzt auf %@";
+"%@ · became a proposal" = "%@ · wurde zum Vorschlag";

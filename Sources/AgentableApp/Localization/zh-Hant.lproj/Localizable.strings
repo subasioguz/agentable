@@ -1,0 +1,792 @@
+/* Traditional Chinese, Taiwan (zh-Hant). Keys are the English text as Swift builds them (%@, %lld for values). */
+/* Settings menu: language */
+"Language" = "語言";
+"Match the system" = "與系統相同";
+"Restart Agentable to change the language?" = "要重新啟動 Agentable 以變更語言嗎？";
+"Your connections and waiting changes are kept." = "你的連線和待處理的變更都會保留。";
+"Restart" = "重新啟動";
+"Later" = "稍後";
+"Connections" = "連線";
+"Connect agents" = "連接代理";
+"New connection" = "新增連線";
+
+/* Agent access levels (AgentAccess.label) */
+/* agent access level (Turkish: kapalı) */
+"access.off" = "關閉";
+/* agent access level (Turkish: okuma) */
+"access.read" = "讀取";
+/* agent access level (Turkish: öneri) */
+"access.propose" = "提議";
+/* agent access level (Turkish: yazma) */
+"access.write" = "寫入";
+
+/* App menus and startup */
+"Unknown error" = "未知的錯誤";
+"Changes" = "變更";
+"Save" = "儲存";
+"Reload" = "重新載入";
+"Add Row" = "新增列";
+"Query" = "查詢";
+"Run Statement" = "執行陳述式";
+"Ask an Agent…" = "詢問代理…";
+"Show Agent Session" = "顯示代理工作階段";
+"Agentable could not start" = "Agentable 無法啟動";
+"Could not read saved connections: %@" = "無法讀取已儲存的連線：%@";
+"let agents %@ on %@" = "將 %2$@ 的代理權限設為「%1$@」";
+
+/* Settings menu */
+"Appearance" = "外觀";
+"Light" = "淺色";
+"Dark" = "深色";
+"Default order" = "預設排序";
+"Oldest first" = "最舊的在前";
+"Newest first" = "最新的在前";
+"Connect Agents…" = "連接代理…";
+"Settings" = "設定";
+
+/* Go to anything */
+"Go to a table or connection" = "前往資料表或連線";
+"Nothing called “%@”" = "沒有名為「%@」的項目";
+"connection" = "連線";
+"Go to anything" = "快速前往";
+
+/* Connect agents card */
+"Agents found on this Mac" = "在這台 Mac 上找到的代理";
+"Connecting adds Agentable as an MCP server in the agent's config. You can remove it anytime." = "連接後，Agentable 會以 MCP 伺服器的身分加入代理的設定。你隨時可以移除。";
+"Another agent" = "其他代理";
+"Run %@ or copy the MCP config" = "執行 %@ 或拷貝 MCP 設定";
+"Copy config" = "拷貝設定";
+"Copied. Paste it into the agent's MCP settings." = "已拷貝。請貼到代理的 MCP 設定中。";
+"What agents can do by default" = "代理的預設權限";
+"per environment; change it on each connection" = "依環境而定；可在每個連線中變更";
+"never more than propose" = "最高為提議";
+"Not found on this Mac" = "在這台 Mac 上找不到";
+"Connected" = "已連接";
+"Connecting…" = "正在連接…";
+"Connect" = "連接";
+"%@ default: %@" = "%@ 預設：%@";
+"Agents get a name for each connection, never the password." = "代理只會取得每個連線的名稱，絕不會取得密碼。";
+"Done" = "完成";
+"App" = "App";
+"%@ can use Agentable now." = "%@ 現在可以使用 Agentable 了。";
+"Added to Cursor. The old file is saved as mcp.json.agentable-backup." = "已加入 Cursor。舊檔案已儲存為 mcp.json.agentable-backup。";
+"The agentable command-line tool was not found next to the app." = "在 App 旁找不到 agentable 命令列工具。";
+"%@ was not found on this Mac." = "在這台 Mac 上找不到 %@。";
+"The agent's setup command failed." = "代理的設定指令執行失敗。";
+"%@ is not valid JSON, so it was left alone." = "%@ 不是有效的 JSON，因此未做更動。";
+
+/* Connection form */
+"Edit %@" = "編輯 %@";
+"Close" = "關閉";
+"Paste a URL or a SQLite file path" = "貼上 URL 或 SQLite 檔案路徑";
+"Filled the file path below" = "已填入下方的檔案路徑";
+"Filled host, port, user and database below" = "已填入下方的主機、連接埠、使用者和資料庫";
+"Name" = "名稱";
+"Lower-case letters, digits, - _ and . only. Agents address the connection by this name." = "僅限小寫字母、數字和 - _ . 字元。代理會以此名稱存取這個連線。";
+"File" = "檔案";
+"Choose…" = "選擇…";
+"Host" = "主機";
+"Port" = "連接埠";
+"User" = "使用者";
+"Database" = "資料庫";
+"Password" = "密碼";
+"Saved in Keychain" = "已儲存在鑰匙圈中";
+"Saved to Keychain. Agents never receive it." = "儲存在鑰匙圈中。代理絕不會取得。";
+"Off" = "關閉";
+"Prefer" = "優先";
+"Require" = "必要";
+"Verify" = "驗證";
+"CA certificate" = "CA 憑證";
+"System roots" = "系統根憑證";
+"Not checked" = "不檢查";
+"Client certificate" = "用戶端憑證";
+"Client key" = "用戶端金鑰";
+"None" = "無";
+"Testing…" = "正在測試…";
+"Test" = "測試";
+"Test again" = "再測試一次";
+"Saving…" = "正在儲存…";
+"SSH tunnel" = "SSH 通道";
+"SSH host" = "SSH 主機";
+"bastion or a ~/.ssh/config name" = "跳板主機或 ~/.ssh/config 中的名稱";
+"SSH user" = "SSH 使用者";
+"from ~/.ssh/config" = "取自 ~/.ssh/config";
+"Key" = "金鑰";
+"Uses your SSH agent, ~/.ssh/config and known_hosts. Agents never see it." = "使用你的 ssh-agent、~/.ssh/config 和 known_hosts。代理永遠看不到這些。";
+"Environment" = "環境";
+"Production gets review before every write, and agents start at Read." = "Production 的每次寫入都要先經過審查，代理從「讀取」開始。";
+"Agents start at Propose: their changes wait for you." = "代理從「提議」開始：它們的變更會等你處理。";
+"Agents start at Write." = "代理從「寫入」開始。";
+"Agent access" = "代理權限";
+"%@, the %@ default" = "%1$@（%2$@ 預設）";
+"Environment default (%@)" = "環境預設（%@）";
+"Change" = "變更";
+"Agents cannot see this connection" = "代理看不到這個連線";
+"Schema and read-only queries" = "綱要和唯讀查詢";
+"Reads, and changes that wait for you" = "讀取，以及等你處理的變更";
+"Reads and writes directly" = "直接讀取和寫入";
+"Connected · %lld ms" = "已連線 · %lld 毫秒";
+"Choose a SQLite database file" = "選擇 SQLite 資料庫檔案";
+"There is already a connection named %@." = "已經有名為 %@ 的連線。";
+
+/* Connections screen */
+"Add Agentable to Claude Code, Codex or Cursor" = "將 Agentable 加入 Claude Code、Codex 或 Cursor";
+"Back to %@" = "返回 %@";
+"Remove %@?" = "要移除 %@ 嗎？";
+"Remove" = "移除";
+"Cancel" = "取消";
+"The saved settings and the password in Keychain are deleted. Agents can no longer use this name." = "已儲存的設定和鑰匙圈中的密碼都會被刪除。代理將無法再使用這個名稱。";
+"%lld saved · passwords live in Keychain" = "已儲存 %lld 個 · 密碼存放在鑰匙圈中";
+"Search by name or host" = "依名稱或主機搜尋";
+"No connections yet" = "尚無連線";
+"Paste a postgres:// URL or pick a SQLite file." = "貼上 postgres:// URL 或選擇 SQLite 檔案。";
+"Agents" = "代理";
+"Last used" = "上次使用";
+"%lld live" = "%lld 個使用中";
+"never" = "從未";
+"Edit" = "編輯";
+"Open" = "打開";
+"Edit…" = "編輯…";
+"Copy name for agents" = "拷貝供代理使用的名稱";
+"Remove…" = "移除…";
+"now" = "剛剛";
+"%lld min ago" = "%lld 分鐘前";
+"%lld h ago" = "%lld 小時前";
+"yesterday" = "昨天";
+"%lld days ago" = "%lld 天前";
+
+/* Welcome */
+"Welcome" = "歡迎";
+"Connect a database, then let your agents in." = "連線資料庫，然後讓你的代理加入。";
+"Two minutes. Agents get a name for each connection, never the password." = "只要兩分鐘。代理只會取得每個連線的名稱，絕不會取得密碼。";
+"%@ is saved" = "%@ 已儲存";
+"%lld connections saved" = "已儲存 %lld 個連線";
+"Passwords are in Keychain. Agents will address it as %@." = "密碼存放在鑰匙圈中。代理會以名稱 %@ 存取它。";
+"Add another" = "再新增一個";
+"Your first database" = "你的第一個資料庫";
+"PostgreSQL or a SQLite file. You can add more later." = "PostgreSQL 或 SQLite 檔案。之後還可以新增更多。";
+"Paste a connection URL" = "貼上連線 URL";
+"Open a SQLite file" = "打開 SQLite 檔案";
+"Enter host and port" = "輸入主機和連接埠";
+"Skip for now" = "暫時略過";
+"Back" = "返回";
+"Continue" = "繼續";
+"Agents get %lld tools:" = "代理可使用 %lld 個工具：";
+
+/* Filters: operators from AgentableCore (chip, segment and row labels) */
+"is" = "是";
+"is not" = "不是";
+"contains" = "包含";
+"doesn't contain" = "不包含";
+"starts with" = "開頭為";
+"between" = "介於";
+"in the last" = "最近";
+"before" = "早於";
+"after" = "晚於";
+"is empty" = "為空";
+"is not empty" = "不為空";
+"empty" = "空值";
+"not empty" = "非空值";
+"true" = "真";
+"false" = "假";
+"last" = "最近";
+"equals" = "等於";
+"is any of" = "屬於";
+"does not equal" = "不等於";
+"is none of" = "不屬於";
+"does not contain" = "不包含";
+"is greater than" = "大於";
+"is at least" = "至少";
+"is less than" = "小於";
+"is at most" = "最多";
+"is between" = "介於";
+"is within the last" = "在最近";
+"is before" = "早於";
+"is after" = "晚於";
+"is true" = "為真";
+"is false" = "為假";
+
+/* Filters: and/or, time units, sentences */
+"and" = "且";
+"or" = "或";
+"%@ or %@" = "%@ 或 %@";
+"minutes" = "分鐘";
+"hours" = "小時";
+"days" = "天";
+"weeks" = "週";
+"months" = "個月";
+"1 minute" = "1 分鐘";
+"1 hour" = "1 小時";
+"1 day" = "1 天";
+"1 week" = "1 週";
+"1 month" = "1 個月";
+"%lld minutes" = "%lld 分鐘";
+"%lld hours" = "%lld 小時";
+"%lld days" = "%lld 天";
+"%lld weeks" = "%lld 週";
+"%lld months" = "%lld 個月";
+"24 hours" = "24 小時";
+"7 days" = "7 天";
+"30 days" = "30 天";
+"a year" = "1 年";
+
+/* Filter bar */
+"Chips" = "標籤";
+"Advanced" = "進階";
+"Remove filter on %@" = "移除 %@ 的篩選條件";
+"Clear filter" = "清除篩選";
+"Filter" = "篩選";
+"Filter by column" = "依欄位篩選";
+"Search rows" = "搜尋資料列";
+"Clear search" = "清除搜尋";
+"Find a column" = "尋找欄位";
+"%lld of %lld shown" = "已顯示 %lld / %lld";
+"%lld of %lld shown · drag headers to reorder" = "已顯示 %lld / %lld · 拖移欄位標題即可重新排序";
+"Show all" = "全部顯示";
+"Reset layout" = "重設版面";
+"Every column back in the table's order and width, sorted by the default order" = "所有欄位恢復為資料表的原始順序與寬度，並依預設排序";
+
+/* Value picker */
+"%@ · 50+ values" = "%@ · 50+ 個值";
+"%@ · 1 distinct value" = "%@ · 1 個相異值";
+"%@ · %lld distinct values" = "%@ · %lld 個相異值";
+"Press Return to add" = "按下 Return 鍵加入";
+"Counted under your other filters" = "依你的其他篩選條件計算";
+"Applies as you click" = "按一下即套用";
+"Applies right away" = "立即套用";
+"Press Return to apply" = "按下 Return 鍵套用";
+"More operators" = "更多運算子";
+"from" = "從";
+"to" = "到";
+"text" = "文字";
+"Type or paste values" = "輸入或貼上值";
+"Search values" = "搜尋值";
+"No values" = "沒有值";
+"Nothing matches “%@”" = "沒有符合「%@」的項目";
+"Use “%@”" = "使用「%@」";
+"typed" = "手動";
+
+/* Advanced filter and WHERE */
+"Advanced filter" = "進階篩選";
+"the same filters as the chips, as rows" = "與標籤相同的篩選條件，逐列顯示";
+"Condition" = "條件";
+"Group" = "群組";
+"1 row matches" = "1 列符合";
+"%@ rows match" = "%@ 列符合";
+"Clear" = "清除";
+"Apply" = "套用";
+"Reads as" = "意思是";
+"Switch off" = "停用";
+"Switch on" = "啟用";
+"any of these" = "下列任一";
+"all of these" = "下列全部";
+"Ungroup" = "取消群組";
+"where" = "當";
+"Switch this level between and / or" = "在「且」和「或」之間切換此層級";
+"Remove condition" = "移除條件";
+"Type a value, then Return" = "輸入值後按下 Return";
+"value" = "值";
+
+/* Shared controls */
+"Remove %@" = "移除 %@";
+"on" = "開啟";
+"off" = "關閉";
+
+/* Grid: page bar */
+"Page" = "頁碼";
+"of" = "/";
+"Go to a page, change rows per page" = "前往某頁，變更每頁列數";
+"Previous page (⌘[)" = "上一頁（⌘[）";
+"Next page (⌘])" = "下一頁（⌘]）";
+"of %@ rows" = "/ %@ 列";
+"of %@ matching" = "/ %@ 列符合";
+"Go to page" = "前往頁面";
+"Go" = "前往";
+"Rows per page" = "每頁列數";
+"Other, like 25" = "其他，例如 25";
+"rows" = "列";
+"Set" = "設定";
+"Counting…" = "正在計算…";
+"The total is an estimate." = "總數為估計值。";
+"Count exactly" = "精確計算";
+
+/* Grid: export panel */
+"Export" = "匯出";
+" · 1 visible column" = " · 1 個可見欄位";
+" · %lld visible columns" = " · %lld 個可見欄位";
+"Selected · %@" = "已選取 · %@";
+"This view · %@" = "目前檢視 · %@";
+"This view" = "目前檢視";
+"Whole table" = "整個資料表";
+"The rows you selected" = "你選取的列";
+"Filters and sort of this view" = "目前檢視的篩選與排序";
+"Every row, by primary key" = "所有列，依主鍵排序";
+"Every row, in this sort" = "所有列，依目前排序";
+"… %@ more" = "… 還有 %@ 列";
+"Copy" = "拷貝";
+"Copy as %@" = "拷貝為 %@";
+"More than %@ rows: save them to a file" = "超過 %@ 列：請儲存成檔案";
+"More than %@ rows: save them to a file." = "超過 %@ 列：請儲存成檔案。";
+"Save…" = "儲存…";
+"Reading rows…" = "正在讀取資料列…";
+"%@ rows so far…" = "已讀取 %@ 列…";
+"Copied 1 row" = "已拷貝 1 列";
+"Copied %@ rows" = "已拷貝 %@ 列";
+"Saved 1 row" = "已儲存 1 列";
+"Saved %@ rows" = "已儲存 %@ 列";
+"Show in Finder" = "在 Finder 中顯示";
+
+/* Grid: cells and gutter tooltips */
+"Open the row it points to" = "打開它指向的列";
+"Waiting for your review. Click to open it." = "等待你審查。按一下即可打開。";
+"New row, not saved yet" = "新的列，尚未儲存";
+"Edited by you" = "由你編輯";
+
+/* Grid: row counts, new-row placeholders, change notes */
+"≈%@ rows" = "≈%@ 列";
+"%@ rows" = "%@ 列";
+"%@ of %@ rows" = "%@ / %@ 列";
+"counting…" = "計算中…";
+"%@+ rows" = "%@+ 列";
+"default" = "預設";
+"required" = "必填";
+"Copy of %@" = "%@ 的副本";
+
+/* Grid: undo action names */
+"Set to NULL" = "設為 NULL";
+"Delete Row" = "刪除列";
+"Delete Rows" = "刪除多列";
+"New Row" = "新增列";
+"Duplicate Row" = "複製列";
+"Duplicate Rows" = "複製多列";
+
+/* Grid: column header tooltip and menu */
+"primary key" = "主鍵";
+"references %@" = "參照 %@";
+"Sort A → Z" = "依 A → Z 排序";
+"Sort Z → A" = "依 Z → A 排序";
+"Clear sort" = "清除排序";
+"Filter by %@…" = "依 %@ 篩選…";
+"Hide column" = "隱藏欄位";
+"Copy column name" = "拷貝欄位名稱";
+
+/* Grid: row menu */
+"Edit value" = "編輯值";
+"Remove new row" = "移除新的列";
+"Only rows with %@" = "僅顯示 %@ 的列";
+"Hide rows with %@" = "隱藏 %@ 的列";
+"Open %@ %@" = "打開 %@ %@";
+"Copy value" = "拷貝值";
+"Copy row" = "拷貝列";
+"Copy %lld rows" = "拷貝 %lld 列";
+"Copy row as" = "將列拷貝為";
+"Copy %lld rows as" = "將 %lld 列拷貝為";
+"Duplicate row" = "複製列";
+"Duplicate %lld rows" = "複製 %lld 列";
+"Delete row" = "刪除列";
+"Delete %lld rows" = "刪除 %lld 列";
+"Undo your change to this row" = "還原你對此列的變更";
+"Row details" = "列詳細資料";
+"Hide row details" = "隱藏列詳細資料";
+"Review the agent's change…" = "審查代理的變更…";
+
+/* Grid: agent note row */
+"%@, waiting for your review." = "%@，等待你審查。";
+"Review" = "審查";
+
+/* Workspace: rail, header, footer, presence */
+"Schema" = "綱要";
+"Review (nothing waiting)" = "審查（沒有待處理項目）";
+"Review, %lld waiting" = "審查，%lld 項待處理";
+"Hide agent session" = "隱藏代理工作階段";
+"Show agent session" = "顯示代理工作階段";
+"All connections" = "所有連線";
+"All connections…" = "所有連線…";
+"Connecting to %@…" = "正在連線至 %@…";
+"Could not connect to %@" = "無法連線至 %@";
+"Try again" = "再試一次";
+"Edit connection" = "編輯連線";
+"Pick a table on the left." = "從左側選擇一個資料表。";
+"%@ is working" = "%@ 正在處理";
+"%@ is editing with you" = "%@ 正在和你一起編輯";
+"%@ is waiting for you" = "%@ 正在等你";
+"You" = "你";
+"%@, active" = "%@，使用中";
+"%@, idle" = "%@，閒置";
+"%@ was here" = "%@ 來過";
+"%lld agents here" = "此處有 %lld 個代理";
+"Review · %lld" = "審查 · %lld";
+"Close tab" = "關閉標籤頁";
+"production writes go through review" = "production 的寫入都要經過審查";
+"your edits wait for review · agents: %@" = "你的編輯需等待審查 · 代理：%@";
+"Could not read the schema: %@" = "無法讀取綱要：%@";
+
+/* Schema rail */
+"Filter tables, columns" = "篩選資料表、欄位";
+"1 table" = "1 個資料表";
+"%lld tables" = "%lld 個資料表";
+"Hide columns" = "隱藏欄位";
+"Show columns" = "顯示欄位";
+"Hidden from agents" = "對代理隱藏";
+"hidden" = "已隱藏";
+"agent" = "代理";
+"view" = "檢視表";
+
+/* Table screen */
+/* button back to a table (Turkish: %@ tablosuna dön) */
+"back.table" = "返回 %@";
+"view · read-only" = "檢視表 · 唯讀";
+"no primary key · read-only" = "無主鍵 · 唯讀";
+"Rows can only be edited in tables with a primary key." = "只有具備主鍵的資料表才能編輯資料列。";
+"Data" = "資料";
+"Structure" = "結構";
+"Row" = "列";
+"Column" = "欄位";
+"Index" = "索引";
+"Add a row (⌘I)" = "新增列（⌘I）";
+"Views don't take new rows" = "檢視表無法新增列";
+"Add a column" = "新增欄位";
+"Views have no columns of their own" = "檢視表沒有自己的欄位";
+"Add an index" = "新增索引";
+"Views have no indexes" = "檢視表沒有索引";
+"new query" = "新查詢";
+"1 column" = "1 個欄位";
+"%lld columns" = "%lld 個欄位";
+"1 index" = "1 個索引";
+"%lld indexes" = "%lld 個索引";
+"The query failed" = "查詢失敗";
+"Clear filters" = "清除篩選條件";
+"No rows yet" = "尚無資料列";
+"No rows match" = "沒有符合的列";
+"Columns" = "欄位";
+"Columns · %lld hidden" = "欄位 · 已隱藏 %lld 個";
+"Copy or save these rows as CSV, JSON, SQL or Markdown" = "將這些列拷貝或儲存為 CSV、JSON、SQL 或 Markdown";
+"Copied" = "已拷貝";
+
+/* Row panel */
+"No row selected" = "未選取任何列";
+"new row" = "新的列";
+"Close (Space)" = "關閉（空白鍵）";
+/* open a table (Turkish: %@ tablosunu aç) */
+"open.table" = "打開 %@";
+"Referenced by" = "被參照於";
+"Open %@ rows whose %@ points here" = "打開 %1$@ 中 %2$@ 指向此處的列";
+
+/* Structure tab */
+"Indexes" = "索引";
+"column" = "欄位";
+"type" = "類型";
+"null" = "可為空";
+"keys and checks" = "鍵與檢查約束";
+"index" = "索引";
+"columns" = "欄位";
+"kind" = "種類";
+"size" = "大小";
+"used" = "使用次數";
+"1 scan" = "1 次掃描";
+"%@ scans" = "%@ 次掃描";
+"unique" = "唯一";
+"yes" = "是";
+"no" = "否";
+"none" = "無";
+"check · 1 value" = "檢查 · 1 個值";
+"check · %lld values" = "檢查 · %lld 個值";
+"proposed by %@" = "由 %@ 提議";
+"proposed by an agent" = "由代理提議";
+"Remove New Column" = "移除新欄位";
+"Keep Column" = "保留欄位";
+"Drop Column" = "刪除欄位";
+"Undo Changes" = "還原變更";
+"new · not saved" = "新增 · 未儲存";
+"dropped · not saved" = "將刪除 · 未儲存";
+"No indexes." = "沒有索引。";
+"Review %@'s proposal" = "審查 %@ 的提議";
+"Review proposed index" = "審查提議的索引";
+"Remove New Index" = "移除新索引";
+"Keep Index" = "保留索引";
+"Review Proposal" = "審查提議";
+"Drop Index" = "刪除索引";
+
+/* Structure side panel */
+"new column" = "新欄位";
+"column %lld of %lld" = "欄位 %lld/%lld";
+"name" = "名稱";
+"Type" = "類型";
+"Default" = "預設值";
+"Allows empty" = "允許空值";
+"%@ reads this column, so PostgreSQL won't change its type." = "%@ 會讀取這個欄位，因此 PostgreSQL 不會變更其類型。";
+"%@ read this column, so PostgreSQL won't change its type." = "%@ 會讀取這個欄位，因此 PostgreSQL 不會變更其類型。";
+"SQLite can only rename a saved column." = "SQLite 只能重新命名已儲存的欄位。";
+"Allowed values" = "允許的值";
+"In the data" = "資料中";
+"Used by" = "用於";
+"key" = "鍵";
+"foreign key" = "外鍵";
+"proposed index" = "提議的索引";
+"Remove new column" = "移除新欄位";
+"Keep column" = "保留欄位";
+"Drop column" = "刪除欄位";
+"new index" = "新索引";
+"index %lld of %lld" = "索引 %lld/%lld";
+"Unique" = "唯一";
+"Kind" = "種類";
+"Size" = "大小";
+"Used" = "使用次數";
+"Remove new index" = "移除新索引";
+"Keep index" = "保留索引";
+"Review proposal" = "審查提議";
+"Drop index" = "刪除索引";
+"Made by the primary key; it goes with the key." = "由主鍵建立，會隨主鍵一併移除。";
+"Made by a unique constraint; it goes with the constraint." = "由唯一約束建立，會隨約束一併移除。";
+"Production: every schema change shows its DDL and lock level before it runs." = "Production：每項綱要變更在執行前都會顯示其 DDL 和鎖定層級。";
+
+/* Undo menu names ("Geri Al: %@") */
+"Remove New Row" = "移除新的列";
+"Undo Change" = "還原變更";
+"Discard Changes" = "捨棄變更";
+"Add Column" = "新增欄位";
+"Add Index" = "新增索引";
+"Edit Column" = "編輯欄位";
+"Edit Index" = "編輯索引";
+"Change Column" = "變更欄位";
+
+/* Review screen */
+"Nothing waiting" = "沒有待處理項目";
+"Edit a cell, or let an agent propose a change, and it shows up here before anything is written." = "編輯儲存格，或讓代理提議變更，寫入之前都會先顯示在這裡。";
+"Discard all %lld changes?" = "要捨棄全部 %lld 項變更嗎？";
+"Discard all" = "全部捨棄";
+"Your edits are dropped and the agents' proposals are turned down. Nothing was written." = "你的編輯會被捨棄，代理的提議會被拒絕。尚未寫入任何內容。";
+"Review 1 change" = "審查 1 項變更";
+"Review %lld changes" = "審查 %lld 項變更";
+"They apply together in one transaction. Nothing is written until you apply." = "它們會在同一筆交易中一起套用。在你套用之前，不會寫入任何內容。";
+"Note for %@ if you turn it down (optional)" = "若拒絕，給 %@ 的備註（選填）";
+"Reject proposal" = "拒絕提議";
+"Applying…" = "正在套用…";
+"Apply 1 change" = "套用 1 項變更";
+"Apply %lld changes" = "套用 %lld 項變更";
+"Edit %@ %@" = "編輯 %@ %@";
+"Delete %@ %@" = "刪除 %@ %@";
+"New row in %@" = "%@ 中的新列";
+"SQL on %@" = "針對 %@ 的 SQL";
+"%@ on %@" = "在 %2$@ 中%1$@";
+"Leave out of this apply" = "不納入這次套用";
+"Include in this apply" = "納入這次套用";
+"Applying" = "將套用";
+"1 row" = "1 列";
+"%lld rows" = "%lld 列";
+"1 row in %@" = "%@ 中的 1 列";
+"%lld rows in %@" = "%2$@ 中的 %1$lld 列";
+"in one transaction on %@" = "在 %@ 上以單筆交易執行";
+"as %@, not as %@" = "身分：%1$@，而非 %2$@";
+"you" = "你";
+"with your own credentials" = "使用你自己的認證資訊";
+/* "rows" when the count is unknown (Turkish: satırlar) */
+"proposal.rows" = "資料列";
+"Update %@ in %@" = "更新 %2$@ 中的 %1$@";
+"Update %@" = "更新 %@";
+"Delete %@ in %@" = "刪除 %2$@ 中的 %1$@";
+"Delete %@" = "刪除 %@";
+"Add %@ in %@" = "在 %2$@ 中新增 %1$@";
+"Add %@" = "新增 %@";
+"Change the schema: %@ in %@" = "變更綱要：對 %2$@ 執行 %1$@";
+"Change the schema: %@" = "變更綱要：%@";
+"Run %@ in %@" = "在 %2$@ 中執行 %1$@";
+"Run %@" = "執行 %@";
+"proposed at %@" = "提議於 %@";
+"Waiting for you on %@" = "在 %@ 上等你處理";
+"Agent's note: " = "代理備註：";
+"After you decide, %@ sees the result the next time it checks its proposals." = "你做出決定後，%@ 下次查看它的提議時就會看到結果。";
+"Trial run changed 1 row" = "試執行變更了 1 列";
+"Trial run changed %lld rows" = "試執行變更了 %lld 列";
+"Rolled back after the trial" = "試執行後已回復";
+"Showing the first %lld" = "僅顯示前 %lld 列";
+"Applies to production" = "將套用至 production";
+"edited at %@" = "編輯於 %@";
+/* column header: old value (Turkish: eski) */
+"review.was" = "原值";
+/* column header: new value (Turkish: yeni) */
+"review.now" = "新值";
+"The whole row is deleted." = "整列都會被刪除。";
+"Runs as written. The trial run said it %@." = "依原樣執行。試執行結果顯示它%@。";
+"Runs as written." = "依原樣執行。";
+"Changes the table's structure." = "變更資料表的結構。";
+"Undo this edit" = "還原此編輯";
+"1 value" = "1 個值";
+"%lld values" = "%lld 個值";
+"Show SQL" = "顯示 SQL";
+
+/* Structure changes and change summaries (Review/ChangeText.swift) */
+"Add column %@" = "新增欄位 %@";
+"Rename column %@ to %@" = "將欄位 %1$@ 重新命名為 %2$@";
+"Change column %@" = "變更欄位 %@";
+"Drop column %@" = "刪除欄位 %@";
+"Add index %@" = "新增索引 %@";
+"Drop index %@" = "刪除索引 %@";
+"Rewrites %@; reads and writes wait until it finishes." = "重寫 %@；完成之前，讀取和寫入都須等待。";
+"Scans %@; reads and writes wait until it finishes." = "掃描 %@；完成之前，讀取和寫入都須等待。";
+"Writes to %@ wait while the index builds." = "建立索引期間，寫入 %@ 須等待。";
+"Locks %@ briefly." = "短暫鎖定 %@。";
+"delete row" = "刪除列";
+"insert a row of defaults" = "插入一列預設值";
+"insert %@" = "插入 %@";
+
+/* Waiting changes bar */
+"Hide your changes" = "隱藏你的變更";
+"Show your changes" = "顯示你的變更";
+"%lld yours" = "你的 %lld 項";
+"%lld from %@" = "%2$@ 的 %1$lld 項";
+"Discard" = "捨棄";
+"Review DDL" = "審查 DDL";
+"Review & apply" = "審查並套用";
+"Runs on %@" = "在 %@ 上執行";
+"Apply to production" = "套用至 production";
+"Discard your 1 edit" = "捨棄你的 1 項編輯";
+"Discard your %lld edits" = "捨棄你的 %lld 項編輯";
+"Discard everything, and turn down the agents' proposals" = "全部捨棄，並拒絕代理的提議";
+"Nothing has been written yet. Turned-down proposals are marked rejected, and the agent sees that." = "尚未寫入任何內容。被拒絕的提議會標示為「已拒絕」，代理也會看到。";
+"1 schema change waiting" = "1 項綱要變更待處理";
+"%lld schema changes waiting" = "%lld 項綱要變更待處理";
+"1 change waiting" = "1 項變更待處理";
+"%lld changes waiting" = "%lld 項變更待處理";
+"Discard 1 change?" = "要捨棄 1 項變更嗎？";
+"Discard %lld changes?" = "要捨棄 %lld 項變更嗎？";
+"Save 1 change" = "儲存 1 項變更";
+"Save %lld changes" = "儲存 %lld 項變更";
+"%@ required" = "%@ 為必填";
+"Undo this change" = "還原此變更";
+"%@'s proposal; review it to apply" = "%@ 的提議；審查後才能套用";
+"New row" = "新的列";
+
+/* Agent session panel */
+"Session" = "工作階段";
+"today on %@" = "今天 · %@";
+"Hide the session (⌥⌘0, or the agents button in the rail)" = "隱藏工作階段（⌥⌘0，或側邊欄中的代理按鈕）";
+"Hide session" = "隱藏工作階段";
+"No agent activity today." = "今天沒有代理活動。";
+"Agents cannot see this connection here." = "代理看不到這個連線。";
+"Agents only read here." = "代理在這裡只能讀取。";
+"Agents read and propose here." = "代理在這裡可以讀取和提議。";
+"Agents read and write here." = "代理在這裡可以讀取和寫入。";
+"1 column is masked." = "1 個欄位已遮罩。";
+"%lld columns are masked." = "%lld 個欄位已遮罩。";
+"1 table is hidden." = "1 個資料表已隱藏。";
+"%lld tables are hidden." = "%lld 個資料表已隱藏。";
+"read %@" = "讀取了 %@";
+/* activity line verb: an agent read tables (Turkish: okudu) */
+"session.read" = "執行了讀取";
+"changed %@" = "變更了 %@";
+"changed" = "做了變更";
+"wrote %@" = "寫入了 %@";
+"wrote" = "執行了寫入";
+"was refused" = "請求遭到拒絕";
+"applied a proposed change to %@" = "將提議的變更套用至 %@";
+"applied a proposed change" = "套用了提議的變更";
+"applied %@" = "已套用至 %@";
+"applied" = "已套用";
+"turned down a proposed change" = "拒絕了提議的變更";
+/* activity line: an agent request failed (Turkish: başarısız oldu) */
+"session.failed" = "執行失敗";
+"looked at your saved queries" = "查看了你儲存的查詢";
+"read a saved query" = "讀取了一個已儲存的查詢";
+"suggested a change to %@" = "建議修改 %@";
+"suggested a change to a saved query" = "建議修改一個已儲存的查詢";
+"took the suggestion for %@" = "採用了對 %@ 的建議";
+"took the suggestion for a saved query" = "採用了對一個已儲存查詢的建議";
+"dismissed the suggestion for %@" = "忽略了對 %@ 的建議";
+"dismissed the suggestion for a saved query" = "忽略了對一個已儲存查詢的建議";
+"asked %@" = "詢問了 %@";
+"asked an agent" = "詢問了代理";
+"proposed an update to %@" = "提議更新 %@";
+"proposed an update" = "提議了更新";
+"proposed a delete to %@" = "提議從 %@ 刪除";
+"proposed a delete" = "提議了刪除";
+"proposed an insert to %@" = "提議向 %@ 插入";
+"proposed an insert" = "提議了插入";
+"proposed a change to %@" = "提議變更 %@";
+"proposed a change" = "提議了變更";
+"and %lld earlier" = "以及更早的 %lld 則";
+"waiting for your review" = "等待你審查";
+"working…" = "處理中…";
+
+/* Ask (Claude Code from the SQL tab) */
+"Claude Code isn't installed on this Mac. Install it from claude.com/code, then try again." = "這台 Mac 尚未安裝 Claude Code。請從 claude.com/code 安裝後再試一次。";
+"The agentable command is missing from the app." = "App 中缺少 agentable 指令。";
+"Stopped after 3 minutes without an answer." = "3 分鐘內沒有回應，已停止。";
+"Could not start Claude Code: %@" = "無法啟動 Claude Code：%@";
+"Claude Code stopped with an error." = "Claude Code 因錯誤而停止。";
+"Claude Code stopped (exit %lld)." = "Claude Code 已停止（結束代碼 %lld）。";
+"%@ finished without suggesting a change." = "%@ 已完成，但沒有建議任何變更。";
+"listed saved queries" = "列出了已儲存的查詢";
+"described %@" = "查看了 %@ 的結構";
+"described a table" = "查看了資料表結構";
+"searched the schema" = "搜尋了綱要";
+"ran a query" = "執行了查詢";
+"checked the plan" = "檢查了執行計畫";
+"suggested a change" = "建議了變更";
+"used %@" = "使用了 %@";
+"Ask" = "詢問";
+"Ask your agent to change or explain this query" = "請你的代理修改或解釋這個查詢";
+"Make it faster" = "讓它更快";
+"Explain the plan" = "解釋執行計畫";
+"Check for mistakes" = "檢查錯誤";
+"Ask claude-code" = "詢問 claude-code";
+"about %@" = "關於 %@";
+"this query" = "這個查詢";
+/* placeholder for the file name to save a query as (Turkish: Kayıt adı) */
+"ask.saveAs" = "儲存名稱";
+"What should it do with this query?" = "要它對這個查詢做什麼？";
+"Runs your Claude Code with Agentable's tools only. It reads and suggests; nothing runs until you accept." = "僅以 Agentable 的工具執行你的 Claude Code。它只會讀取和建議；在你接受之前，不會執行任何內容。";
+"Claude Code isn't installed on this Mac." = "這台 Mac 尚未安裝 Claude Code。";
+"Send" = "傳送";
+"Stop" = "停止";
+"thinking" = "思考中";
+"%lld s" = "%lld 秒";
+"Stopped." = "已停止。";
+
+/* SQL tab */
+"Run" = "執行";
+"Run the statement under the cursor, or the selected one" = "執行游標所在或所選取的陳述式";
+"Explain" = "解釋";
+"Format" = "格式化";
+"Reads run directly. Writes go to review." = "讀取會直接執行，寫入須經審查。";
+"Results" = "結果";
+"Plan" = "計畫";
+"Messages" = "訊息";
+"No plan yet" = "尚無執行計畫";
+"No messages" = "沒有訊息";
+"Copy as" = "拷貝為";
+"Save as" = "儲存為";
+"Save this query for this connection" = "為這個連線儲存此查詢";
+"Save query" = "儲存查詢";
+"Each run is its own transaction, so %@ isn't needed here." = "每次執行都是獨立的交易，因此這裡不需要 %@。";
+"More than %@ rows; the first %@ are shown." = "超過 %1$@ 列，僅顯示前 %2$@ 列。";
+"1 row in %lld ms." = "1 列，耗時 %lld 毫秒。";
+"%@ rows in %lld ms." = "%1$@ 列，耗時 %2$lld 毫秒。";
+"ran in a trial" = "執行正常";
+"would change 1 row" = "會變更 1 列";
+"would change %@ rows" = "會變更 %@ 列";
+"Waiting with your changes: in a trial it %@. ⌘S saves it, after showing you the SQL." = "已加入你待儲存的變更：試執行結果顯示它%@。按下 ⌘S 會先顯示 SQL 再儲存。";
+"Waiting with your changes: in a trial it %@. ⌘S saves it." = "已加入你待儲存的變更：試執行結果顯示它%@。按下 ⌘S 即可儲存。";
+"Nothing to run here." = "這裡沒有可執行的內容。";
+"That selection holds %lld statements. Select one, or put the cursor in it." = "所選內容包含 %lld 個陳述式。請只選取一個，或將游標放在其中。";
+"Give the query a name." = "請為查詢命名。";
+"table" = "資料表";
+"keyword" = "關鍵字";
+"Accept Suggestion" = "接受建議";
+"Suggested a new version of this query." = "建議了這個查詢的新版本。";
+"Made for an earlier version of this query." = "針對這個查詢的舊版本。";
+"Accept" = "接受";
+"Dismiss" = "忽略";
+
+/* Saved queries sidebar */
+"Search queries" = "搜尋查詢";
+"Saved" = "已儲存";
+"New" = "新增";
+"Start an empty query" = "建立空白查詢";
+"No saved queries" = "沒有已儲存的查詢";
+"No matches" = "沒有符合項目";
+"%@ · suggested a new query" = "%@ · 建議了新查詢";
+"%@ · suggested a change" = "%@ · 建議了變更";
+"you · edited %@" = "你 · 編輯於 %@";
+"Recent on %@" = "最近 · %@";
+"%@ · became a proposal" = "%@ · 已轉為提議";

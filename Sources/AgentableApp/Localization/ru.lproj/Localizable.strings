@@ -1,0 +1,792 @@
+/* Russian. Keys are the English text as Swift builds them (%@, %lld for values). */
+/* Settings menu: language */
+"Language" = "Язык";
+"Match the system" = "Как в системе";
+"Restart Agentable to change the language?" = "Перезапустить Agentable, чтобы сменить язык?";
+"Your connections and waiting changes are kept." = "Ваши подключения и ожидающие изменения сохранятся.";
+"Restart" = "Перезапустить";
+"Later" = "Позже";
+"Connections" = "Подключения";
+"Connect agents" = "Подключить агентов";
+"New connection" = "Новое подключение";
+
+/* Agent access levels (AgentAccess.label) */
+/* agent access level (Turkish: kapalı) */
+"access.off" = "выкл.";
+/* agent access level (Turkish: okuma) */
+"access.read" = "чтение";
+/* agent access level (Turkish: öneri) */
+"access.propose" = "предложение";
+/* agent access level (Turkish: yazma) */
+"access.write" = "запись";
+
+/* App menus and startup */
+"Unknown error" = "Неизвестная ошибка";
+"Changes" = "Изменения";
+"Save" = "Сохранить";
+"Reload" = "Перезагрузить";
+"Add Row" = "Добавить строку";
+"Query" = "Запрос";
+"Run Statement" = "Выполнить инструкцию";
+"Ask an Agent…" = "Спросить агента…";
+"Show Agent Session" = "Показать сеанс агентов";
+"Agentable could not start" = "Не удалось запустить Agentable";
+"Could not read saved connections: %@" = "Не удалось прочитать сохранённые подключения: %@";
+"let agents %@ on %@" = "дать агентам доступ «%1$@» к подключению %2$@";
+
+/* Settings menu */
+"Appearance" = "Оформление";
+"Light" = "Светлое";
+"Dark" = "Тёмное";
+"Default order" = "Порядок по умолчанию";
+"Oldest first" = "Сначала старые";
+"Newest first" = "Сначала новые";
+"Connect Agents…" = "Подключить агентов…";
+"Settings" = "Настройки";
+
+/* Go to anything */
+"Go to a table or connection" = "Перейти к таблице или подключению";
+"Nothing called “%@”" = "Ничего с именем «%@»";
+"connection" = "подключение";
+"Go to anything" = "Быстрый переход";
+
+/* Connect agents card */
+"Agents found on this Mac" = "Агенты на этом Mac";
+"Connecting adds Agentable as an MCP server in the agent's config. You can remove it anytime." = "При подключении Agentable добавляется в конфигурацию агента как MCP-сервер. Его можно удалить в любой момент.";
+"Another agent" = "Другой агент";
+"Run %@ or copy the MCP config" = "Выполните %@ или скопируйте конфигурацию MCP";
+"Copy config" = "Скопировать конфиг";
+"Copied. Paste it into the agent's MCP settings." = "Скопировано. Вставьте в настройки MCP агента.";
+"What agents can do by default" = "Что агенты могут по умолчанию";
+"per environment; change it on each connection" = "для каждой среды; меняется в каждом подключении";
+"never more than propose" = "максимум — предложение";
+"Not found on this Mac" = "Нет на этом Mac";
+"Connected" = "Подключено";
+"Connecting…" = "Подключение…";
+"Connect" = "Подключить";
+"%@ default: %@" = "По умолчанию для %1$@: %2$@";
+"Agents get a name for each connection, never the password." = "Агенты получают имя подключения, но никогда — пароль.";
+"Done" = "Готово";
+"App" = "Приложение";
+"%@ can use Agentable now." = "%@ теперь может работать с Agentable.";
+"Added to Cursor. The old file is saved as mcp.json.agentable-backup." = "Добавлено в Cursor. Старый файл сохранён как mcp.json.agentable-backup.";
+"The agentable command-line tool was not found next to the app." = "Инструмент командной строки agentable не найден рядом с приложением.";
+"%@ was not found on this Mac." = "%@: не найдено на этом Mac.";
+"The agent's setup command failed." = "Команда настройки агента завершилась с ошибкой.";
+"%@ is not valid JSON, so it was left alone." = "%@ — некорректный JSON, поэтому файл не изменён.";
+
+/* Connection form */
+"Edit %@" = "Изменить %@";
+"Close" = "Закрыть";
+"Paste a URL or a SQLite file path" = "Вставьте URL или путь к файлу SQLite";
+"Filled the file path below" = "Путь к файлу заполнен ниже";
+"Filled host, port, user and database below" = "Хост, порт, пользователь и база данных заполнены ниже";
+"Name" = "Имя";
+"Lower-case letters, digits, - _ and . only. Agents address the connection by this name." = "Только строчные буквы, цифры, - _ и . Агенты обращаются к подключению по этому имени.";
+"File" = "Файл";
+"Choose…" = "Выбрать…";
+"Host" = "Хост";
+"Port" = "Порт";
+"User" = "Пользователь";
+"Database" = "База данных";
+"Password" = "Пароль";
+"Saved in Keychain" = "Хранится в Связке ключей";
+"Saved to Keychain. Agents never receive it." = "Хранится в Связке ключей. Агенты его никогда не получают.";
+"Off" = "Выкл.";
+"Prefer" = "Желательно";
+"Require" = "Обязательно";
+"Verify" = "С проверкой";
+"CA certificate" = "Сертификат CA";
+"System roots" = "Сертификаты системы";
+"Not checked" = "Не проверяется";
+"Client certificate" = "Сертификат клиента";
+"Client key" = "Ключ клиента";
+"None" = "Нет";
+"Testing…" = "Проверка…";
+"Test" = "Проверить";
+"Test again" = "Проверить снова";
+"Saving…" = "Сохранение…";
+"SSH tunnel" = "SSH-туннель";
+"SSH host" = "SSH-хост";
+"bastion or a ~/.ssh/config name" = "bastion или имя из ~/.ssh/config";
+"SSH user" = "Пользователь SSH";
+"from ~/.ssh/config" = "из ~/.ssh/config";
+"Key" = "Ключ";
+"Uses your SSH agent, ~/.ssh/config and known_hosts. Agents never see it." = "Используются ваш SSH-агент, ~/.ssh/config и known_hosts. Агенты их не видят.";
+"Environment" = "Среда";
+"Production gets review before every write, and agents start at Read." = "В production каждая запись проходит проверку, а агенты начинают с уровня «чтение».";
+"Agents start at Propose: their changes wait for you." = "Агенты начинают с уровня «предложение»: их изменения ждут вас.";
+"Agents start at Write." = "Агенты начинают с уровня «запись».";
+"Agent access" = "Доступ агентов";
+"%@, the %@ default" = "%1$@, по умолчанию для %2$@";
+"Environment default (%@)" = "По умолчанию для среды (%@)";
+"Change" = "Изменить";
+"Agents cannot see this connection" = "Агенты не видят это подключение";
+"Schema and read-only queries" = "Схема и запросы только на чтение";
+"Reads, and changes that wait for you" = "Чтение и изменения, которые ждут вас";
+"Reads and writes directly" = "Чтение и запись напрямую";
+"Connected · %lld ms" = "Подключено · %lld мс";
+"Choose a SQLite database file" = "Выберите файл базы данных SQLite";
+"There is already a connection named %@." = "Подключение с именем %@ уже существует.";
+
+/* Connections screen */
+"Add Agentable to Claude Code, Codex or Cursor" = "Добавьте Agentable в Claude Code, Codex или Cursor";
+"Back to %@" = "Назад к %@";
+"Remove %@?" = "Удалить %@?";
+"Remove" = "Удалить";
+"Cancel" = "Отменить";
+"The saved settings and the password in Keychain are deleted. Agents can no longer use this name." = "Сохранённые настройки и пароль в Связке ключей будут удалены. Агенты больше не смогут использовать это имя.";
+"%lld saved · passwords live in Keychain" = "сохранено: %lld · пароли хранятся в Связке ключей";
+"Search by name or host" = "Поиск по имени или хосту";
+"No connections yet" = "Подключений пока нет";
+"Paste a postgres:// URL or pick a SQLite file." = "Вставьте URL postgres:// или выберите файл SQLite.";
+"Agents" = "Агенты";
+"Last used" = "Последний раз";
+"%lld live" = "в сети: %lld";
+"never" = "никогда";
+"Edit" = "Изменить";
+"Open" = "Открыть";
+"Edit…" = "Изменить…";
+"Copy name for agents" = "Скопировать имя для агентов";
+"Remove…" = "Удалить…";
+"now" = "сейчас";
+"%lld min ago" = "%lld мин назад";
+"%lld h ago" = "%lld ч назад";
+"yesterday" = "вчера";
+"%lld days ago" = "%lld дн. назад";
+
+/* Welcome */
+"Welcome" = "Добро пожаловать";
+"Connect a database, then let your agents in." = "Подключите базу данных, а затем впустите агентов.";
+"Two minutes. Agents get a name for each connection, never the password." = "Это займёт две минуты. Агенты получают имя подключения, но никогда — пароль.";
+"%@ is saved" = "Сохранено: %@";
+"%lld connections saved" = "Сохранено подключений: %lld";
+"Passwords are in Keychain. Agents will address it as %@." = "Пароли хранятся в Связке ключей. Агенты будут обращаться к подключению по имени %@.";
+"Add another" = "Добавить ещё";
+"Your first database" = "Ваша первая база данных";
+"PostgreSQL or a SQLite file. You can add more later." = "PostgreSQL или файл SQLite. Позже можно добавить ещё.";
+"Paste a connection URL" = "Вставить URL подключения";
+"Open a SQLite file" = "Открыть файл SQLite";
+"Enter host and port" = "Ввести хост и порт";
+"Skip for now" = "Пока пропустить";
+"Back" = "Назад";
+"Continue" = "Продолжить";
+"Agents get %lld tools:" = "Инструменты агентов (%lld):";
+
+/* Filters: operators from AgentableCore (chip, segment and row labels) */
+"is" = "равно";
+"is not" = "не равно";
+"contains" = "содерж.";
+"doesn't contain" = "не содержит";
+"starts with" = "начинается с";
+"between" = "между";
+"in the last" = "за";
+"before" = "до";
+"after" = "после";
+"is empty" = "пусто";
+"is not empty" = "не пусто";
+"empty" = "пусто";
+"not empty" = "не пусто";
+"true" = "истина";
+"false" = "ложь";
+"last" = "последние";
+"equals" = "равно";
+"is any of" = "одно из";
+"does not equal" = "не равно";
+"is none of" = "ни одно из";
+"does not contain" = "не содержит";
+"is greater than" = "больше";
+"is at least" = "не меньше";
+"is less than" = "меньше";
+"is at most" = "не больше";
+"is between" = "между";
+"is within the last" = "за последние";
+"is before" = "до";
+"is after" = "после";
+"is true" = "истина";
+"is false" = "ложь";
+
+/* Filters: and/or, time units, sentences */
+"and" = "и";
+"or" = "или";
+"%@ or %@" = "%@ или %@";
+"minutes" = "минуты";
+"hours" = "часы";
+"days" = "дни";
+"weeks" = "недели";
+"months" = "месяцы";
+"1 minute" = "1 минуту";
+"1 hour" = "1 час";
+"1 day" = "1 день";
+"1 week" = "1 неделю";
+"1 month" = "1 месяц";
+"%lld minutes" = "%lld мин";
+"%lld hours" = "%lld ч";
+"%lld days" = "%lld дн.";
+"%lld weeks" = "%lld нед.";
+"%lld months" = "%lld мес.";
+"24 hours" = "24 часа";
+"7 days" = "7 дней";
+"30 days" = "30 дней";
+"a year" = "1 год";
+
+/* Filter bar */
+"Chips" = "Чипы";
+"Advanced" = "Расширенный";
+"Remove filter on %@" = "Удалить фильтр: %@";
+"Clear filter" = "Сбросить фильтр";
+"Filter" = "Фильтр";
+"Filter by column" = "Фильтр по столбцу";
+"Search rows" = "Поиск по строкам";
+"Clear search" = "Очистить поиск";
+"Find a column" = "Найти столбец";
+"%lld of %lld shown" = "Показано: %lld из %lld";
+"%lld of %lld shown · drag headers to reorder" = "Показано: %lld из %lld · перетащите заголовки, чтобы изменить порядок";
+"Show all" = "Показать все";
+"Reset layout" = "Сбросить макет";
+"Every column back in the table's order and width, sorted by the default order" = "Все столбцы вернутся к порядку и ширине таблицы, сортировка — по умолчанию";
+
+/* Value picker */
+"%@ · 50+ values" = "%@ · 50+ значений";
+"%@ · 1 distinct value" = "%@ · 1 уникальное значение";
+"%@ · %lld distinct values" = "%@ · уникальных значений: %lld";
+"Press Return to add" = "Нажмите Return, чтобы добавить";
+"Counted under your other filters" = "С учётом других фильтров";
+"Applies as you click" = "Применяется по щелчку";
+"Applies right away" = "Применяется сразу";
+"Press Return to apply" = "Нажмите Return, чтобы применить";
+"More operators" = "Другие операторы";
+"from" = "от";
+"to" = "до";
+"text" = "текст";
+"Type or paste values" = "Введите или вставьте значения";
+"Search values" = "Поиск значений";
+"No values" = "Нет значений";
+"Nothing matches “%@”" = "Нет совпадений с «%@»";
+"Use “%@”" = "Выбрать «%@»";
+"typed" = "введено";
+
+/* Advanced filter and WHERE */
+"Advanced filter" = "Расширенный фильтр";
+"the same filters as the chips, as rows" = "те же фильтры, что и в чипах, но строками";
+"Condition" = "Условие";
+"Group" = "Группа";
+"1 row matches" = "Найдена 1 строка";
+"%@ rows match" = "Найдено строк: %@";
+"Clear" = "Очистить";
+"Apply" = "Применить";
+"Reads as" = "Читается как";
+"Switch off" = "Выключить";
+"Switch on" = "Включить";
+"any of these" = "любое из этих";
+"all of these" = "все эти";
+"Ungroup" = "Разгруппировать";
+"where" = "где";
+"Switch this level between and / or" = "Переключить этот уровень: и / или";
+"Remove condition" = "Удалить условие";
+"Type a value, then Return" = "Введите значение и нажмите Return";
+"value" = "значение";
+
+/* Shared controls */
+"Remove %@" = "Удалить %@";
+"on" = "вкл.";
+"off" = "выкл.";
+
+/* Grid: page bar */
+"Page" = "Страница";
+"of" = "из";
+"Go to a page, change rows per page" = "Перейти на страницу, изменить число строк на странице";
+"Previous page (⌘[)" = "Предыдущая страница (⌘[)";
+"Next page (⌘])" = "Следующая страница (⌘])";
+"of %@ rows" = "из %@";
+"of %@ matching" = "из %@ по фильтру";
+"Go to page" = "На страницу";
+"Go" = "Перейти";
+"Rows per page" = "Строк на странице";
+"Other, like 25" = "Другое, напр. 25";
+"rows" = "строк";
+"Set" = "Задать";
+"Counting…" = "Подсчёт…";
+"The total is an estimate." = "Общее число приблизительное.";
+"Count exactly" = "Посчитать точно";
+
+/* Grid: export panel */
+"Export" = "Экспорт";
+" · 1 visible column" = " · 1 видимый столбец";
+" · %lld visible columns" = " · видимых столбцов: %lld";
+"Selected · %@" = "Выделенные · %@";
+"This view · %@" = "Текущий вид · %@";
+"This view" = "Текущий вид";
+"Whole table" = "Вся таблица";
+"The rows you selected" = "Выделенные строки";
+"Filters and sort of this view" = "Фильтры и сортировка текущего вида";
+"Every row, by primary key" = "Все строки, по первичному ключу";
+"Every row, in this sort" = "Все строки, в текущей сортировке";
+"… %@ more" = "… и ещё %@";
+"Copy" = "Скопировать";
+"Copy as %@" = "Скопировать как %@";
+"More than %@ rows: save them to a file" = "Строк больше %@: сохраните их в файл";
+"More than %@ rows: save them to a file." = "Строк больше %@: сохраните их в файл.";
+"Save…" = "Сохранить…";
+"Reading rows…" = "Чтение строк…";
+"%@ rows so far…" = "Прочитано строк: %@…";
+"Copied 1 row" = "Скопирована 1 строка";
+"Copied %@ rows" = "Скопировано строк: %@";
+"Saved 1 row" = "Сохранена 1 строка";
+"Saved %@ rows" = "Сохранено строк: %@";
+"Show in Finder" = "Показать в Finder";
+
+/* Grid: cells and gutter tooltips */
+"Open the row it points to" = "Открыть связанную строку";
+"Waiting for your review. Click to open it." = "Ждёт вашей проверки. Нажмите, чтобы открыть.";
+"New row, not saved yet" = "Новая строка, ещё не сохранена";
+"Edited by you" = "Изменено вами";
+
+/* Grid: row counts, new-row placeholders, change notes */
+"≈%@ rows" = "строк: ≈%@";
+"%@ rows" = "строк: %@";
+"%@ of %@ rows" = "строк: %@ из %@";
+"counting…" = "подсчёт…";
+"%@+ rows" = "строк: %@+";
+"default" = "по умолчанию";
+"required" = "обязательно";
+"Copy of %@" = "Копия %@";
+
+/* Grid: undo action names */
+"Set to NULL" = "Установить NULL";
+"Delete Row" = "Удаление строки";
+"Delete Rows" = "Удаление строк";
+"New Row" = "Новая строка";
+"Duplicate Row" = "Дублирование строки";
+"Duplicate Rows" = "Дублирование строк";
+
+/* Grid: column header tooltip and menu */
+"primary key" = "первичный ключ";
+"references %@" = "ссылается на %@";
+"Sort A → Z" = "Сортировать А → Я";
+"Sort Z → A" = "Сортировать Я → А";
+"Clear sort" = "Без сортировки";
+"Filter by %@…" = "Фильтр по %@…";
+"Hide column" = "Скрыть столбец";
+"Copy column name" = "Скопировать имя столбца";
+
+/* Grid: row menu */
+"Edit value" = "Изменить значение";
+"Remove new row" = "Удалить новую строку";
+"Only rows with %@" = "Только строки, где %@";
+"Hide rows with %@" = "Скрыть строки, где %@";
+"Open %@ %@" = "Открыть %@ %@";
+"Copy value" = "Скопировать значение";
+"Copy row" = "Скопировать строку";
+"Copy %lld rows" = "Скопировать строки (%lld)";
+"Copy row as" = "Скопировать строку как";
+"Copy %lld rows as" = "Скопировать строки (%lld) как";
+"Duplicate row" = "Дублировать строку";
+"Duplicate %lld rows" = "Дублировать строки (%lld)";
+"Delete row" = "Удалить строку";
+"Delete %lld rows" = "Удалить строки (%lld)";
+"Undo your change to this row" = "Отменить ваше изменение в строке";
+"Row details" = "Сведения о строке";
+"Hide row details" = "Скрыть сведения о строке";
+"Review the agent's change…" = "Проверить изменение агента…";
+
+/* Grid: agent note row */
+"%@, waiting for your review." = "%@ — ждёт вашей проверки.";
+"Review" = "Проверить";
+
+/* Workspace: rail, header, footer, presence */
+"Schema" = "Схема";
+"Review (nothing waiting)" = "Проверка (ничего не ждёт)";
+"Review, %lld waiting" = "Проверка, ждут: %lld";
+"Hide agent session" = "Скрыть сеанс агентов";
+"Show agent session" = "Показать сеанс агентов";
+"All connections" = "Все подключения";
+"All connections…" = "Все подключения…";
+"Connecting to %@…" = "Подключение к %@…";
+"Could not connect to %@" = "Не удалось подключиться к %@";
+"Try again" = "Повторить";
+"Edit connection" = "Изменить подключение";
+"Pick a table on the left." = "Выберите таблицу слева.";
+"%@ is working" = "%@ работает";
+"%@ is editing with you" = "%@ редактирует вместе с вами";
+"%@ is waiting for you" = "%@ ждёт вас";
+"You" = "Вы";
+"%@, active" = "%@, работает";
+"%@, idle" = "%@, простаивает";
+"%@ was here" = "Недавно здесь: %@";
+"%lld agents here" = "Агентов здесь: %lld";
+"Review · %lld" = "Проверка · %lld";
+"Close tab" = "Закрыть вкладку";
+"production writes go through review" = "запись в production — через проверку";
+"your edits wait for review · agents: %@" = "ваши правки ждут проверки · агенты: %@";
+"Could not read the schema: %@" = "Не удалось прочитать схему: %@";
+
+/* Schema rail */
+"Filter tables, columns" = "Фильтр таблиц и столбцов";
+"1 table" = "1 таблица";
+"%lld tables" = "таблиц: %lld";
+"Hide columns" = "Скрыть столбцы";
+"Show columns" = "Показать столбцы";
+"Hidden from agents" = "Скрыто от агентов";
+"hidden" = "скрыто";
+"agent" = "агент";
+"view" = "представление";
+
+/* Table screen */
+/* button back to a table (Turkish: %@ tablosuna dön) */
+"back.table" = "Назад к таблице %@";
+"view · read-only" = "представление · только чтение";
+"no primary key · read-only" = "нет первичного ключа · только чтение";
+"Rows can only be edited in tables with a primary key." = "Строки можно изменять только в таблицах с первичным ключом.";
+"Data" = "Данные";
+"Structure" = "Структура";
+"Row" = "Строка";
+"Column" = "Столбец";
+"Index" = "Индекс";
+"Add a row (⌘I)" = "Добавить строку (⌘I)";
+"Views don't take new rows" = "В представление нельзя добавить строки";
+"Add a column" = "Добавить столбец";
+"Views have no columns of their own" = "У представлений нет своих столбцов";
+"Add an index" = "Добавить индекс";
+"Views have no indexes" = "У представлений нет индексов";
+"new query" = "новый запрос";
+"1 column" = "1 столбец";
+"%lld columns" = "столбцов: %lld";
+"1 index" = "1 индекс";
+"%lld indexes" = "индексов: %lld";
+"The query failed" = "Ошибка запроса";
+"Clear filters" = "Сбросить фильтры";
+"No rows yet" = "Строк пока нет";
+"No rows match" = "Нет подходящих строк";
+"Columns" = "Столбцы";
+"Columns · %lld hidden" = "Столбцы · скрыто: %lld";
+"Copy or save these rows as CSV, JSON, SQL or Markdown" = "Скопировать или сохранить эти строки в CSV, JSON, SQL или Markdown";
+"Copied" = "Скопировано";
+
+/* Row panel */
+"No row selected" = "Строка не выбрана";
+"new row" = "новая строка";
+"Close (Space)" = "Закрыть (Пробел)";
+/* open a table (Turkish: %@ tablosunu aç) */
+"open.table" = "Открыть %@";
+"Referenced by" = "Ссылки на строку";
+"Open %@ rows whose %@ points here" = "Открыть строки таблицы %1$@, где %2$@ ссылается сюда";
+
+/* Structure tab */
+"Indexes" = "Индексы";
+"column" = "столбец";
+"type" = "тип";
+"null" = "null";
+"keys and checks" = "ключи и проверки";
+"index" = "индекс";
+"columns" = "столбцы";
+"kind" = "вид";
+"size" = "размер";
+"used" = "использование";
+"1 scan" = "1 сканирование";
+"%@ scans" = "сканирований: %@";
+"unique" = "уникальный";
+"yes" = "да";
+"no" = "нет";
+"none" = "нет";
+"check · 1 value" = "check · 1 значение";
+"check · %lld values" = "check · значений: %lld";
+"proposed by %@" = "предложено агентом %@";
+"proposed by an agent" = "предложено агентом";
+"Remove New Column" = "Удалить новый столбец";
+"Keep Column" = "Оставить столбец";
+"Drop Column" = "Удалить столбец";
+"Undo Changes" = "Отменить изменения";
+"new · not saved" = "новый · не сохранён";
+"dropped · not saved" = "к удалению · не сохранён";
+"No indexes." = "Индексов нет.";
+"Review %@'s proposal" = "Проверить предложение от %@";
+"Review proposed index" = "Проверить предложенный индекс";
+"Remove New Index" = "Удалить новый индекс";
+"Keep Index" = "Оставить индекс";
+"Review Proposal" = "Проверить предложение";
+"Drop Index" = "Удалить индекс";
+
+/* Structure side panel */
+"new column" = "новый столбец";
+"column %lld of %lld" = "столбец %lld из %lld";
+"name" = "имя";
+"Type" = "Тип";
+"Default" = "По умолчанию";
+"Allows empty" = "Может быть пустым";
+"%@ reads this column, so PostgreSQL won't change its type." = "%@ использует этот столбец, поэтому PostgreSQL не изменит его тип.";
+"%@ read this column, so PostgreSQL won't change its type." = "%@ используют этот столбец, поэтому PostgreSQL не изменит его тип.";
+"SQLite can only rename a saved column." = "SQLite может только переименовать сохранённый столбец.";
+"Allowed values" = "Допустимые значения";
+"In the data" = "В данных";
+"Used by" = "Используется в";
+"key" = "ключ";
+"foreign key" = "внешний ключ";
+"proposed index" = "предложенный индекс";
+"Remove new column" = "Удалить новый столбец";
+"Keep column" = "Оставить столбец";
+"Drop column" = "Удалить столбец";
+"new index" = "новый индекс";
+"index %lld of %lld" = "индекс %lld из %lld";
+"Unique" = "Уникальный";
+"Kind" = "Вид";
+"Size" = "Размер";
+"Used" = "Использование";
+"Remove new index" = "Удалить новый индекс";
+"Keep index" = "Оставить индекс";
+"Review proposal" = "Проверить предложение";
+"Drop index" = "Удалить индекс";
+"Made by the primary key; it goes with the key." = "Создан первичным ключом и удаляется вместе с ним.";
+"Made by a unique constraint; it goes with the constraint." = "Создан ограничением уникальности и удаляется вместе с ним.";
+"Production: every schema change shows its DDL and lock level before it runs." = "Production: перед выполнением каждое изменение схемы показывает DDL и уровень блокировки.";
+
+/* Undo menu names ("Geri Al: %@") */
+"Remove New Row" = "Удаление новой строки";
+"Undo Change" = "Отмена изменения";
+"Discard Changes" = "Сброс изменений";
+"Add Column" = "Новый столбец";
+"Add Index" = "Новый индекс";
+"Edit Column" = "Правка столбца";
+"Edit Index" = "Правка индекса";
+"Change Column" = "Изменение столбца";
+
+/* Review screen */
+"Nothing waiting" = "Ничего не ждёт";
+"Edit a cell, or let an agent propose a change, and it shows up here before anything is written." = "Измените ячейку или дайте агенту предложить изменение — оно появится здесь до того, как что-либо будет записано.";
+"Discard all %lld changes?" = "Сбросить все изменения (%lld)?";
+"Discard all" = "Сбросить все";
+"Your edits are dropped and the agents' proposals are turned down. Nothing was written." = "Ваши правки будут сброшены, а предложения агентов — отклонены. Ничего не записано.";
+"Review 1 change" = "1 изменение на проверку";
+"Review %lld changes" = "Изменений на проверку: %lld";
+"They apply together in one transaction. Nothing is written until you apply." = "Они применяются вместе, одной транзакцией. Пока вы их не примените, ничего не записывается.";
+"Note for %@ if you turn it down (optional)" = "Комментарий для %@ при отклонении (необязательно)";
+"Reject proposal" = "Отклонить предложение";
+"Applying…" = "Применение…";
+"Apply 1 change" = "Применить 1 изменение";
+"Apply %lld changes" = "Применить изменения (%lld)";
+"Edit %@ %@" = "Изменить %@ %@";
+"Delete %@ %@" = "Удалить %@ %@";
+"New row in %@" = "Новая строка в %@";
+"SQL on %@" = "SQL в %@";
+"%@ on %@" = "%@ в %@";
+"Leave out of this apply" = "Исключить из применения";
+"Include in this apply" = "Включить в применение";
+"Applying" = "Будет применено";
+"1 row" = "1 строка";
+"%lld rows" = "строк: %lld";
+"1 row in %@" = "1 строка в %@";
+"%lld rows in %@" = "строк в %2$@: %1$lld";
+"in one transaction on %@" = "одной транзакцией в %@";
+"as %@, not as %@" = "как %@, а не как %@";
+"you" = "вы";
+"with your own credentials" = "с вашими учётными данными";
+/* "rows" when the count is unknown (Turkish: satırlar) */
+"proposal.rows" = "строки";
+"Update %@ in %@" = "Обновить в %2$@ (%1$@)";
+"Update %@" = "Обновить (%@)";
+"Delete %@ in %@" = "Удалить в %2$@ (%1$@)";
+"Delete %@" = "Удалить (%@)";
+"Add %@ in %@" = "Добавить в %2$@ (%1$@)";
+"Add %@" = "Добавить (%@)";
+"Change the schema: %@ in %@" = "Изменить схему: %1$@ в %2$@";
+"Change the schema: %@" = "Изменить схему: %@";
+"Run %@ in %@" = "Выполнить %1$@ в %2$@";
+"Run %@" = "Выполнить %@";
+"proposed at %@" = "предложено в %@";
+"Waiting for you on %@" = "Ждёт вас в %@";
+"Agent's note: " = "Комментарий агента: ";
+"After you decide, %@ sees the result the next time it checks its proposals." = "Когда вы решите, %@ увидит результат при следующей проверке своих предложений.";
+"Trial run changed 1 row" = "Пробный запуск изменил 1 строку";
+"Trial run changed %lld rows" = "Изменено строк при пробном запуске: %lld";
+"Rolled back after the trial" = "Откат после пробного запуска";
+"Showing the first %lld" = "Показаны первые %lld";
+"Applies to production" = "Применяется к production";
+"edited at %@" = "изменено в %@";
+/* column header: old value (Turkish: eski) */
+"review.was" = "было";
+/* column header: new value (Turkish: yeni) */
+"review.now" = "стало";
+"The whole row is deleted." = "Строка удаляется целиком.";
+"Runs as written. The trial run said it %@." = "Выполняется как написано. Пробный запуск — %@.";
+"Runs as written." = "Выполняется как написано.";
+"Changes the table's structure." = "Изменяет структуру таблицы.";
+"Undo this edit" = "Отменить эту правку";
+"1 value" = "1 значение";
+"%lld values" = "значений: %lld";
+"Show SQL" = "Показать SQL";
+
+/* Structure changes and change summaries (Review/ChangeText.swift) */
+"Add column %@" = "Добавить столбец %@";
+"Rename column %@ to %@" = "Переименовать столбец %@ в %@";
+"Change column %@" = "Изменить столбец %@";
+"Drop column %@" = "Удалить столбец %@";
+"Add index %@" = "Добавить индекс %@";
+"Drop index %@" = "Удалить индекс %@";
+"Rewrites %@; reads and writes wait until it finishes." = "Перезаписывает таблицу %@; чтение и запись ждут завершения.";
+"Scans %@; reads and writes wait until it finishes." = "Сканирует таблицу %@; чтение и запись ждут завершения.";
+"Writes to %@ wait while the index builds." = "Запись в %@ ждёт, пока строится индекс.";
+"Locks %@ briefly." = "Ненадолго блокирует %@.";
+"delete row" = "удалить строку";
+"insert a row of defaults" = "вставить строку по умолчанию";
+"insert %@" = "вставить %@";
+
+/* Waiting changes bar */
+"Hide your changes" = "Скрыть ваши изменения";
+"Show your changes" = "Показать ваши изменения";
+"%lld yours" = "ваши: %lld";
+"%lld from %@" = "%2$@: %1$lld";
+"Discard" = "Сбросить";
+"Review DDL" = "Проверить DDL";
+"Review & apply" = "Проверить и применить";
+"Runs on %@" = "Выполняется в %@";
+"Apply to production" = "Применить к production";
+"Discard your 1 edit" = "Сбросить 1 правку";
+"Discard your %lld edits" = "Сбросить ваши правки (%lld)";
+"Discard everything, and turn down the agents' proposals" = "Сбросить всё и отклонить предложения агентов";
+"Nothing has been written yet. Turned-down proposals are marked rejected, and the agent sees that." = "Пока ничего не записано. Отклонённые предложения помечаются как отклонённые, и агент это видит.";
+"1 schema change waiting" = "1 изменение схемы в ожидании";
+"%lld schema changes waiting" = "Изменений схемы в ожидании: %lld";
+"1 change waiting" = "1 изменение в ожидании";
+"%lld changes waiting" = "Изменений в ожидании: %lld";
+"Discard 1 change?" = "Сбросить 1 изменение?";
+"Discard %lld changes?" = "Сбросить изменения (%lld)?";
+"Save 1 change" = "Сохранить 1 изменение";
+"Save %lld changes" = "Сохранить изменения (%lld)";
+"%@ required" = "Обязательно: %@";
+"Undo this change" = "Отменить это изменение";
+"%@'s proposal; review it to apply" = "Предложение от %@; проверьте, чтобы применить";
+"New row" = "Новая строка";
+
+/* Agent session panel */
+"Session" = "Сеанс";
+"today on %@" = "сегодня в %@";
+"Hide the session (⌥⌘0, or the agents button in the rail)" = "Скрыть сеанс (⌥⌘0 или кнопка агентов на боковой панели)";
+"Hide session" = "Скрыть сеанс";
+"No agent activity today." = "Сегодня агенты ничего не делали.";
+"Agents cannot see this connection here." = "Агенты не видят это подключение.";
+"Agents only read here." = "Здесь агенты только читают.";
+"Agents read and propose here." = "Здесь агенты читают и предлагают.";
+"Agents read and write here." = "Здесь агенты читают и записывают.";
+"1 column is masked." = "1 столбец замаскирован.";
+"%lld columns are masked." = "Замаскировано столбцов: %lld.";
+"1 table is hidden." = "1 таблица скрыта.";
+"%lld tables are hidden." = "Скрыто таблиц: %lld.";
+"read %@" = "чтение: %@";
+/* activity line verb: an agent read tables (Turkish: okudu) */
+"session.read" = "чтение";
+"changed %@" = "изменено: %@";
+"changed" = "изменено";
+"wrote %@" = "запись: %@";
+"wrote" = "запись";
+"was refused" = "отказано";
+"applied a proposed change to %@" = "применено предложение: %@";
+"applied a proposed change" = "применено предложение";
+"applied %@" = "применено: %@";
+"applied" = "применено";
+"turned down a proposed change" = "предложение отклонено";
+/* activity line: an agent request failed (Turkish: başarısız oldu) */
+"session.failed" = "ошибка";
+"looked at your saved queries" = "просмотрены ваши сохранённые запросы";
+"read a saved query" = "прочитан сохранённый запрос";
+"suggested a change to %@" = "предложен вариант: %@";
+"suggested a change to a saved query" = "предложен вариант сохранённого запроса";
+"took the suggestion for %@" = "принят вариант: %@";
+"took the suggestion for a saved query" = "принят вариант сохранённого запроса";
+"dismissed the suggestion for %@" = "отклонён вариант: %@";
+"dismissed the suggestion for a saved query" = "отклонён вариант сохранённого запроса";
+"asked %@" = "вопрос агенту %@";
+"asked an agent" = "вопрос агенту";
+"proposed an update to %@" = "предложено обновление: %@";
+"proposed an update" = "предложено обновление";
+"proposed a delete to %@" = "предложено удаление: %@";
+"proposed a delete" = "предложено удаление";
+"proposed an insert to %@" = "предложено добавление: %@";
+"proposed an insert" = "предложено добавление";
+"proposed a change to %@" = "предложено изменение: %@";
+"proposed a change" = "предложено изменение";
+"and %lld earlier" = "и ещё %lld раньше";
+"waiting for your review" = "ждёт вашей проверки";
+"working…" = "работает…";
+
+/* Ask (Claude Code from the SQL tab) */
+"Claude Code isn't installed on this Mac. Install it from claude.com/code, then try again." = "Claude Code не установлен на этом Mac. Установите его с claude.com/code и повторите попытку.";
+"The agentable command is missing from the app." = "В приложении нет команды agentable.";
+"Stopped after 3 minutes without an answer." = "Остановлено: нет ответа за 3 минуты.";
+"Could not start Claude Code: %@" = "Не удалось запустить Claude Code: %@";
+"Claude Code stopped with an error." = "Работа Claude Code прервана из-за ошибки.";
+"Claude Code stopped (exit %lld)." = "Работа Claude Code прервана (код выхода %lld).";
+"%@ finished without suggesting a change." = "%@: готово, вариантов изменений нет.";
+"listed saved queries" = "список сохранённых запросов";
+"described %@" = "описание: %@";
+"described a table" = "описание таблицы";
+"searched the schema" = "поиск по схеме";
+"ran a query" = "выполнен запрос";
+"checked the plan" = "проверен план";
+"suggested a change" = "предложен вариант";
+"used %@" = "вызов: %@";
+"Ask" = "Спросить";
+"Ask your agent to change or explain this query" = "Попросите агента изменить или объяснить этот запрос";
+"Make it faster" = "Ускорить запрос";
+"Explain the plan" = "Объяснить план";
+"Check for mistakes" = "Найти ошибки";
+"Ask claude-code" = "Спросить claude-code";
+"about %@" = "про %@";
+"this query" = "этот запрос";
+/* placeholder for the file name to save a query as (Turkish: Kayıt adı) */
+"ask.saveAs" = "Сохранить как";
+"What should it do with this query?" = "Что сделать с этим запросом?";
+"Runs your Claude Code with Agentable's tools only. It reads and suggests; nothing runs until you accept." = "Запускает ваш Claude Code только с инструментами Agentable. Он читает и предлагает варианты; ничего не выполняется, пока вы их не примете.";
+"Claude Code isn't installed on this Mac." = "Claude Code не установлен на этом Mac.";
+"Send" = "Отправить";
+"Stop" = "Остановить";
+"thinking" = "думает";
+"%lld s" = "%lld с";
+"Stopped." = "Остановлено.";
+
+/* SQL tab */
+"Run" = "Выполнить";
+"Run the statement under the cursor, or the selected one" = "Выполнить инструкцию под курсором или выделенную";
+"Explain" = "Объяснить";
+"Format" = "Форматировать";
+"Reads run directly. Writes go to review." = "Чтение выполняется сразу. Запись — через проверку.";
+"Results" = "Результаты";
+"Plan" = "План";
+"Messages" = "Сообщения";
+"No plan yet" = "Плана пока нет";
+"No messages" = "Нет сообщений";
+"Copy as" = "Скопировать как";
+"Save as" = "Сохранить как";
+"Save this query for this connection" = "Сохранить запрос для этого подключения";
+"Save query" = "Сохранить запрос";
+"Each run is its own transaction, so %@ isn't needed here." = "Каждый запуск — отдельная транзакция, поэтому %@ здесь не требуется.";
+"More than %@ rows; the first %@ are shown." = "Строк больше %1$@; показаны первые %2$@.";
+"1 row in %lld ms." = "1 строка за %lld мс.";
+"%@ rows in %lld ms." = "Строк: %1$@ за %2$lld мс.";
+"ran in a trial" = "выполнено без ошибок";
+"would change 1 row" = "изменится 1 строка";
+"would change %@ rows" = "изменится строк: %@";
+"Waiting with your changes: in a trial it %@. ⌘S saves it, after showing you the SQL." = "Ожидает вместе с вашими изменениями. Пробный запуск — %@. ⌘S сохранит, сначала показав SQL.";
+"Waiting with your changes: in a trial it %@. ⌘S saves it." = "Ожидает вместе с вашими изменениями. Пробный запуск — %@. ⌘S сохранит.";
+"Nothing to run here." = "Здесь нечего выполнять.";
+"That selection holds %lld statements. Select one, or put the cursor in it." = "Инструкций в выделении: %lld. Выделите одну или поставьте в неё курсор.";
+"Give the query a name." = "Задайте имя запроса.";
+"table" = "таблица";
+"keyword" = "ключевое слово";
+"Accept Suggestion" = "Принятие варианта";
+"Suggested a new version of this query." = "Предложена новая версия запроса.";
+"Made for an earlier version of this query." = "Сделано для прежней версии запроса.";
+"Accept" = "Принять";
+"Dismiss" = "Отклонить";
+
+/* Saved queries sidebar */
+"Search queries" = "Поиск запросов";
+"Saved" = "Сохранённые";
+"New" = "Новый";
+"Start an empty query" = "Начать пустой запрос";
+"No saved queries" = "Нет сохранённых запросов";
+"No matches" = "Нет совпадений";
+"%@ · suggested a new query" = "%@ · предложен новый запрос";
+"%@ · suggested a change" = "%@ · предложен вариант";
+"you · edited %@" = "вы · изменено %@";
+"Recent on %@" = "Недавние в %@";
+"%@ · became a proposal" = "%@ · теперь предложение";

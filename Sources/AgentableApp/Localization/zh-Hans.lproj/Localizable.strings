@@ -1,0 +1,792 @@
+/* Simplified Chinese (zh-Hans). Keys are the English text as Swift builds them (%@, %lld for values). */
+/* Settings menu: language */
+"Language" = "语言";
+"Match the system" = "跟随系统";
+"Restart Agentable to change the language?" = "要重新启动 Agentable 以更改语言吗？";
+"Your connections and waiting changes are kept." = "你的连接和待处理的更改都会保留。";
+"Restart" = "重新启动";
+"Later" = "稍后";
+"Connections" = "连接";
+"Connect agents" = "连接智能体";
+"New connection" = "新建连接";
+
+/* Agent access levels (AgentAccess.label) */
+/* agent access level (Turkish: kapalı) */
+"access.off" = "关闭";
+/* agent access level (Turkish: okuma) */
+"access.read" = "读取";
+/* agent access level (Turkish: öneri) */
+"access.propose" = "提议";
+/* agent access level (Turkish: yazma) */
+"access.write" = "写入";
+
+/* App menus and startup */
+"Unknown error" = "未知错误";
+"Changes" = "更改";
+"Save" = "存储";
+"Reload" = "重新载入";
+"Add Row" = "添加行";
+"Query" = "查询";
+"Run Statement" = "运行语句";
+"Ask an Agent…" = "询问智能体…";
+"Show Agent Session" = "显示智能体会话";
+"Agentable could not start" = "Agentable 无法启动";
+"Could not read saved connections: %@" = "无法读取存储的连接：%@";
+"let agents %@ on %@" = "将 %2$@ 的智能体权限设为“%1$@”";
+
+/* Settings menu */
+"Appearance" = "外观";
+"Light" = "浅色";
+"Dark" = "深色";
+"Default order" = "默认排序";
+"Oldest first" = "最早的在前";
+"Newest first" = "最新的在前";
+"Connect Agents…" = "连接智能体…";
+"Settings" = "设置";
+
+/* Go to anything */
+"Go to a table or connection" = "前往表或连接";
+"Nothing called “%@”" = "没有名为“%@”的项目";
+"connection" = "连接";
+"Go to anything" = "快速前往";
+
+/* Connect agents card */
+"Agents found on this Mac" = "在这台 Mac 上找到的智能体";
+"Connecting adds Agentable as an MCP server in the agent's config. You can remove it anytime." = "连接后，Agentable 会作为 MCP 服务器添加到智能体的配置中。你可以随时移除。";
+"Another agent" = "其他智能体";
+"Run %@ or copy the MCP config" = "运行 %@ 或拷贝 MCP 配置";
+"Copy config" = "拷贝配置";
+"Copied. Paste it into the agent's MCP settings." = "已拷贝。请将其粘贴到智能体的 MCP 设置中。";
+"What agents can do by default" = "智能体的默认权限";
+"per environment; change it on each connection" = "按环境设定；可在各个连接中更改";
+"never more than propose" = "最高为提议";
+"Not found on this Mac" = "在这台 Mac 上未找到";
+"Connected" = "已连接";
+"Connecting…" = "正在连接…";
+"Connect" = "连接";
+"%@ default: %@" = "%@ 默认：%@";
+"Agents get a name for each connection, never the password." = "智能体只会获得每个连接的名称，绝不会获得密码。";
+"Done" = "完成";
+"App" = "App";
+"%@ can use Agentable now." = "%@ 现在可以使用 Agentable 了。";
+"Added to Cursor. The old file is saved as mcp.json.agentable-backup." = "已添加到 Cursor。旧文件已存储为 mcp.json.agentable-backup。";
+"The agentable command-line tool was not found next to the app." = "在 App 旁未找到 agentable 命令行工具。";
+"%@ was not found on this Mac." = "在这台 Mac 上未找到 %@。";
+"The agent's setup command failed." = "智能体的设置命令失败。";
+"%@ is not valid JSON, so it was left alone." = "%@ 不是有效的 JSON，因此未作改动。";
+
+/* Connection form */
+"Edit %@" = "编辑 %@";
+"Close" = "关闭";
+"Paste a URL or a SQLite file path" = "粘贴 URL 或 SQLite 文件路径";
+"Filled the file path below" = "已填写下方的文件路径";
+"Filled host, port, user and database below" = "已填写下方的主机、端口、用户和数据库";
+"Name" = "名称";
+"Lower-case letters, digits, - _ and . only. Agents address the connection by this name." = "仅限小写字母、数字和 - _ . 字符。智能体通过此名称访问该连接。";
+"File" = "文件";
+"Choose…" = "选取…";
+"Host" = "主机";
+"Port" = "端口";
+"User" = "用户";
+"Database" = "数据库";
+"Password" = "密码";
+"Saved in Keychain" = "已存储在钥匙串中";
+"Saved to Keychain. Agents never receive it." = "存储在钥匙串中。智能体绝不会获得它。";
+"Off" = "关闭";
+"Prefer" = "优先";
+"Require" = "必需";
+"Verify" = "验证";
+"CA certificate" = "CA 证书";
+"System roots" = "系统根证书";
+"Not checked" = "不检查";
+"Client certificate" = "客户端证书";
+"Client key" = "客户端密钥";
+"None" = "无";
+"Testing…" = "正在测试…";
+"Test" = "测试";
+"Test again" = "再次测试";
+"Saving…" = "正在存储…";
+"SSH tunnel" = "SSH 隧道";
+"SSH host" = "SSH 主机";
+"bastion or a ~/.ssh/config name" = "跳板机或 ~/.ssh/config 中的名称";
+"SSH user" = "SSH 用户";
+"from ~/.ssh/config" = "来自 ~/.ssh/config";
+"Key" = "密钥";
+"Uses your SSH agent, ~/.ssh/config and known_hosts. Agents never see it." = "使用你的 SSH 代理、~/.ssh/config 和 known_hosts。智能体永远看不到它们。";
+"Environment" = "环境";
+"Production gets review before every write, and agents start at Read." = "Production 中每次写入前都需审核，智能体从“读取”开始。";
+"Agents start at Propose: their changes wait for you." = "智能体从“提议”开始：其更改会等你处理。";
+"Agents start at Write." = "智能体从“写入”开始。";
+"Agent access" = "智能体权限";
+"%@, the %@ default" = "%1$@（%2$@ 默认）";
+"Environment default (%@)" = "环境默认（%@）";
+"Change" = "更改";
+"Agents cannot see this connection" = "智能体看不到此连接";
+"Schema and read-only queries" = "架构和只读查询";
+"Reads, and changes that wait for you" = "读取，以及等你处理的更改";
+"Reads and writes directly" = "直接读写";
+"Connected · %lld ms" = "已连接 · %lld 毫秒";
+"Choose a SQLite database file" = "选取 SQLite 数据库文件";
+"There is already a connection named %@." = "已有名为 %@ 的连接。";
+
+/* Connections screen */
+"Add Agentable to Claude Code, Codex or Cursor" = "将 Agentable 添加到 Claude Code、Codex 或 Cursor";
+"Back to %@" = "返回 %@";
+"Remove %@?" = "要移除 %@ 吗？";
+"Remove" = "移除";
+"Cancel" = "取消";
+"The saved settings and the password in Keychain are deleted. Agents can no longer use this name." = "存储的设置和钥匙串中的密码将被删除。智能体将无法再使用此名称。";
+"%lld saved · passwords live in Keychain" = "已存储 %lld 个 · 密码保存在钥匙串中";
+"Search by name or host" = "按名称或主机搜索";
+"No connections yet" = "还没有连接";
+"Paste a postgres:// URL or pick a SQLite file." = "粘贴 postgres:// URL 或选取 SQLite 文件。";
+"Agents" = "智能体";
+"Last used" = "上次使用";
+"%lld live" = "%lld 个活跃";
+"never" = "从未";
+"Edit" = "编辑";
+"Open" = "打开";
+"Edit…" = "编辑…";
+"Copy name for agents" = "拷贝供智能体使用的名称";
+"Remove…" = "移除…";
+"now" = "刚刚";
+"%lld min ago" = "%lld 分钟前";
+"%lld h ago" = "%lld 小时前";
+"yesterday" = "昨天";
+"%lld days ago" = "%lld 天前";
+
+/* Welcome */
+"Welcome" = "欢迎";
+"Connect a database, then let your agents in." = "连接数据库，然后让你的智能体加入。";
+"Two minutes. Agents get a name for each connection, never the password." = "只需两分钟。智能体只会获得每个连接的名称，绝不会获得密码。";
+"%@ is saved" = "%@ 已存储";
+"%lld connections saved" = "已存储 %lld 个连接";
+"Passwords are in Keychain. Agents will address it as %@." = "密码保存在钥匙串中。智能体将通过名称 %@ 访问它。";
+"Add another" = "再添加一个";
+"Your first database" = "你的第一个数据库";
+"PostgreSQL or a SQLite file. You can add more later." = "PostgreSQL 或 SQLite 文件。以后还可以添加更多。";
+"Paste a connection URL" = "粘贴连接 URL";
+"Open a SQLite file" = "打开 SQLite 文件";
+"Enter host and port" = "输入主机和端口";
+"Skip for now" = "暂时跳过";
+"Back" = "返回";
+"Continue" = "继续";
+"Agents get %lld tools:" = "智能体可使用 %lld 个工具：";
+
+/* Filters: operators from AgentableCore (chip, segment and row labels) */
+"is" = "是";
+"is not" = "不是";
+"contains" = "包含";
+"doesn't contain" = "不包含";
+"starts with" = "开头为";
+"between" = "介于";
+"in the last" = "最近";
+"before" = "早于";
+"after" = "晚于";
+"is empty" = "为空";
+"is not empty" = "不为空";
+"empty" = "空值";
+"not empty" = "非空值";
+"true" = "真";
+"false" = "假";
+"last" = "最近";
+"equals" = "等于";
+"is any of" = "属于";
+"does not equal" = "不等于";
+"is none of" = "不属于";
+"does not contain" = "不包含";
+"is greater than" = "大于";
+"is at least" = "至少";
+"is less than" = "小于";
+"is at most" = "最多";
+"is between" = "介于";
+"is within the last" = "在最近";
+"is before" = "早于";
+"is after" = "晚于";
+"is true" = "为真";
+"is false" = "为假";
+
+/* Filters: and/or, time units, sentences */
+"and" = "且";
+"or" = "或";
+"%@ or %@" = "%@ 或 %@";
+"minutes" = "分钟";
+"hours" = "小时";
+"days" = "天";
+"weeks" = "周";
+"months" = "个月";
+"1 minute" = "1 分钟";
+"1 hour" = "1 小时";
+"1 day" = "1 天";
+"1 week" = "1 周";
+"1 month" = "1 个月";
+"%lld minutes" = "%lld 分钟";
+"%lld hours" = "%lld 小时";
+"%lld days" = "%lld 天";
+"%lld weeks" = "%lld 周";
+"%lld months" = "%lld 个月";
+"24 hours" = "24 小时";
+"7 days" = "7 天";
+"30 days" = "30 天";
+"a year" = "1 年";
+
+/* Filter bar */
+"Chips" = "标签";
+"Advanced" = "高级";
+"Remove filter on %@" = "移除 %@ 的过滤条件";
+"Clear filter" = "清除过滤";
+"Filter" = "过滤";
+"Filter by column" = "按列过滤";
+"Search rows" = "搜索行";
+"Clear search" = "清除搜索";
+"Find a column" = "查找列";
+"%lld of %lld shown" = "已显示 %lld / %lld";
+"%lld of %lld shown · drag headers to reorder" = "已显示 %lld / %lld · 拖移列标题可重新排序";
+"Show all" = "全部显示";
+"Reset layout" = "重置布局";
+"Every column back in the table's order and width, sorted by the default order" = "所有列恢复为表的原始顺序和宽度，并按默认排序";
+
+/* Value picker */
+"%@ · 50+ values" = "%@ · 50+ 个值";
+"%@ · 1 distinct value" = "%@ · 1 个不同值";
+"%@ · %lld distinct values" = "%@ · %lld 个不同值";
+"Press Return to add" = "按 Return 键添加";
+"Counted under your other filters" = "按你的其他过滤条件计数";
+"Applies as you click" = "点按即应用";
+"Applies right away" = "立即应用";
+"Press Return to apply" = "按 Return 键应用";
+"More operators" = "更多运算符";
+"from" = "从";
+"to" = "到";
+"text" = "文本";
+"Type or paste values" = "键入或粘贴值";
+"Search values" = "搜索值";
+"No values" = "无值";
+"Nothing matches “%@”" = "没有与“%@”匹配的项";
+"Use “%@”" = "使用“%@”";
+"typed" = "手动";
+
+/* Advanced filter and WHERE */
+"Advanced filter" = "高级过滤";
+"the same filters as the chips, as rows" = "与标签相同的过滤条件，逐行列出";
+"Condition" = "条件";
+"Group" = "组";
+"1 row matches" = "1 行匹配";
+"%@ rows match" = "%@ 行匹配";
+"Clear" = "清除";
+"Apply" = "应用";
+"Reads as" = "含义";
+"Switch off" = "停用";
+"Switch on" = "启用";
+"any of these" = "以下任一";
+"all of these" = "以下全部";
+"Ungroup" = "取消分组";
+"where" = "当";
+"Switch this level between and / or" = "在“且”和“或”之间切换此层级";
+"Remove condition" = "移除条件";
+"Type a value, then Return" = "键入值，然后按 Return";
+"value" = "值";
+
+/* Shared controls */
+"Remove %@" = "移除 %@";
+"on" = "开启";
+"off" = "关闭";
+
+/* Grid: page bar */
+"Page" = "页码";
+"of" = "/";
+"Go to a page, change rows per page" = "前往某页，更改每页行数";
+"Previous page (⌘[)" = "上一页（⌘[）";
+"Next page (⌘])" = "下一页（⌘]）";
+"of %@ rows" = "/ %@ 行";
+"of %@ matching" = "/ %@ 行匹配";
+"Go to page" = "前往页面";
+"Go" = "前往";
+"Rows per page" = "每页行数";
+"Other, like 25" = "其他，如 25";
+"rows" = "行";
+"Set" = "设定";
+"Counting…" = "正在计数…";
+"The total is an estimate." = "总数为估计值。";
+"Count exactly" = "精确计数";
+
+/* Grid: export panel */
+"Export" = "导出";
+" · 1 visible column" = " · 1 个可见列";
+" · %lld visible columns" = " · %lld 个可见列";
+"Selected · %@" = "所选 · %@";
+"This view · %@" = "当前视图 · %@";
+"This view" = "当前视图";
+"Whole table" = "全表";
+"The rows you selected" = "你选择的行";
+"Filters and sort of this view" = "当前视图的过滤和排序";
+"Every row, by primary key" = "所有行，按主键排序";
+"Every row, in this sort" = "所有行，按当前排序";
+"… %@ more" = "… 还有 %@ 行";
+"Copy" = "拷贝";
+"Copy as %@" = "拷贝为 %@";
+"More than %@ rows: save them to a file" = "超过 %@ 行：请存储到文件";
+"More than %@ rows: save them to a file." = "超过 %@ 行：请存储到文件。";
+"Save…" = "存储…";
+"Reading rows…" = "正在读取行…";
+"%@ rows so far…" = "已读取 %@ 行…";
+"Copied 1 row" = "已拷贝 1 行";
+"Copied %@ rows" = "已拷贝 %@ 行";
+"Saved 1 row" = "已存储 1 行";
+"Saved %@ rows" = "已存储 %@ 行";
+"Show in Finder" = "在访达中显示";
+
+/* Grid: cells and gutter tooltips */
+"Open the row it points to" = "打开它指向的行";
+"Waiting for your review. Click to open it." = "等待你审核。点按以打开。";
+"New row, not saved yet" = "新行，尚未存储";
+"Edited by you" = "由你编辑";
+
+/* Grid: row counts, new-row placeholders, change notes */
+"≈%@ rows" = "≈%@ 行";
+"%@ rows" = "%@ 行";
+"%@ of %@ rows" = "%@ / %@ 行";
+"counting…" = "正在计数…";
+"%@+ rows" = "%@+ 行";
+"default" = "默认";
+"required" = "必填";
+"Copy of %@" = "%@ 的副本";
+
+/* Grid: undo action names */
+"Set to NULL" = "设为 NULL";
+"Delete Row" = "删除行";
+"Delete Rows" = "删除多行";
+"New Row" = "新建行";
+"Duplicate Row" = "复制行";
+"Duplicate Rows" = "复制多行";
+
+/* Grid: column header tooltip and menu */
+"primary key" = "主键";
+"references %@" = "引用 %@";
+"Sort A → Z" = "按 A → Z 排序";
+"Sort Z → A" = "按 Z → A 排序";
+"Clear sort" = "清除排序";
+"Filter by %@…" = "按 %@ 过滤…";
+"Hide column" = "隐藏列";
+"Copy column name" = "拷贝列名";
+
+/* Grid: row menu */
+"Edit value" = "编辑值";
+"Remove new row" = "移除新行";
+"Only rows with %@" = "仅显示 %@ 的行";
+"Hide rows with %@" = "隐藏 %@ 的行";
+"Open %@ %@" = "打开 %@ %@";
+"Copy value" = "拷贝值";
+"Copy row" = "拷贝行";
+"Copy %lld rows" = "拷贝 %lld 行";
+"Copy row as" = "将行拷贝为";
+"Copy %lld rows as" = "将 %lld 行拷贝为";
+"Duplicate row" = "复制行";
+"Duplicate %lld rows" = "复制 %lld 行";
+"Delete row" = "删除行";
+"Delete %lld rows" = "删除 %lld 行";
+"Undo your change to this row" = "撤销你对此行的更改";
+"Row details" = "行详情";
+"Hide row details" = "隐藏行详情";
+"Review the agent's change…" = "审核智能体的更改…";
+
+/* Grid: agent note row */
+"%@, waiting for your review." = "%@，等待你审核。";
+"Review" = "审核";
+
+/* Workspace: rail, header, footer, presence */
+"Schema" = "架构";
+"Review (nothing waiting)" = "审核（无待处理项）";
+"Review, %lld waiting" = "审核，%lld 项待处理";
+"Hide agent session" = "隐藏智能体会话";
+"Show agent session" = "显示智能体会话";
+"All connections" = "所有连接";
+"All connections…" = "所有连接…";
+"Connecting to %@…" = "正在连接 %@…";
+"Could not connect to %@" = "无法连接到 %@";
+"Try again" = "重试";
+"Edit connection" = "编辑连接";
+"Pick a table on the left." = "从左侧选择一个表。";
+"%@ is working" = "%@ 正在工作";
+"%@ is editing with you" = "%@ 正在与你一起编辑";
+"%@ is waiting for you" = "%@ 正在等你";
+"You" = "你";
+"%@, active" = "%@，活跃";
+"%@, idle" = "%@，空闲";
+"%@ was here" = "%@ 来过";
+"%lld agents here" = "%lld 个智能体在此";
+"Review · %lld" = "审核 · %lld";
+"Close tab" = "关闭标签页";
+"production writes go through review" = "production 中的写入需经审核";
+"your edits wait for review · agents: %@" = "你的编辑需等待审核 · 智能体：%@";
+"Could not read the schema: %@" = "无法读取架构：%@";
+
+/* Schema rail */
+"Filter tables, columns" = "过滤表、列";
+"1 table" = "1 个表";
+"%lld tables" = "%lld 个表";
+"Hide columns" = "隐藏列";
+"Show columns" = "显示列";
+"Hidden from agents" = "对智能体隐藏";
+"hidden" = "已隐藏";
+"agent" = "智能体";
+"view" = "视图";
+
+/* Table screen */
+/* button back to a table (Turkish: %@ tablosuna dön) */
+"back.table" = "返回 %@";
+"view · read-only" = "视图 · 只读";
+"no primary key · read-only" = "无主键 · 只读";
+"Rows can only be edited in tables with a primary key." = "只有带主键的表才能编辑行。";
+"Data" = "数据";
+"Structure" = "结构";
+"Row" = "行";
+"Column" = "列";
+"Index" = "索引";
+"Add a row (⌘I)" = "添加行（⌘I）";
+"Views don't take new rows" = "视图不能添加新行";
+"Add a column" = "添加列";
+"Views have no columns of their own" = "视图没有自己的列";
+"Add an index" = "添加索引";
+"Views have no indexes" = "视图没有索引";
+"new query" = "新查询";
+"1 column" = "1 列";
+"%lld columns" = "%lld 列";
+"1 index" = "1 个索引";
+"%lld indexes" = "%lld 个索引";
+"The query failed" = "查询失败";
+"Clear filters" = "清除过滤条件";
+"No rows yet" = "还没有行";
+"No rows match" = "没有匹配的行";
+"Columns" = "列";
+"Columns · %lld hidden" = "列 · %lld 个已隐藏";
+"Copy or save these rows as CSV, JSON, SQL or Markdown" = "将这些行拷贝或存储为 CSV、JSON、SQL 或 Markdown";
+"Copied" = "已拷贝";
+
+/* Row panel */
+"No row selected" = "未选择行";
+"new row" = "新行";
+"Close (Space)" = "关闭（空格键）";
+/* open a table (Turkish: %@ tablosunu aç) */
+"open.table" = "打开 %@";
+"Referenced by" = "被引用于";
+"Open %@ rows whose %@ points here" = "打开 %1$@ 中 %2$@ 指向此处的行";
+
+/* Structure tab */
+"Indexes" = "索引";
+"column" = "列";
+"type" = "类型";
+"null" = "可空";
+"keys and checks" = "键和检查约束";
+"index" = "索引";
+"columns" = "列";
+"kind" = "种类";
+"size" = "大小";
+"used" = "使用次数";
+"1 scan" = "1 次扫描";
+"%@ scans" = "%@ 次扫描";
+"unique" = "唯一";
+"yes" = "是";
+"no" = "否";
+"none" = "无";
+"check · 1 value" = "检查 · 1 个值";
+"check · %lld values" = "检查 · %lld 个值";
+"proposed by %@" = "由 %@ 提议";
+"proposed by an agent" = "由智能体提议";
+"Remove New Column" = "移除新列";
+"Keep Column" = "保留列";
+"Drop Column" = "删除列";
+"Undo Changes" = "撤销更改";
+"new · not saved" = "新 · 未存储";
+"dropped · not saved" = "待删除 · 未存储";
+"No indexes." = "没有索引。";
+"Review %@'s proposal" = "审核 %@ 的提议";
+"Review proposed index" = "审核提议的索引";
+"Remove New Index" = "移除新索引";
+"Keep Index" = "保留索引";
+"Review Proposal" = "审核提议";
+"Drop Index" = "删除索引";
+
+/* Structure side panel */
+"new column" = "新列";
+"column %lld of %lld" = "列 %lld/%lld";
+"name" = "名称";
+"Type" = "类型";
+"Default" = "默认值";
+"Allows empty" = "允许为空";
+"%@ reads this column, so PostgreSQL won't change its type." = "%@ 读取此列，因此 PostgreSQL 不会更改其类型。";
+"%@ read this column, so PostgreSQL won't change its type." = "%@ 读取此列，因此 PostgreSQL 不会更改其类型。";
+"SQLite can only rename a saved column." = "SQLite 只能重命名已存储的列。";
+"Allowed values" = "允许的值";
+"In the data" = "数据中";
+"Used by" = "用于";
+"key" = "键";
+"foreign key" = "外键";
+"proposed index" = "提议的索引";
+"Remove new column" = "移除新列";
+"Keep column" = "保留列";
+"Drop column" = "删除列";
+"new index" = "新索引";
+"index %lld of %lld" = "索引 %lld/%lld";
+"Unique" = "唯一";
+"Kind" = "种类";
+"Size" = "大小";
+"Used" = "使用次数";
+"Remove new index" = "移除新索引";
+"Keep index" = "保留索引";
+"Review proposal" = "审核提议";
+"Drop index" = "删除索引";
+"Made by the primary key; it goes with the key." = "由主键创建，随主键一起删除。";
+"Made by a unique constraint; it goes with the constraint." = "由唯一约束创建，随约束一起删除。";
+"Production: every schema change shows its DDL and lock level before it runs." = "Production：每项架构更改在运行前都会显示其 DDL 和锁级别。";
+
+/* Undo menu names ("Geri Al: %@") */
+"Remove New Row" = "移除新行";
+"Undo Change" = "撤销更改";
+"Discard Changes" = "放弃更改";
+"Add Column" = "添加列";
+"Add Index" = "添加索引";
+"Edit Column" = "编辑列";
+"Edit Index" = "编辑索引";
+"Change Column" = "更改列";
+
+/* Review screen */
+"Nothing waiting" = "没有待处理项";
+"Edit a cell, or let an agent propose a change, and it shows up here before anything is written." = "编辑单元格，或让智能体提议更改，它会在写入前先显示在这里。";
+"Discard all %lld changes?" = "要放弃全部 %lld 项更改吗？";
+"Discard all" = "全部放弃";
+"Your edits are dropped and the agents' proposals are turned down. Nothing was written." = "你的编辑将被放弃，智能体的提议将被拒绝。尚未写入任何内容。";
+"Review 1 change" = "审核 1 项更改";
+"Review %lld changes" = "审核 %lld 项更改";
+"They apply together in one transaction. Nothing is written until you apply." = "它们会在同一个事务中一起应用。在你应用之前，不会写入任何内容。";
+"Note for %@ if you turn it down (optional)" = "如果拒绝，给 %@ 的备注（可选）";
+"Reject proposal" = "拒绝提议";
+"Applying…" = "正在应用…";
+"Apply 1 change" = "应用 1 项更改";
+"Apply %lld changes" = "应用 %lld 项更改";
+"Edit %@ %@" = "编辑 %@ %@";
+"Delete %@ %@" = "删除 %@ %@";
+"New row in %@" = "%@ 中的新行";
+"SQL on %@" = "针对 %@ 的 SQL";
+"%@ on %@" = "在 %2$@ 中%1$@";
+"Leave out of this apply" = "不纳入本次应用";
+"Include in this apply" = "纳入本次应用";
+"Applying" = "将应用";
+"1 row" = "1 行";
+"%lld rows" = "%lld 行";
+"1 row in %@" = "%@ 中的 1 行";
+"%lld rows in %@" = "%2$@ 中的 %1$lld 行";
+"in one transaction on %@" = "在 %@ 上以单个事务执行";
+"as %@, not as %@" = "身份：%1$@，而非 %2$@";
+"you" = "你";
+"with your own credentials" = "使用你自己的凭据";
+/* "rows" when the count is unknown (Turkish: satırlar) */
+"proposal.rows" = "行";
+"Update %@ in %@" = "更新 %2$@ 中的 %1$@";
+"Update %@" = "更新 %@";
+"Delete %@ in %@" = "删除 %2$@ 中的 %1$@";
+"Delete %@" = "删除 %@";
+"Add %@ in %@" = "在 %2$@ 中添加 %1$@";
+"Add %@" = "添加 %@";
+"Change the schema: %@ in %@" = "更改架构：对 %2$@ 执行 %1$@";
+"Change the schema: %@" = "更改架构：%@";
+"Run %@ in %@" = "在 %2$@ 中运行 %1$@";
+"Run %@" = "运行 %@";
+"proposed at %@" = "提议于 %@";
+"Waiting for you on %@" = "在 %@ 上等你处理";
+"Agent's note: " = "智能体备注：";
+"After you decide, %@ sees the result the next time it checks its proposals." = "你做出决定后，%@ 下次查看其提议时会看到结果。";
+"Trial run changed 1 row" = "试运行更改了 1 行";
+"Trial run changed %lld rows" = "试运行更改了 %lld 行";
+"Rolled back after the trial" = "试运行后已回滚";
+"Showing the first %lld" = "仅显示前 %lld 行";
+"Applies to production" = "将应用到 production";
+"edited at %@" = "编辑于 %@";
+/* column header: old value (Turkish: eski) */
+"review.was" = "原值";
+/* column header: new value (Turkish: yeni) */
+"review.now" = "新值";
+"The whole row is deleted." = "整行将被删除。";
+"Runs as written. The trial run said it %@." = "按原样运行。试运行显示它%@。";
+"Runs as written." = "按原样运行。";
+"Changes the table's structure." = "更改表的结构。";
+"Undo this edit" = "撤销此编辑";
+"1 value" = "1 个值";
+"%lld values" = "%lld 个值";
+"Show SQL" = "显示 SQL";
+
+/* Structure changes and change summaries (Review/ChangeText.swift) */
+"Add column %@" = "添加列 %@";
+"Rename column %@ to %@" = "将列 %1$@ 重命名为 %2$@";
+"Change column %@" = "更改列 %@";
+"Drop column %@" = "删除列 %@";
+"Add index %@" = "添加索引 %@";
+"Drop index %@" = "删除索引 %@";
+"Rewrites %@; reads and writes wait until it finishes." = "重写 %@；完成前，读写都需等待。";
+"Scans %@; reads and writes wait until it finishes." = "扫描 %@；完成前，读写都需等待。";
+"Writes to %@ wait while the index builds." = "建立索引期间，写入 %@ 需等待。";
+"Locks %@ briefly." = "短暂锁定 %@。";
+"delete row" = "删除行";
+"insert a row of defaults" = "插入一行默认值";
+"insert %@" = "插入 %@";
+
+/* Waiting changes bar */
+"Hide your changes" = "隐藏你的更改";
+"Show your changes" = "显示你的更改";
+"%lld yours" = "你的 %lld 项";
+"%lld from %@" = "%2$@ 的 %1$lld 项";
+"Discard" = "放弃";
+"Review DDL" = "审核 DDL";
+"Review & apply" = "审核并应用";
+"Runs on %@" = "在 %@ 上运行";
+"Apply to production" = "应用到 production";
+"Discard your 1 edit" = "放弃你的 1 处编辑";
+"Discard your %lld edits" = "放弃你的 %lld 处编辑";
+"Discard everything, and turn down the agents' proposals" = "全部放弃，并拒绝智能体的提议";
+"Nothing has been written yet. Turned-down proposals are marked rejected, and the agent sees that." = "尚未写入任何内容。被拒绝的提议会标记为“已拒绝”，智能体也会看到。";
+"1 schema change waiting" = "1 项架构更改待处理";
+"%lld schema changes waiting" = "%lld 项架构更改待处理";
+"1 change waiting" = "1 项更改待处理";
+"%lld changes waiting" = "%lld 项更改待处理";
+"Discard 1 change?" = "要放弃 1 项更改吗？";
+"Discard %lld changes?" = "要放弃 %lld 项更改吗？";
+"Save 1 change" = "存储 1 项更改";
+"Save %lld changes" = "存储 %lld 项更改";
+"%@ required" = "%@ 为必填项";
+"Undo this change" = "撤销此更改";
+"%@'s proposal; review it to apply" = "%@ 的提议；审核后才能应用";
+"New row" = "新行";
+
+/* Agent session panel */
+"Session" = "会话";
+"today on %@" = "今天 · %@";
+"Hide the session (⌥⌘0, or the agents button in the rail)" = "隐藏会话（⌥⌘0，或边栏中的智能体按钮）";
+"Hide session" = "隐藏会话";
+"No agent activity today." = "今天没有智能体活动。";
+"Agents cannot see this connection here." = "智能体看不到此连接。";
+"Agents only read here." = "智能体在此只能读取。";
+"Agents read and propose here." = "智能体在此可以读取和提议。";
+"Agents read and write here." = "智能体在此可以读写。";
+"1 column is masked." = "1 列已遮蔽。";
+"%lld columns are masked." = "%lld 列已遮蔽。";
+"1 table is hidden." = "1 个表已隐藏。";
+"%lld tables are hidden." = "%lld 个表已隐藏。";
+"read %@" = "读取了 %@";
+/* activity line verb: an agent read tables (Turkish: okudu) */
+"session.read" = "执行了读取";
+"changed %@" = "更改了 %@";
+"changed" = "做了更改";
+"wrote %@" = "写入了 %@";
+"wrote" = "执行了写入";
+"was refused" = "请求被拒绝";
+"applied a proposed change to %@" = "将提议的更改应用到了 %@";
+"applied a proposed change" = "应用了提议的更改";
+"applied %@" = "已应用到 %@";
+"applied" = "已应用";
+"turned down a proposed change" = "拒绝了提议的更改";
+/* activity line: an agent request failed (Turkish: başarısız oldu) */
+"session.failed" = "执行失败";
+"looked at your saved queries" = "查看了你存储的查询";
+"read a saved query" = "读取了一个存储的查询";
+"suggested a change to %@" = "建议修改 %@";
+"suggested a change to a saved query" = "建议修改一个存储的查询";
+"took the suggestion for %@" = "采纳了对 %@ 的建议";
+"took the suggestion for a saved query" = "采纳了对一个存储查询的建议";
+"dismissed the suggestion for %@" = "忽略了对 %@ 的建议";
+"dismissed the suggestion for a saved query" = "忽略了对一个存储查询的建议";
+"asked %@" = "询问了 %@";
+"asked an agent" = "询问了智能体";
+"proposed an update to %@" = "提议更新 %@";
+"proposed an update" = "提议了更新";
+"proposed a delete to %@" = "提议从 %@ 删除";
+"proposed a delete" = "提议了删除";
+"proposed an insert to %@" = "提议向 %@ 插入";
+"proposed an insert" = "提议了插入";
+"proposed a change to %@" = "提议更改 %@";
+"proposed a change" = "提议了更改";
+"and %lld earlier" = "以及更早的 %lld 条";
+"waiting for your review" = "等待你审核";
+"working…" = "正在工作…";
+
+/* Ask (Claude Code from the SQL tab) */
+"Claude Code isn't installed on this Mac. Install it from claude.com/code, then try again." = "这台 Mac 上未安装 Claude Code。请从 claude.com/code 安装，然后重试。";
+"The agentable command is missing from the app." = "App 中缺少 agentable 命令。";
+"Stopped after 3 minutes without an answer." = "3 分钟内没有回答，已停止。";
+"Could not start Claude Code: %@" = "无法启动 Claude Code：%@";
+"Claude Code stopped with an error." = "Claude Code 因错误而停止。";
+"Claude Code stopped (exit %lld)." = "Claude Code 已停止（退出代码 %lld）。";
+"%@ finished without suggesting a change." = "%@ 已完成，但未建议任何更改。";
+"listed saved queries" = "列出了存储的查询";
+"described %@" = "查看了 %@ 的结构";
+"described a table" = "查看了表结构";
+"searched the schema" = "搜索了架构";
+"ran a query" = "运行了查询";
+"checked the plan" = "检查了执行计划";
+"suggested a change" = "建议了更改";
+"used %@" = "使用了 %@";
+"Ask" = "询问";
+"Ask your agent to change or explain this query" = "让你的智能体修改或解释此查询";
+"Make it faster" = "让它更快";
+"Explain the plan" = "解释执行计划";
+"Check for mistakes" = "检查错误";
+"Ask claude-code" = "询问 claude-code";
+"about %@" = "关于 %@";
+"this query" = "此查询";
+/* placeholder for the file name to save a query as (Turkish: Kayıt adı) */
+"ask.saveAs" = "存储名称";
+"What should it do with this query?" = "要它对此查询做什么？";
+"Runs your Claude Code with Agentable's tools only. It reads and suggests; nothing runs until you accept." = "仅用 Agentable 的工具运行你的 Claude Code。它只读取和建议；在你接受之前，不会运行任何内容。";
+"Claude Code isn't installed on this Mac." = "这台 Mac 上未安装 Claude Code。";
+"Send" = "发送";
+"Stop" = "停止";
+"thinking" = "思考中";
+"%lld s" = "%lld 秒";
+"Stopped." = "已停止。";
+
+/* SQL tab */
+"Run" = "运行";
+"Run the statement under the cursor, or the selected one" = "运行光标所在的语句或所选语句";
+"Explain" = "解释";
+"Format" = "格式化";
+"Reads run directly. Writes go to review." = "读取直接运行，写入需经审核。";
+"Results" = "结果";
+"Plan" = "计划";
+"Messages" = "消息";
+"No plan yet" = "还没有执行计划";
+"No messages" = "没有消息";
+"Copy as" = "拷贝为";
+"Save as" = "存储为";
+"Save this query for this connection" = "为此连接存储此查询";
+"Save query" = "存储查询";
+"Each run is its own transaction, so %@ isn't needed here." = "每次运行都是独立的事务，因此这里不需要 %@。";
+"More than %@ rows; the first %@ are shown." = "超过 %1$@ 行，仅显示前 %2$@ 行。";
+"1 row in %lld ms." = "1 行，用时 %lld 毫秒。";
+"%@ rows in %lld ms." = "%1$@ 行，用时 %2$lld 毫秒。";
+"ran in a trial" = "运行正常";
+"would change 1 row" = "会更改 1 行";
+"would change %@ rows" = "会更改 %@ 行";
+"Waiting with your changes: in a trial it %@. ⌘S saves it, after showing you the SQL." = "已加入你的待存储更改：试运行显示它%@。按 ⌘S 会先显示 SQL，再存储。";
+"Waiting with your changes: in a trial it %@. ⌘S saves it." = "已加入你的待存储更改：试运行显示它%@。按 ⌘S 存储。";
+"Nothing to run here." = "这里没有可运行的内容。";
+"That selection holds %lld statements. Select one, or put the cursor in it." = "所选内容包含 %lld 条语句。请只选择一条，或将光标放在其中。";
+"Give the query a name." = "请为查询命名。";
+"table" = "表";
+"keyword" = "关键字";
+"Accept Suggestion" = "接受建议";
+"Suggested a new version of this query." = "建议了此查询的新版本。";
+"Made for an earlier version of this query." = "针对此查询的旧版本。";
+"Accept" = "接受";
+"Dismiss" = "忽略";
+
+/* Saved queries sidebar */
+"Search queries" = "搜索查询";
+"Saved" = "已存储";
+"New" = "新建";
+"Start an empty query" = "新建空白查询";
+"No saved queries" = "没有存储的查询";
+"No matches" = "无匹配项";
+"%@ · suggested a new query" = "%@ · 建议了新查询";
+"%@ · suggested a change" = "%@ · 建议了更改";
+"you · edited %@" = "你 · 编辑于 %@";
+"Recent on %@" = "最近 · %@";
+"%@ · became a proposal" = "%@ · 已转为提议";

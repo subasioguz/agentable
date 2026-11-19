@@ -1,0 +1,792 @@
+/* Korean. Keys are the English text as Swift builds them (%@, %lld for values). */
+/* Settings menu: language */
+"Language" = "언어";
+"Match the system" = "시스템 설정에 맞춤";
+"Restart Agentable to change the language?" = "언어를 변경하기 위해 Agentable을 재시동하겠습니까?";
+"Your connections and waiting changes are kept." = "연결과 대기 중인 변경 사항은 유지됩니다.";
+"Restart" = "재시동";
+"Later" = "나중에";
+"Connections" = "연결";
+"Connect agents" = "에이전트 연결";
+"New connection" = "새로운 연결";
+
+/* Agent access levels (AgentAccess.label) */
+/* agent access level (Turkish: kapalı) */
+"access.off" = "끔";
+/* agent access level (Turkish: okuma) */
+"access.read" = "읽기";
+/* agent access level (Turkish: öneri) */
+"access.propose" = "제안";
+/* agent access level (Turkish: yazma) */
+"access.write" = "쓰기";
+
+/* App menus and startup */
+"Unknown error" = "알 수 없는 오류";
+"Changes" = "변경 사항";
+"Save" = "저장";
+"Reload" = "다시 로드";
+"Add Row" = "행 추가";
+"Query" = "쿼리";
+"Run Statement" = "구문 실행";
+"Ask an Agent…" = "에이전트에게 질문…";
+"Show Agent Session" = "에이전트 세션 보기";
+"Agentable could not start" = "Agentable을 시작할 수 없음";
+"Could not read saved connections: %@" = "저장된 연결을 읽을 수 없음: %@";
+"let agents %@ on %@" = "%2$@ 연결에서 에이전트에게 '%1$@' 권한을 허용";
+
+/* Settings menu */
+"Appearance" = "모양";
+"Light" = "라이트";
+"Dark" = "다크";
+"Default order" = "기본 정렬 순서";
+"Oldest first" = "오래된 순";
+"Newest first" = "최신 순";
+"Connect Agents…" = "에이전트 연결…";
+"Settings" = "설정";
+
+/* Go to anything */
+"Go to a table or connection" = "테이블 또는 연결로 이동";
+"Nothing called “%@”" = "일치하는 이름 없음: “%@”";
+"connection" = "연결";
+"Go to anything" = "빠른 이동";
+
+/* Connect agents card */
+"Agents found on this Mac" = "이 Mac에서 찾은 에이전트";
+"Connecting adds Agentable as an MCP server in the agent's config. You can remove it anytime." = "연결하면 에이전트 구성에 Agentable이 MCP 서버로 추가됩니다. 언제든지 제거할 수 있습니다.";
+"Another agent" = "다른 에이전트";
+"Run %@ or copy the MCP config" = "%@ 명령 실행 또는 MCP 구성 복사";
+"Copy config" = "구성 복사";
+"Copied. Paste it into the agent's MCP settings." = "복사했습니다. 에이전트의 MCP 설정에 붙여넣으십시오.";
+"What agents can do by default" = "에이전트의 기본 권한";
+"per environment; change it on each connection" = "환경별 기본값이며 연결마다 변경 가능";
+"never more than propose" = "최대 제안까지";
+"Not found on this Mac" = "이 Mac에서 찾을 수 없음";
+"Connected" = "연결됨";
+"Connecting…" = "연결 중…";
+"Connect" = "연결";
+"%@ default: %@" = "%1$@ 기본값: %2$@";
+"Agents get a name for each connection, never the password." = "에이전트는 각 연결의 이름만 받으며 암호는 절대 받지 않습니다.";
+"Done" = "완료";
+"App" = "앱";
+"%@ can use Agentable now." = "이제 %@에서 Agentable을 사용할 수 있습니다.";
+"Added to Cursor. The old file is saved as mcp.json.agentable-backup." = "Cursor에 추가했습니다. 이전 파일은 mcp.json.agentable-backup 이름으로 저장되었습니다.";
+"The agentable command-line tool was not found next to the app." = "앱과 같은 위치에서 agentable 명령줄 도구를 찾을 수 없습니다.";
+"%@ was not found on this Mac." = "이 Mac에서 찾을 수 없습니다: %@";
+"The agent's setup command failed." = "에이전트 설정 명령이 실패했습니다.";
+"%@ is not valid JSON, so it was left alone." = "%@ 파일이 유효한 JSON이 아니어서 변경하지 않았습니다.";
+
+/* Connection form */
+"Edit %@" = "%@ 편집";
+"Close" = "닫기";
+"Paste a URL or a SQLite file path" = "URL 또는 SQLite 파일 경로 붙여넣기";
+"Filled the file path below" = "아래 파일 경로를 채웠습니다";
+"Filled host, port, user and database below" = "아래 호스트, 포트, 사용자, 데이터베이스를 채웠습니다";
+"Name" = "이름";
+"Lower-case letters, digits, - _ and . only. Agents address the connection by this name." = "소문자, 숫자, - _ . 기호만 사용할 수 있습니다. 에이전트는 이 이름으로 연결을 지정합니다.";
+"File" = "파일";
+"Choose…" = "선택…";
+"Host" = "호스트";
+"Port" = "포트";
+"User" = "사용자";
+"Database" = "데이터베이스";
+"Password" = "암호";
+"Saved in Keychain" = "키체인에 저장됨";
+"Saved to Keychain. Agents never receive it." = "키체인에 저장됩니다. 에이전트는 절대 받지 않습니다.";
+"Off" = "끔";
+"Prefer" = "선호";
+"Require" = "필수";
+"Verify" = "검증";
+"CA certificate" = "CA 인증서";
+"System roots" = "시스템 루트";
+"Not checked" = "검증 안 함";
+"Client certificate" = "클라이언트 인증서";
+"Client key" = "클라이언트 키";
+"None" = "없음";
+"Testing…" = "테스트 중…";
+"Test" = "테스트";
+"Test again" = "다시 테스트";
+"Saving…" = "저장 중…";
+"SSH tunnel" = "SSH 터널";
+"SSH host" = "SSH 호스트";
+"bastion or a ~/.ssh/config name" = "bastion 또는 ~/.ssh/config의 이름";
+"SSH user" = "SSH 사용자";
+"from ~/.ssh/config" = "~/.ssh/config에서";
+"Key" = "키";
+"Uses your SSH agent, ~/.ssh/config and known_hosts. Agents never see it." = "SSH 에이전트, ~/.ssh/config 및 known_hosts 파일을 사용합니다. 에이전트는 절대 볼 수 없습니다.";
+"Environment" = "환경";
+"Production gets review before every write, and agents start at Read." = "Production에서는 모든 쓰기 전에 검토를 거치며, 에이전트는 '읽기' 권한으로 시작합니다.";
+"Agents start at Propose: their changes wait for you." = "에이전트는 '제안' 권한으로 시작합니다. 변경 사항은 사용자의 검토를 기다립니다.";
+"Agents start at Write." = "에이전트는 '쓰기' 권한으로 시작합니다.";
+"Agent access" = "에이전트 권한";
+"%@, the %@ default" = "%1$@(%2$@ 기본값)";
+"Environment default (%@)" = "환경 기본값(%@)";
+"Change" = "변경";
+"Agents cannot see this connection" = "에이전트가 이 연결을 볼 수 없음";
+"Schema and read-only queries" = "스키마 및 읽기 전용 쿼리";
+"Reads, and changes that wait for you" = "읽기 및 검토 대기 변경 사항";
+"Reads and writes directly" = "직접 읽기 및 쓰기";
+"Connected · %lld ms" = "연결됨 · %lld ms";
+"Choose a SQLite database file" = "SQLite 데이터베이스 파일 선택";
+"There is already a connection named %@." = "같은 이름의 연결이 이미 있습니다: %@";
+
+/* Connections screen */
+"Add Agentable to Claude Code, Codex or Cursor" = "Claude Code, Codex 또는 Cursor에 Agentable 추가";
+"Back to %@" = "%@ 연결로 돌아가기";
+"Remove %@?" = "%@ 연결을 제거하겠습니까?";
+"Remove" = "제거";
+"Cancel" = "취소";
+"The saved settings and the password in Keychain are deleted. Agents can no longer use this name." = "저장된 설정과 키체인의 암호가 삭제됩니다. 에이전트는 더 이상 이 이름을 사용할 수 없습니다.";
+"%lld saved · passwords live in Keychain" = "%lld개 저장됨 · 암호는 키체인에 보관";
+"Search by name or host" = "이름 또는 호스트로 검색";
+"No connections yet" = "아직 연결 없음";
+"Paste a postgres:// URL or pick a SQLite file." = "postgres:// URL을 붙여넣거나 SQLite 파일을 선택하십시오.";
+"Agents" = "에이전트";
+"Last used" = "마지막 사용";
+"%lld live" = "%lld개 활성";
+"never" = "없음";
+"Edit" = "편집";
+"Open" = "열기";
+"Edit…" = "편집…";
+"Copy name for agents" = "에이전트용 이름 복사";
+"Remove…" = "제거…";
+"now" = "지금";
+"%lld min ago" = "%lld분 전";
+"%lld h ago" = "%lld시간 전";
+"yesterday" = "어제";
+"%lld days ago" = "%lld일 전";
+
+/* Welcome */
+"Welcome" = "환영합니다";
+"Connect a database, then let your agents in." = "데이터베이스를 연결한 다음 에이전트를 초대하십시오.";
+"Two minutes. Agents get a name for each connection, never the password." = "2분이면 됩니다. 에이전트는 각 연결의 이름만 받으며 암호는 절대 받지 않습니다.";
+"%@ is saved" = "%@ 저장됨";
+"%lld connections saved" = "연결 %lld개 저장됨";
+"Passwords are in Keychain. Agents will address it as %@." = "암호는 키체인에 있습니다. 에이전트는 이 연결을 %@ 이름으로 지정합니다.";
+"Add another" = "하나 더 추가";
+"Your first database" = "첫 번째 데이터베이스";
+"PostgreSQL or a SQLite file. You can add more later." = "PostgreSQL 또는 SQLite 파일. 나중에 더 추가할 수 있습니다.";
+"Paste a connection URL" = "연결 URL 붙여넣기";
+"Open a SQLite file" = "SQLite 파일 열기";
+"Enter host and port" = "호스트 및 포트 입력";
+"Skip for now" = "지금은 건너뛰기";
+"Back" = "뒤로";
+"Continue" = "계속";
+"Agents get %lld tools:" = "에이전트가 사용하는 도구 %lld개:";
+
+/* Filters: operators from AgentableCore (chip, segment and row labels) */
+"is" = "같음";
+"is not" = "다름";
+"contains" = "포함";
+"doesn't contain" = "미포함";
+"starts with" = "다음으로 시작";
+"between" = "범위 내";
+"in the last" = "최근";
+"before" = "이전";
+"after" = "이후";
+"is empty" = "비어 있음";
+"is not empty" = "비어 있지 않음";
+"empty" = "비어 있음";
+"not empty" = "비어 있지 않음";
+"true" = "참";
+"false" = "거짓";
+"last" = "최근";
+"equals" = "다음과 같음";
+"is any of" = "다음 중 하나";
+"does not equal" = "다음과 같지 않음";
+"is none of" = "다음 중 해당 없음";
+"does not contain" = "다음을 포함하지 않음";
+"is greater than" = "다음보다 큼";
+"is at least" = "다음 이상";
+"is less than" = "다음보다 작음";
+"is at most" = "다음 이하";
+"is between" = "다음 사이";
+"is within the last" = "최근";
+"is before" = "다음 이전";
+"is after" = "다음 이후";
+"is true" = "참임";
+"is false" = "거짓임";
+
+/* Filters: and/or, time units, sentences */
+"and" = "그리고";
+"or" = "또는";
+"%@ or %@" = "%@ 또는 %@";
+"minutes" = "분";
+"hours" = "시간";
+"days" = "일";
+"weeks" = "주";
+"months" = "개월";
+"1 minute" = "1분";
+"1 hour" = "1시간";
+"1 day" = "1일";
+"1 week" = "1주";
+"1 month" = "1개월";
+"%lld minutes" = "%lld분";
+"%lld hours" = "%lld시간";
+"%lld days" = "%lld일";
+"%lld weeks" = "%lld주";
+"%lld months" = "%lld개월";
+"24 hours" = "24시간";
+"7 days" = "7일";
+"30 days" = "30일";
+"a year" = "1년";
+
+/* Filter bar */
+"Chips" = "칩";
+"Advanced" = "고급";
+"Remove filter on %@" = "%@ 필터 제거";
+"Clear filter" = "필터 지우기";
+"Filter" = "필터";
+"Filter by column" = "열로 필터링";
+"Search rows" = "행 검색";
+"Clear search" = "검색 지우기";
+"Find a column" = "열 찾기";
+"%lld of %lld shown" = "%2$lld개 중 %1$lld개 표시";
+"%lld of %lld shown · drag headers to reorder" = "%2$lld개 중 %1$lld개 표시 · 헤더를 드래그하여 순서 변경";
+"Show all" = "모두 보기";
+"Reset layout" = "레이아웃 재설정";
+"Every column back in the table's order and width, sorted by the default order" = "모든 열을 테이블 원래의 순서와 너비로 되돌리고 기본 정렬 순서로 정렬";
+
+/* Value picker */
+"%@ · 50+ values" = "%@ · 값 50개 이상";
+"%@ · 1 distinct value" = "%@ · 고유 값 1개";
+"%@ · %lld distinct values" = "%@ · 고유 값 %lld개";
+"Press Return to add" = "Return 키를 눌러 추가";
+"Counted under your other filters" = "다른 필터를 적용한 개수";
+"Applies as you click" = "클릭하면 바로 적용";
+"Applies right away" = "즉시 적용";
+"Press Return to apply" = "Return 키를 눌러 적용";
+"More operators" = "기타 연산자";
+"from" = "시작";
+"to" = "끝";
+"text" = "텍스트";
+"Type or paste values" = "값 입력 또는 붙여넣기";
+"Search values" = "값 검색";
+"No values" = "값 없음";
+"Nothing matches “%@”" = "일치하는 항목 없음: “%@”";
+"Use “%@”" = "“%@” 사용";
+"typed" = "직접 입력";
+
+/* Advanced filter and WHERE */
+"Advanced filter" = "고급 필터";
+"the same filters as the chips, as rows" = "칩과 같은 필터를 행으로 표시";
+"Condition" = "조건";
+"Group" = "그룹";
+"1 row matches" = "행 1개 일치";
+"%@ rows match" = "행 %@개 일치";
+"Clear" = "지우기";
+"Apply" = "적용";
+"Reads as" = "의미";
+"Switch off" = "끄기";
+"Switch on" = "켜기";
+"any of these" = "다음 중 하나";
+"all of these" = "다음 모두";
+"Ungroup" = "그룹 해제";
+"where" = "조건";
+"Switch this level between and / or" = "이 수준의 '그리고'/'또는' 전환";
+"Remove condition" = "조건 제거";
+"Type a value, then Return" = "값을 입력하고 Return";
+"value" = "값";
+
+/* Shared controls */
+"Remove %@" = "%@ 제거";
+"on" = "켬";
+"off" = "끔";
+
+/* Grid: page bar */
+"Page" = "페이지";
+"of" = "/";
+"Go to a page, change rows per page" = "페이지로 이동, 페이지당 행 수 변경";
+"Previous page (⌘[)" = "이전 페이지(⌘[)";
+"Next page (⌘])" = "다음 페이지(⌘])";
+"of %@ rows" = "/ 행 %@개";
+"of %@ matching" = "/ %@개 일치";
+"Go to page" = "페이지로 이동";
+"Go" = "이동";
+"Rows per page" = "페이지당 행 수";
+"Other, like 25" = "기타(예: 25)";
+"rows" = "행";
+"Set" = "설정";
+"Counting…" = "세는 중…";
+"The total is an estimate." = "합계는 추정치입니다.";
+"Count exactly" = "정확히 세기";
+
+/* Grid: export panel */
+"Export" = "내보내기";
+" · 1 visible column" = " · 보이는 열 1개";
+" · %lld visible columns" = " · 보이는 열 %lld개";
+"Selected · %@" = "선택됨 · %@";
+"This view · %@" = "현재 보기 · %@";
+"This view" = "현재 보기";
+"Whole table" = "전체 테이블";
+"The rows you selected" = "선택한 행";
+"Filters and sort of this view" = "현재 보기의 필터 및 정렬";
+"Every row, by primary key" = "모든 행, 기본 키 순";
+"Every row, in this sort" = "모든 행, 현재 정렬 순";
+"… %@ more" = "… 외 행 %@개";
+"Copy" = "복사";
+"Copy as %@" = "%@ 형식으로 복사";
+"More than %@ rows: save them to a file" = "행 %@개 초과: 파일로 저장";
+"More than %@ rows: save them to a file." = "행이 %@개를 초과합니다. 파일로 저장하십시오.";
+"Save…" = "저장…";
+"Reading rows…" = "행 읽는 중…";
+"%@ rows so far…" = "지금까지 행 %@개…";
+"Copied 1 row" = "행 1개 복사됨";
+"Copied %@ rows" = "행 %@개 복사됨";
+"Saved 1 row" = "행 1개 저장됨";
+"Saved %@ rows" = "행 %@개 저장됨";
+"Show in Finder" = "Finder에서 보기";
+
+/* Grid: cells and gutter tooltips */
+"Open the row it points to" = "참조하는 행 열기";
+"Waiting for your review. Click to open it." = "검토를 기다리는 중입니다. 클릭하여 엽니다.";
+"New row, not saved yet" = "새 행, 아직 저장 안 됨";
+"Edited by you" = "내가 편집함";
+
+/* Grid: row counts, new-row placeholders, change notes */
+"≈%@ rows" = "행 약 %@개";
+"%@ rows" = "행 %@개";
+"%@ of %@ rows" = "행 %1$@/%2$@개";
+"counting…" = "세는 중…";
+"%@+ rows" = "행 %@개 이상";
+"default" = "기본값";
+"required" = "필수";
+"Copy of %@" = "%@ 사본";
+
+/* Grid: undo action names */
+"Set to NULL" = "NULL로 설정";
+"Delete Row" = "행 삭제";
+"Delete Rows" = "행 삭제";
+"New Row" = "새로운 행";
+"Duplicate Row" = "행 복제";
+"Duplicate Rows" = "행 복제";
+
+/* Grid: column header tooltip and menu */
+"primary key" = "기본 키";
+"references %@" = "%@ 참조";
+"Sort A → Z" = "A → Z 정렬";
+"Sort Z → A" = "Z → A 정렬";
+"Clear sort" = "정렬 지우기";
+"Filter by %@…" = "%@ 열로 필터링…";
+"Hide column" = "열 가리기";
+"Copy column name" = "열 이름 복사";
+
+/* Grid: row menu */
+"Edit value" = "값 편집";
+"Remove new row" = "새 행 제거";
+"Only rows with %@" = "다음 값의 행만 보기: %@";
+"Hide rows with %@" = "다음 값의 행 가리기: %@";
+"Open %@ %@" = "%1$@ %2$@ 열기";
+"Copy value" = "값 복사";
+"Copy row" = "행 복사";
+"Copy %lld rows" = "행 %lld개 복사";
+"Copy row as" = "다음 형식으로 행 복사";
+"Copy %lld rows as" = "다음 형식으로 행 %lld개 복사";
+"Duplicate row" = "행 복제";
+"Duplicate %lld rows" = "행 %lld개 복제";
+"Delete row" = "행 삭제";
+"Delete %lld rows" = "행 %lld개 삭제";
+"Undo your change to this row" = "이 행의 변경 사항 실행 취소";
+"Row details" = "행 세부사항";
+"Hide row details" = "행 세부사항 가리기";
+"Review the agent's change…" = "에이전트의 변경 사항 검토…";
+
+/* Grid: agent note row */
+"%@, waiting for your review." = "%@, 검토 대기 중입니다.";
+"Review" = "검토";
+
+/* Workspace: rail, header, footer, presence */
+"Schema" = "스키마";
+"Review (nothing waiting)" = "검토(대기 항목 없음)";
+"Review, %lld waiting" = "검토, %lld개 대기 중";
+"Hide agent session" = "에이전트 세션 가리기";
+"Show agent session" = "에이전트 세션 보기";
+"All connections" = "모든 연결";
+"All connections…" = "모든 연결…";
+"Connecting to %@…" = "%@에 연결 중…";
+"Could not connect to %@" = "%@에 연결할 수 없음";
+"Try again" = "다시 시도";
+"Edit connection" = "연결 편집";
+"Pick a table on the left." = "왼쪽에서 테이블을 선택하십시오.";
+"%@ is working" = "%@ 작업 중";
+"%@ is editing with you" = "%@ 함께 편집 중";
+"%@ is waiting for you" = "%@ 에이전트가 기다리는 중";
+"You" = "나";
+"%@, active" = "%@, 활성";
+"%@, idle" = "%@, 유휴";
+"%@ was here" = "%@ 최근 활동";
+"%lld agents here" = "에이전트 %lld개 최근 활동";
+"Review · %lld" = "검토 · %lld";
+"Close tab" = "탭 닫기";
+"production writes go through review" = "production 쓰기는 검토를 거침";
+"your edits wait for review · agents: %@" = "내 편집은 검토 대기 · 에이전트: %@";
+"Could not read the schema: %@" = "스키마를 읽을 수 없음: %@";
+
+/* Schema rail */
+"Filter tables, columns" = "테이블, 열 필터링";
+"1 table" = "테이블 1개";
+"%lld tables" = "테이블 %lld개";
+"Hide columns" = "열 가리기";
+"Show columns" = "열 보기";
+"Hidden from agents" = "에이전트에게 가려짐";
+"hidden" = "가려짐";
+"agent" = "에이전트";
+"view" = "뷰";
+
+/* Table screen */
+/* button back to a table (Turkish: %@ tablosuna dön) */
+"back.table" = "%@ 테이블로 돌아가기";
+"view · read-only" = "뷰 · 읽기 전용";
+"no primary key · read-only" = "기본 키 없음 · 읽기 전용";
+"Rows can only be edited in tables with a primary key." = "기본 키가 있는 테이블에서만 행을 편집할 수 있습니다.";
+"Data" = "데이터";
+"Structure" = "구조";
+"Row" = "행";
+"Column" = "열";
+"Index" = "인덱스";
+"Add a row (⌘I)" = "행 추가(⌘I)";
+"Views don't take new rows" = "뷰에는 행을 추가할 수 없음";
+"Add a column" = "열 추가";
+"Views have no columns of their own" = "뷰에는 자체 열이 없음";
+"Add an index" = "인덱스 추가";
+"Views have no indexes" = "뷰에는 인덱스가 없음";
+"new query" = "새 쿼리";
+"1 column" = "열 1개";
+"%lld columns" = "열 %lld개";
+"1 index" = "인덱스 1개";
+"%lld indexes" = "인덱스 %lld개";
+"The query failed" = "쿼리 실패";
+"Clear filters" = "필터 지우기";
+"No rows yet" = "아직 행 없음";
+"No rows match" = "일치하는 행 없음";
+"Columns" = "열";
+"Columns · %lld hidden" = "열 · %lld개 가려짐";
+"Copy or save these rows as CSV, JSON, SQL or Markdown" = "이 행을 CSV, JSON, SQL 또는 Markdown 형식으로 복사하거나 저장";
+"Copied" = "복사됨";
+
+/* Row panel */
+"No row selected" = "선택된 행 없음";
+"new row" = "새 행";
+"Close (Space)" = "닫기(스페이스 바)";
+/* open a table (Turkish: %@ tablosunu aç) */
+"open.table" = "%@ 테이블 열기";
+"Referenced by" = "참조하는 항목";
+"Open %@ rows whose %@ points here" = "%2$@ 값이 이 행을 가리키는 %1$@ 테이블의 행 열기";
+
+/* Structure tab */
+"Indexes" = "인덱스";
+"column" = "열";
+"type" = "유형";
+"null" = "null";
+"keys and checks" = "키 및 제약 조건";
+"index" = "인덱스";
+"columns" = "열";
+"kind" = "종류";
+"size" = "크기";
+"used" = "사용 횟수";
+"1 scan" = "스캔 1회";
+"%@ scans" = "스캔 %@회";
+"unique" = "고유";
+"yes" = "예";
+"no" = "아니요";
+"none" = "없음";
+"check · 1 value" = "check · 값 1개";
+"check · %lld values" = "check · 값 %lld개";
+"proposed by %@" = "%@의 제안";
+"proposed by an agent" = "에이전트의 제안";
+"Remove New Column" = "새로운 열 제거";
+"Keep Column" = "열 유지";
+"Drop Column" = "열 삭제";
+"Undo Changes" = "변경 사항 실행 취소";
+"new · not saved" = "신규 · 저장 안 됨";
+"dropped · not saved" = "삭제 예정 · 저장 안 됨";
+"No indexes." = "인덱스 없음.";
+"Review %@'s proposal" = "%@의 제안 검토";
+"Review proposed index" = "제안된 인덱스 검토";
+"Remove New Index" = "새로운 인덱스 제거";
+"Keep Index" = "인덱스 유지";
+"Review Proposal" = "제안 검토";
+"Drop Index" = "인덱스 삭제";
+
+/* Structure side panel */
+"new column" = "새 열";
+"column %lld of %lld" = "열 %1$lld/%2$lld";
+"name" = "이름";
+"Type" = "유형";
+"Default" = "기본값";
+"Allows empty" = "빈 값 허용";
+"%@ reads this column, so PostgreSQL won't change its type." = "%@에서 이 열을 읽으므로 PostgreSQL이 유형을 변경하지 않습니다.";
+"%@ read this column, so PostgreSQL won't change its type." = "%@에서 이 열을 읽으므로 PostgreSQL이 유형을 변경하지 않습니다.";
+"SQLite can only rename a saved column." = "SQLite에서는 저장된 열의 이름만 변경할 수 있습니다.";
+"Allowed values" = "허용되는 값";
+"In the data" = "데이터 내";
+"Used by" = "사용하는 항목";
+"key" = "키";
+"foreign key" = "외래 키";
+"proposed index" = "제안된 인덱스";
+"Remove new column" = "새 열 제거";
+"Keep column" = "열 유지";
+"Drop column" = "열 삭제";
+"new index" = "새 인덱스";
+"index %lld of %lld" = "인덱스 %1$lld/%2$lld";
+"Unique" = "고유";
+"Kind" = "종류";
+"Size" = "크기";
+"Used" = "사용 횟수";
+"Remove new index" = "새 인덱스 제거";
+"Keep index" = "인덱스 유지";
+"Review proposal" = "제안 검토";
+"Drop index" = "인덱스 삭제";
+"Made by the primary key; it goes with the key." = "기본 키가 만든 인덱스로, 키와 함께 삭제됩니다.";
+"Made by a unique constraint; it goes with the constraint." = "고유 제약 조건이 만든 인덱스로, 제약 조건과 함께 삭제됩니다.";
+"Production: every schema change shows its DDL and lock level before it runs." = "Production: 모든 스키마 변경은 실행 전에 DDL과 잠금 수준을 표시합니다.";
+
+/* Undo menu names ("Geri Al: %@") */
+"Remove New Row" = "새로운 행 제거";
+"Undo Change" = "변경 실행 취소";
+"Discard Changes" = "변경 사항 폐기";
+"Add Column" = "열 추가";
+"Add Index" = "인덱스 추가";
+"Edit Column" = "열 편집";
+"Edit Index" = "인덱스 편집";
+"Change Column" = "열 변경";
+
+/* Review screen */
+"Nothing waiting" = "대기 중인 항목 없음";
+"Edit a cell, or let an agent propose a change, and it shows up here before anything is written." = "셀을 편집하거나 에이전트가 변경을 제안하면, 기록되기 전에 여기에 표시됩니다.";
+"Discard all %lld changes?" = "변경 사항 %lld개를 모두 폐기하겠습니까?";
+"Discard all" = "모두 폐기";
+"Your edits are dropped and the agents' proposals are turned down. Nothing was written." = "내 편집은 폐기되고 에이전트의 제안은 거절됩니다. 아무것도 기록되지 않았습니다.";
+"Review 1 change" = "변경 사항 1개 검토";
+"Review %lld changes" = "변경 사항 %lld개 검토";
+"They apply together in one transaction. Nothing is written until you apply." = "하나의 트랜잭션으로 함께 적용됩니다. 적용하기 전까지는 아무것도 기록되지 않습니다.";
+"Note for %@ if you turn it down (optional)" = "거절할 경우 %@에게 남길 메모(선택 사항)";
+"Reject proposal" = "제안 거절";
+"Applying…" = "적용 중…";
+"Apply 1 change" = "변경 사항 1개 적용";
+"Apply %lld changes" = "변경 사항 %lld개 적용";
+"Edit %@ %@" = "%1$@ %2$@ 편집";
+"Delete %@ %@" = "%1$@ %2$@ 삭제";
+"New row in %@" = "%@의 새 행";
+"SQL on %@" = "%@에 대한 SQL";
+"%@ on %@" = "%1$@(%2$@)";
+"Leave out of this apply" = "이번 적용에서 제외";
+"Include in this apply" = "이번 적용에 포함";
+"Applying" = "적용 방식";
+"1 row" = "행 1개";
+"%lld rows" = "행 %lld개";
+"1 row in %@" = "%@의 행 1개";
+"%lld rows in %@" = "%2$@의 행 %1$lld개";
+"in one transaction on %@" = "%@에서 하나의 트랜잭션으로";
+"as %@, not as %@" = "실행 계정: %1$@(%2$@ 아님)";
+"you" = "나";
+"with your own credentials" = "내 자격 증명으로";
+/* "rows" when the count is unknown (Turkish: satırlar) */
+"proposal.rows" = "행";
+"Update %@ in %@" = "%2$@에서 %1$@ 업데이트";
+"Update %@" = "%@ 업데이트";
+"Delete %@ in %@" = "%2$@에서 %1$@ 삭제";
+"Delete %@" = "%@ 삭제";
+"Add %@ in %@" = "%2$@에 %1$@ 추가";
+"Add %@" = "%@ 추가";
+"Change the schema: %@ in %@" = "스키마 변경: %2$@에서 %1$@";
+"Change the schema: %@" = "스키마 변경: %@";
+"Run %@ in %@" = "%2$@에서 %1$@ 실행";
+"Run %@" = "%@ 실행";
+"proposed at %@" = "%@에 제안함";
+"Waiting for you on %@" = "%@에서 검토 대기 중";
+"Agent's note: " = "에이전트 메모: ";
+"After you decide, %@ sees the result the next time it checks its proposals." = "결정하고 나면 %@ 에이전트가 다음에 제안을 확인할 때 결과를 보게 됩니다.";
+"Trial run changed 1 row" = "시험 실행에서 행 1개가 변경됨";
+"Trial run changed %lld rows" = "시험 실행에서 행 %lld개가 변경됨";
+"Rolled back after the trial" = "시험 실행 후 롤백됨";
+"Showing the first %lld" = "처음 %lld개 표시";
+"Applies to production" = "production에 적용";
+"edited at %@" = "%@에 편집함";
+/* column header: old value (Turkish: eski) */
+"review.was" = "변경 전";
+/* column header: new value (Turkish: yeni) */
+"review.now" = "변경 후";
+"The whole row is deleted." = "행 전체가 삭제됩니다.";
+"Runs as written. The trial run said it %@." = "작성한 대로 실행됩니다. 시험 실행 결과: %@.";
+"Runs as written." = "작성한 대로 실행됩니다.";
+"Changes the table's structure." = "테이블의 구조를 변경합니다.";
+"Undo this edit" = "이 편집 실행 취소";
+"1 value" = "값 1개";
+"%lld values" = "값 %lld개";
+"Show SQL" = "SQL 보기";
+
+/* Structure changes and change summaries (Review/ChangeText.swift) */
+"Add column %@" = "%@ 열 추가";
+"Rename column %@ to %@" = "열 이름 변경: %1$@ → %2$@";
+"Change column %@" = "%@ 열 변경";
+"Drop column %@" = "%@ 열 삭제";
+"Add index %@" = "%@ 인덱스 추가";
+"Drop index %@" = "%@ 인덱스 삭제";
+"Rewrites %@; reads and writes wait until it finishes." = "%@ 테이블을 다시 작성합니다. 완료될 때까지 읽기와 쓰기가 대기합니다.";
+"Scans %@; reads and writes wait until it finishes." = "%@ 테이블을 스캔합니다. 완료될 때까지 읽기와 쓰기가 대기합니다.";
+"Writes to %@ wait while the index builds." = "인덱스를 생성하는 동안 %@ 테이블에 대한 쓰기가 대기합니다.";
+"Locks %@ briefly." = "%@ 테이블을 잠시 잠급니다.";
+"delete row" = "행 삭제";
+"insert a row of defaults" = "기본값으로 행 삽입";
+"insert %@" = "삽입: %@";
+
+/* Waiting changes bar */
+"Hide your changes" = "내 변경 사항 가리기";
+"Show your changes" = "내 변경 사항 보기";
+"%lld yours" = "나: %lld";
+"%lld from %@" = "%2$@: %1$lld";
+"Discard" = "폐기";
+"Review DDL" = "DDL 검토";
+"Review & apply" = "검토 및 적용";
+"Runs on %@" = "%@에서 실행";
+"Apply to production" = "production에 적용";
+"Discard your 1 edit" = "내 편집 1개 폐기";
+"Discard your %lld edits" = "내 편집 %lld개 폐기";
+"Discard everything, and turn down the agents' proposals" = "모두 폐기하고 에이전트의 제안 거절";
+"Nothing has been written yet. Turned-down proposals are marked rejected, and the agent sees that." = "아직 아무것도 기록되지 않았습니다. 거절한 제안에는 거절됨 표시가 붙으며 에이전트도 이를 확인합니다.";
+"1 schema change waiting" = "스키마 변경 1개 대기 중";
+"%lld schema changes waiting" = "스키마 변경 %lld개 대기 중";
+"1 change waiting" = "변경 사항 1개 대기 중";
+"%lld changes waiting" = "변경 사항 %lld개 대기 중";
+"Discard 1 change?" = "변경 사항 1개를 폐기하겠습니까?";
+"Discard %lld changes?" = "변경 사항 %lld개를 폐기하겠습니까?";
+"Save 1 change" = "변경 사항 1개 저장";
+"Save %lld changes" = "변경 사항 %lld개 저장";
+"%@ required" = "필수: %@";
+"Undo this change" = "이 변경 실행 취소";
+"%@'s proposal; review it to apply" = "%@의 제안. 적용하려면 검토하십시오";
+"New row" = "새로운 행";
+
+/* Agent session panel */
+"Session" = "세션";
+"today on %@" = "오늘 · %@";
+"Hide the session (⌥⌘0, or the agents button in the rail)" = "세션 가리기(⌥⌘0 또는 사이드바의 에이전트 버튼)";
+"Hide session" = "세션 가리기";
+"No agent activity today." = "오늘 에이전트 활동이 없습니다.";
+"Agents cannot see this connection here." = "에이전트가 이 연결을 볼 수 없습니다.";
+"Agents only read here." = "여기서 에이전트는 읽기만 합니다.";
+"Agents read and propose here." = "여기서 에이전트는 읽기와 제안을 합니다.";
+"Agents read and write here." = "여기서 에이전트는 읽기와 쓰기를 합니다.";
+"1 column is masked." = "열 1개가 마스킹되었습니다.";
+"%lld columns are masked." = "열 %lld개가 마스킹되었습니다.";
+"1 table is hidden." = "테이블 1개가 가려졌습니다.";
+"%lld tables are hidden." = "테이블 %lld개가 가려졌습니다.";
+"read %@" = "%@ 읽음";
+/* activity line verb: an agent read tables (Turkish: okudu) */
+"session.read" = "읽음";
+"changed %@" = "%@ 변경함";
+"changed" = "변경함";
+"wrote %@" = "%@에 씀";
+"wrote" = "씀";
+"was refused" = "거부됨";
+"applied a proposed change to %@" = "%@에 제안된 변경 적용함";
+"applied a proposed change" = "제안된 변경 적용함";
+"applied %@" = "%@에 적용됨";
+"applied" = "적용됨";
+"turned down a proposed change" = "제안된 변경 거절함";
+/* activity line: an agent request failed (Turkish: başarısız oldu) */
+"session.failed" = "실패";
+"looked at your saved queries" = "저장된 쿼리 확인함";
+"read a saved query" = "저장된 쿼리 읽음";
+"suggested a change to %@" = "%@ 수정안 제시함";
+"suggested a change to a saved query" = "저장된 쿼리 수정안 제시함";
+"took the suggestion for %@" = "%@ 수정안 수락함";
+"took the suggestion for a saved query" = "저장된 쿼리 수정안 수락함";
+"dismissed the suggestion for %@" = "%@ 수정안 무시함";
+"dismissed the suggestion for a saved query" = "저장된 쿼리 수정안 무시함";
+"asked %@" = "%@에게 질문함";
+"asked an agent" = "에이전트에게 질문함";
+"proposed an update to %@" = "%@ 업데이트 제안함";
+"proposed an update" = "업데이트 제안함";
+"proposed a delete to %@" = "%@ 삭제 제안함";
+"proposed a delete" = "삭제 제안함";
+"proposed an insert to %@" = "%@에 삽입 제안함";
+"proposed an insert" = "삽입 제안함";
+"proposed a change to %@" = "%@ 변경 제안함";
+"proposed a change" = "변경 제안함";
+"and %lld earlier" = "외 이전 항목 %lld개";
+"waiting for your review" = "검토 대기 중";
+"working…" = "작업 중…";
+
+/* Ask (Claude Code from the SQL tab) */
+"Claude Code isn't installed on this Mac. Install it from claude.com/code, then try again." = "이 Mac에 Claude Code가 설치되어 있지 않습니다. claude.com/code에서 설치한 다음 다시 시도하십시오.";
+"The agentable command is missing from the app." = "앱에 agentable 명령이 없습니다.";
+"Stopped after 3 minutes without an answer." = "3분 동안 응답이 없어 중단했습니다.";
+"Could not start Claude Code: %@" = "Claude Code를 시작할 수 없음: %@";
+"Claude Code stopped with an error." = "Claude Code가 오류로 중단되었습니다.";
+"Claude Code stopped (exit %lld)." = "Claude Code가 중단되었습니다(종료 코드 %lld).";
+"%@ finished without suggesting a change." = "%@ 에이전트가 수정안을 제시하지 않고 종료했습니다.";
+"listed saved queries" = "저장된 쿼리 목록 확인함";
+"described %@" = "%@ 구조 확인함";
+"described a table" = "테이블 구조 확인함";
+"searched the schema" = "스키마 검색함";
+"ran a query" = "쿼리 실행함";
+"checked the plan" = "실행 계획 확인함";
+"suggested a change" = "수정안 제시함";
+"used %@" = "%@ 사용함";
+"Ask" = "질문";
+"Ask your agent to change or explain this query" = "에이전트에게 이 쿼리의 변경이나 설명 요청";
+"Make it faster" = "더 빠르게 만들기";
+"Explain the plan" = "실행 계획 설명";
+"Check for mistakes" = "오류 확인";
+"Ask claude-code" = "claude-code에게 질문";
+"about %@" = "%@ 관련";
+"this query" = "이 쿼리";
+/* placeholder for the file name to save a query as (Turkish: Kayıt adı) */
+"ask.saveAs" = "저장 이름";
+"What should it do with this query?" = "이 쿼리로 무엇을 할까요?";
+"Runs your Claude Code with Agentable's tools only. It reads and suggests; nothing runs until you accept." = "Agentable 도구만 사용하여 Claude Code를 실행합니다. 읽고 수정안을 제시할 뿐, 수락하기 전에는 아무것도 실행되지 않습니다.";
+"Claude Code isn't installed on this Mac." = "이 Mac에 Claude Code가 설치되어 있지 않습니다.";
+"Send" = "보내기";
+"Stop" = "중단";
+"thinking" = "생각 중";
+"%lld s" = "%lld초";
+"Stopped." = "중단되었습니다.";
+
+/* SQL tab */
+"Run" = "실행";
+"Run the statement under the cursor, or the selected one" = "커서 위치의 구문 또는 선택한 구문 실행";
+"Explain" = "실행 계획";
+"Format" = "포맷";
+"Reads run directly. Writes go to review." = "읽기는 바로 실행되고 쓰기는 검토로 넘어갑니다.";
+"Results" = "결과";
+"Plan" = "실행 계획";
+"Messages" = "메시지";
+"No plan yet" = "아직 실행 계획 없음";
+"No messages" = "메시지 없음";
+"Copy as" = "다음 형식으로 복사";
+"Save as" = "다음 형식으로 저장";
+"Save this query for this connection" = "이 연결에 이 쿼리 저장";
+"Save query" = "쿼리 저장";
+"Each run is its own transaction, so %@ isn't needed here." = "실행할 때마다 별도의 트랜잭션이므로 여기서는 %@ 구문이 필요하지 않습니다.";
+"More than %@ rows; the first %@ are shown." = "행이 %1$@개를 초과합니다. 처음 %2$@개를 표시합니다.";
+"1 row in %lld ms." = "행 1개, %lld ms.";
+"%@ rows in %lld ms." = "행 %1$@개, %2$lld ms.";
+"ran in a trial" = "문제없이 실행됨";
+"would change 1 row" = "행 1개를 변경할 예정";
+"would change %@ rows" = "행 %@개를 변경할 예정";
+"Waiting with your changes: in a trial it %@. ⌘S saves it, after showing you the SQL." = "내 변경 사항과 함께 대기 중입니다. 시험 실행 결과: %@. ⌘S를 누르면 SQL을 보여 준 후 저장합니다.";
+"Waiting with your changes: in a trial it %@. ⌘S saves it." = "내 변경 사항과 함께 대기 중입니다. 시험 실행 결과: %@. ⌘S를 누르면 저장합니다.";
+"Nothing to run here." = "실행할 항목이 없습니다.";
+"That selection holds %lld statements. Select one, or put the cursor in it." = "선택 영역에 구문이 %lld개 있습니다. 하나를 선택하거나 그 안에 커서를 두십시오.";
+"Give the query a name." = "쿼리 이름을 입력하십시오.";
+"table" = "테이블";
+"keyword" = "키워드";
+"Accept Suggestion" = "수정안 수락";
+"Suggested a new version of this query." = "이 쿼리의 새 버전이 제시되었습니다.";
+"Made for an earlier version of this query." = "이 쿼리의 이전 버전에 대한 수정안입니다.";
+"Accept" = "수락";
+"Dismiss" = "무시";
+
+/* Saved queries sidebar */
+"Search queries" = "쿼리 검색";
+"Saved" = "저장됨";
+"New" = "새로 만들기";
+"Start an empty query" = "빈 쿼리 시작";
+"No saved queries" = "저장된 쿼리 없음";
+"No matches" = "일치 항목 없음";
+"%@ · suggested a new query" = "%@ · 새 쿼리 제시함";
+"%@ · suggested a change" = "%@ · 수정안 제시함";
+"you · edited %@" = "나 · %@ 편집함";
+"Recent on %@" = "%@의 최근 쿼리";
+"%@ · became a proposal" = "%@ · 제안으로 전환됨";

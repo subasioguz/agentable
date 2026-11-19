@@ -1,0 +1,792 @@
+/* Japanese. Keys are the English text as Swift builds them (%@, %lld for values). */
+/* Settings menu: language */
+"Language" = "言語";
+"Match the system" = "システムに合わせる";
+"Restart Agentable to change the language?" = "Agentable を再起動して言語を変更しますか？";
+"Your connections and waiting changes are kept." = "接続と保留中の変更はそのまま残ります。";
+"Restart" = "再起動";
+"Later" = "あとで";
+"Connections" = "接続";
+"Connect agents" = "エージェントを接続";
+"New connection" = "新規接続";
+
+/* Agent access levels (AgentAccess.label) */
+/* agent access level (Turkish: kapalı) */
+"access.off" = "オフ";
+/* agent access level (Turkish: okuma) */
+"access.read" = "読み取り";
+/* agent access level (Turkish: öneri) */
+"access.propose" = "提案";
+/* agent access level (Turkish: yazma) */
+"access.write" = "書き込み";
+
+/* App menus and startup */
+"Unknown error" = "不明なエラー";
+"Changes" = "変更";
+"Save" = "保存";
+"Reload" = "再読み込み";
+"Add Row" = "行を追加";
+"Query" = "クエリ";
+"Run Statement" = "ステートメントを実行";
+"Ask an Agent…" = "エージェントに質問…";
+"Show Agent Session" = "エージェントセッションを表示";
+"Agentable could not start" = "Agentable を起動できませんでした";
+"Could not read saved connections: %@" = "保存済みの接続を読み込めませんでした：%@";
+"let agents %@ on %@" = "接続 %2$@ でエージェントに「%1$@」を許可";
+
+/* Settings menu */
+"Appearance" = "外観";
+"Light" = "ライト";
+"Dark" = "ダーク";
+"Default order" = "デフォルトの並び順";
+"Oldest first" = "古い順";
+"Newest first" = "新しい順";
+"Connect Agents…" = "エージェントを接続…";
+"Settings" = "設定";
+
+/* Go to anything */
+"Go to a table or connection" = "テーブルまたは接続へ移動";
+"Nothing called “%@”" = "“%@” という名前の項目はありません";
+"connection" = "接続";
+"Go to anything" = "クイック移動";
+
+/* Connect agents card */
+"Agents found on this Mac" = "この Mac で見つかったエージェント";
+"Connecting adds Agentable as an MCP server in the agent's config. You can remove it anytime." = "接続すると、エージェントの設定に Agentable が MCP サーバとして追加されます。いつでも削除できます。";
+"Another agent" = "その他のエージェント";
+"Run %@ or copy the MCP config" = "%@ を実行するか、MCP 設定をコピー";
+"Copy config" = "設定をコピー";
+"Copied. Paste it into the agent's MCP settings." = "コピーしました。エージェントの MCP 設定にペーストしてください。";
+"What agents can do by default" = "エージェントがデフォルトでできること";
+"per environment; change it on each connection" = "環境ごと。接続ごとに変更できます";
+"never more than propose" = "上限は提案";
+"Not found on this Mac" = "この Mac にはありません";
+"Connected" = "接続済み";
+"Connecting…" = "接続中…";
+"Connect" = "接続";
+"%@ default: %@" = "%1$@ のデフォルト：%2$@";
+"Agents get a name for each connection, never the password." = "エージェントには接続ごとの名前だけが渡され、パスワードは渡されません。";
+"Done" = "完了";
+"App" = "App";
+"%@ can use Agentable now." = "%@ で Agentable を使えるようになりました。";
+"Added to Cursor. The old file is saved as mcp.json.agentable-backup." = "Cursor に追加しました。以前のファイルは mcp.json.agentable-backup として保存されています。";
+"The agentable command-line tool was not found next to the app." = "App と同じ場所に agentable コマンドラインツールが見つかりませんでした。";
+"%@ was not found on this Mac." = "この Mac に %@ が見つかりませんでした。";
+"The agent's setup command failed." = "エージェントのセットアップコマンドが失敗しました。";
+"%@ is not valid JSON, so it was left alone." = "%@ は有効な JSON ではないため、変更しませんでした。";
+
+/* Connection form */
+"Edit %@" = "%@ を編集";
+"Close" = "閉じる";
+"Paste a URL or a SQLite file path" = "URL または SQLite ファイルのパスをペースト";
+"Filled the file path below" = "下のファイルパスに入力しました";
+"Filled host, port, user and database below" = "下のホスト、ポート、ユーザ、データベースに入力しました";
+"Name" = "名前";
+"Lower-case letters, digits, - _ and . only. Agents address the connection by this name." = "小文字、数字、- _ . のみ使用できます。エージェントはこの名前で接続を指定します。";
+"File" = "ファイル";
+"Choose…" = "選択…";
+"Host" = "ホスト";
+"Port" = "ポート";
+"User" = "ユーザ";
+"Database" = "データベース";
+"Password" = "パスワード";
+"Saved in Keychain" = "キーチェーンに保存済み";
+"Saved to Keychain. Agents never receive it." = "キーチェーンに保存されます。エージェントには渡されません。";
+"Off" = "オフ";
+"Prefer" = "優先";
+"Require" = "必須";
+"Verify" = "検証";
+"CA certificate" = "CA 証明書";
+"System roots" = "システムルート";
+"Not checked" = "検証しない";
+"Client certificate" = "クライアント証明書";
+"Client key" = "クライアントキー";
+"None" = "なし";
+"Testing…" = "テスト中…";
+"Test" = "テスト";
+"Test again" = "再テスト";
+"Saving…" = "保存中…";
+"SSH tunnel" = "SSH トンネル";
+"SSH host" = "SSH ホスト";
+"bastion or a ~/.ssh/config name" = "bastion または ~/.ssh/config の名前";
+"SSH user" = "SSH ユーザ";
+"from ~/.ssh/config" = "~/.ssh/config から";
+"Key" = "キー";
+"Uses your SSH agent, ~/.ssh/config and known_hosts. Agents never see it." = "SSH エージェント、~/.ssh/config、known_hosts を使用します。エージェントからは見えません。";
+"Environment" = "環境";
+"Production gets review before every write, and agents start at Read." = "Production ではすべての書き込みの前にレビューが入り、エージェントは「読み取り」から始まります。";
+"Agents start at Propose: their changes wait for you." = "エージェントは「提案」から始まります。変更はレビュー待ちになります。";
+"Agents start at Write." = "エージェントは「書き込み」から始まります。";
+"Agent access" = "エージェント権限";
+"%@, the %@ default" = "%1$@（%2$@ のデフォルト）";
+"Environment default (%@)" = "環境のデフォルト（%@）";
+"Change" = "変更";
+"Agents cannot see this connection" = "エージェントからこの接続は見えません";
+"Schema and read-only queries" = "スキーマと読み取り専用クエリ";
+"Reads, and changes that wait for you" = "読み取りと、レビュー待ちの変更";
+"Reads and writes directly" = "直接読み書き";
+"Connected · %lld ms" = "接続済み · %lld ms";
+"Choose a SQLite database file" = "SQLite データベースファイルを選択";
+"There is already a connection named %@." = "%@ という名前の接続はすでにあります。";
+
+/* Connections screen */
+"Add Agentable to Claude Code, Codex or Cursor" = "Agentable を Claude Code、Codex、Cursor に追加";
+"Back to %@" = "%@ に戻る";
+"Remove %@?" = "%@ を削除しますか？";
+"Remove" = "削除";
+"Cancel" = "キャンセル";
+"The saved settings and the password in Keychain are deleted. Agents can no longer use this name." = "保存された設定とキーチェーン内のパスワードが削除されます。エージェントはこの名前を使用できなくなります。";
+"%lld saved · passwords live in Keychain" = "%lld件保存済み · パスワードはキーチェーン内";
+"Search by name or host" = "名前またはホストで検索";
+"No connections yet" = "接続はまだありません";
+"Paste a postgres:// URL or pick a SQLite file." = "postgres:// URL をペーストするか、SQLite ファイルを選択してください。";
+"Agents" = "エージェント";
+"Last used" = "最終使用";
+"%lld live" = "稼働中 %lld";
+"never" = "未使用";
+"Edit" = "編集";
+"Open" = "開く";
+"Edit…" = "編集…";
+"Copy name for agents" = "エージェント用の名前をコピー";
+"Remove…" = "削除…";
+"now" = "たった今";
+"%lld min ago" = "%lld分前";
+"%lld h ago" = "%lld時間前";
+"yesterday" = "昨日";
+"%lld days ago" = "%lld日前";
+
+/* Welcome */
+"Welcome" = "ようこそ";
+"Connect a database, then let your agents in." = "データベースを接続して、エージェントを迎え入れましょう。";
+"Two minutes. Agents get a name for each connection, never the password." = "所要時間は2分。エージェントには接続ごとの名前だけが渡され、パスワードは渡されません。";
+"%@ is saved" = "%@ を保存しました";
+"%lld connections saved" = "%lld件の接続を保存しました";
+"Passwords are in Keychain. Agents will address it as %@." = "パスワードはキーチェーンにあります。エージェントはこの接続を %@ という名前で指定します。";
+"Add another" = "さらに追加";
+"Your first database" = "最初のデータベース";
+"PostgreSQL or a SQLite file. You can add more later." = "PostgreSQL または SQLite ファイル。あとから追加できます。";
+"Paste a connection URL" = "接続 URL をペースト";
+"Open a SQLite file" = "SQLite ファイルを開く";
+"Enter host and port" = "ホストとポートを入力";
+"Skip for now" = "今はスキップ";
+"Back" = "戻る";
+"Continue" = "続ける";
+"Agents get %lld tools:" = "エージェントが使えるツール（%lld個）：";
+
+/* Filters: operators from AgentableCore (chip, segment and row labels) */
+"is" = "次と一致";
+"is not" = "次以外";
+"contains" = "次を含む";
+"doesn't contain" = "次を含まない";
+"starts with" = "次で始まる";
+"between" = "範囲内";
+"in the last" = "過去";
+"before" = "次より前";
+"after" = "次より後";
+"is empty" = "が空";
+"is not empty" = "が空でない";
+"empty" = "空";
+"not empty" = "空でない";
+"true" = "真";
+"false" = "偽";
+"last" = "過去";
+"equals" = "次と等しい";
+"is any of" = "次のいずれか";
+"does not equal" = "次と等しくない";
+"is none of" = "次のいずれでもない";
+"does not contain" = "次を含まない";
+"is greater than" = "次より大きい";
+"is at least" = "次以上";
+"is less than" = "次より小さい";
+"is at most" = "次以下";
+"is between" = "次の範囲内";
+"is within the last" = "過去";
+"is before" = "次より前";
+"is after" = "次より後";
+"is true" = "が真";
+"is false" = "が偽";
+
+/* Filters: and/or, time units, sentences */
+"and" = "かつ";
+"or" = "または";
+"%@ or %@" = "%@ または %@";
+"minutes" = "分";
+"hours" = "時間";
+"days" = "日";
+"weeks" = "週";
+"months" = "か月";
+"1 minute" = "1分";
+"1 hour" = "1時間";
+"1 day" = "1日";
+"1 week" = "1週間";
+"1 month" = "1か月";
+"%lld minutes" = "%lld分";
+"%lld hours" = "%lld時間";
+"%lld days" = "%lld日";
+"%lld weeks" = "%lld週間";
+"%lld months" = "%lldか月";
+"24 hours" = "24時間";
+"7 days" = "7日";
+"30 days" = "30日";
+"a year" = "1年";
+
+/* Filter bar */
+"Chips" = "チップ";
+"Advanced" = "詳細";
+"Remove filter on %@" = "%@ のフィルタを削除";
+"Clear filter" = "フィルタをクリア";
+"Filter" = "フィルタ";
+"Filter by column" = "列でフィルタ";
+"Search rows" = "行を検索";
+"Clear search" = "検索をクリア";
+"Find a column" = "列を検索";
+"%lld of %lld shown" = "%1$lld/%2$lld 表示中";
+"%lld of %lld shown · drag headers to reorder" = "%1$lld/%2$lld 表示中 · ヘッダをドラッグして並べ替え";
+"Show all" = "すべて表示";
+"Reset layout" = "レイアウトをリセット";
+"Every column back in the table's order and width, sorted by the default order" = "すべての列をテーブル本来の順序と幅に戻し、デフォルトの並び順で並べ替えます";
+
+/* Value picker */
+"%@ · 50+ values" = "%@ · 50個以上の値";
+"%@ · 1 distinct value" = "%@ · 1種類の値";
+"%@ · %lld distinct values" = "%@ · %lld種類の値";
+"Press Return to add" = "Return キーで追加";
+"Counted under your other filters" = "ほかのフィルタを適用した件数";
+"Applies as you click" = "クリックするとすぐ適用";
+"Applies right away" = "すぐに適用";
+"Press Return to apply" = "Return キーで適用";
+"More operators" = "その他の演算子";
+"from" = "開始";
+"to" = "終了";
+"text" = "テキスト";
+"Type or paste values" = "値を入力またはペースト";
+"Search values" = "値を検索";
+"No values" = "値なし";
+"Nothing matches “%@”" = "“%@” に一致する項目はありません";
+"Use “%@”" = "“%@” を使用";
+"typed" = "手入力";
+
+/* Advanced filter and WHERE */
+"Advanced filter" = "詳細フィルタ";
+"the same filters as the chips, as rows" = "チップと同じフィルタを行で表示";
+"Condition" = "条件";
+"Group" = "グループ";
+"1 row matches" = "1行が一致";
+"%@ rows match" = "%@行が一致";
+"Clear" = "クリア";
+"Apply" = "適用";
+"Reads as" = "意味";
+"Switch off" = "オフにする";
+"Switch on" = "オンにする";
+"any of these" = "次のいずれか";
+"all of these" = "次のすべて";
+"Ungroup" = "グループ解除";
+"where" = "条件";
+"Switch this level between and / or" = "この階層の「かつ」/「または」を切り替え";
+"Remove condition" = "条件を削除";
+"Type a value, then Return" = "値を入力して Return";
+"value" = "値";
+
+/* Shared controls */
+"Remove %@" = "%@ を削除";
+"on" = "オン";
+"off" = "オフ";
+
+/* Grid: page bar */
+"Page" = "ページ";
+"of" = "/";
+"Go to a page, change rows per page" = "ページへ移動、1ページの行数を変更";
+"Previous page (⌘[)" = "前のページ（⌘[）";
+"Next page (⌘])" = "次のページ（⌘]）";
+"of %@ rows" = "/ %@行";
+"of %@ matching" = "/ %@件一致";
+"Go to page" = "ページへ移動";
+"Go" = "移動";
+"Rows per page" = "1ページの行数";
+"Other, like 25" = "その他（例：25）";
+"rows" = "行";
+"Set" = "設定";
+"Counting…" = "カウント中…";
+"The total is an estimate." = "合計は推定値です。";
+"Count exactly" = "正確にカウント";
+
+/* Grid: export panel */
+"Export" = "書き出す";
+" · 1 visible column" = " · 表示中の1列";
+" · %lld visible columns" = " · 表示中の%lld列";
+"Selected · %@" = "選択中 · %@";
+"This view · %@" = "現在の表示 · %@";
+"This view" = "現在の表示";
+"Whole table" = "テーブル全体";
+"The rows you selected" = "選択した行";
+"Filters and sort of this view" = "現在の表示のフィルタと並べ替え";
+"Every row, by primary key" = "全行、主キー順";
+"Every row, in this sort" = "全行、現在の並べ替え順";
+"… %@ more" = "…ほか%@行";
+"Copy" = "コピー";
+"Copy as %@" = "%@ としてコピー";
+"More than %@ rows: save them to a file" = "%@行超：ファイルに保存";
+"More than %@ rows: save them to a file." = "%@行を超えています。ファイルに保存してください。";
+"Save…" = "保存…";
+"Reading rows…" = "行を読み込み中…";
+"%@ rows so far…" = "%@行を読み込み済み…";
+"Copied 1 row" = "1行をコピーしました";
+"Copied %@ rows" = "%@行をコピーしました";
+"Saved 1 row" = "1行を保存しました";
+"Saved %@ rows" = "%@行を保存しました";
+"Show in Finder" = "Finder で表示";
+
+/* Grid: cells and gutter tooltips */
+"Open the row it points to" = "参照先の行を開く";
+"Waiting for your review. Click to open it." = "レビュー待ちです。クリックして開きます。";
+"New row, not saved yet" = "新しい行（未保存）";
+"Edited by you" = "あなたが編集";
+
+/* Grid: row counts, new-row placeholders, change notes */
+"≈%@ rows" = "約%@行";
+"%@ rows" = "%@行";
+"%@ of %@ rows" = "%1$@/%2$@行";
+"counting…" = "カウント中…";
+"%@+ rows" = "%@行以上";
+"default" = "デフォルト";
+"required" = "必須";
+"Copy of %@" = "%@ のコピー";
+
+/* Grid: undo action names */
+"Set to NULL" = "NULL に設定";
+"Delete Row" = "行を削除";
+"Delete Rows" = "行を削除";
+"New Row" = "新規行";
+"Duplicate Row" = "行を複製";
+"Duplicate Rows" = "行を複製";
+
+/* Grid: column header tooltip and menu */
+"primary key" = "主キー";
+"references %@" = "%@ を参照";
+"Sort A → Z" = "A → Z で並べ替え";
+"Sort Z → A" = "Z → A で並べ替え";
+"Clear sort" = "並べ替えを解除";
+"Filter by %@…" = "%@ でフィルタ…";
+"Hide column" = "列を非表示";
+"Copy column name" = "列名をコピー";
+
+/* Grid: row menu */
+"Edit value" = "値を編集";
+"Remove new row" = "新しい行を削除";
+"Only rows with %@" = "%@ の行のみ";
+"Hide rows with %@" = "%@ の行を非表示";
+"Open %@ %@" = "%1$@ %2$@ を開く";
+"Copy value" = "値をコピー";
+"Copy row" = "行をコピー";
+"Copy %lld rows" = "%lld行をコピー";
+"Copy row as" = "行を次の形式でコピー";
+"Copy %lld rows as" = "%lld行を次の形式でコピー";
+"Duplicate row" = "行を複製";
+"Duplicate %lld rows" = "%lld行を複製";
+"Delete row" = "行を削除";
+"Delete %lld rows" = "%lld行を削除";
+"Undo your change to this row" = "この行への変更を取り消す";
+"Row details" = "行の詳細";
+"Hide row details" = "行の詳細を非表示";
+"Review the agent's change…" = "エージェントの変更をレビュー…";
+
+/* Grid: agent note row */
+"%@, waiting for your review." = "%@。レビュー待ちです。";
+"Review" = "レビュー";
+
+/* Workspace: rail, header, footer, presence */
+"Schema" = "スキーマ";
+"Review (nothing waiting)" = "レビュー（保留なし）";
+"Review, %lld waiting" = "レビュー、%lld件保留中";
+"Hide agent session" = "エージェントセッションを非表示";
+"Show agent session" = "エージェントセッションを表示";
+"All connections" = "すべての接続";
+"All connections…" = "すべての接続…";
+"Connecting to %@…" = "%@ に接続中…";
+"Could not connect to %@" = "%@ に接続できませんでした";
+"Try again" = "再試行";
+"Edit connection" = "接続を編集";
+"Pick a table on the left." = "左側でテーブルを選択してください。";
+"%@ is working" = "%@ が作業中";
+"%@ is editing with you" = "%@ が一緒に編集中";
+"%@ is waiting for you" = "%@ が対応を待っています";
+"You" = "あなた";
+"%@, active" = "%@、アクティブ";
+"%@, idle" = "%@、アイドル";
+"%@ was here" = "%@ がアクセスしました";
+"%lld agents here" = "%lld個のエージェントがアクセス";
+"Review · %lld" = "レビュー · %lld";
+"Close tab" = "タブを閉じる";
+"production writes go through review" = "production への書き込みはレビューを経由";
+"your edits wait for review · agents: %@" = "編集内容はレビュー待ち · エージェント：%@";
+"Could not read the schema: %@" = "スキーマを読み込めませんでした：%@";
+
+/* Schema rail */
+"Filter tables, columns" = "テーブルと列をフィルタ";
+"1 table" = "1個のテーブル";
+"%lld tables" = "%lld個のテーブル";
+"Hide columns" = "列を非表示";
+"Show columns" = "列を表示";
+"Hidden from agents" = "エージェントには非表示";
+"hidden" = "非表示";
+"agent" = "エージェント";
+"view" = "ビュー";
+
+/* Table screen */
+/* button back to a table (Turkish: %@ tablosuna dön) */
+"back.table" = "テーブル %@ に戻る";
+"view · read-only" = "ビュー · 読み取り専用";
+"no primary key · read-only" = "主キーなし · 読み取り専用";
+"Rows can only be edited in tables with a primary key." = "行を編集できるのは、主キーのあるテーブルだけです。";
+"Data" = "データ";
+"Structure" = "構造";
+"Row" = "行";
+"Column" = "列";
+"Index" = "インデックス";
+"Add a row (⌘I)" = "行を追加（⌘I）";
+"Views don't take new rows" = "ビューには行を追加できません";
+"Add a column" = "列を追加";
+"Views have no columns of their own" = "ビューには独自の列がありません";
+"Add an index" = "インデックスを追加";
+"Views have no indexes" = "ビューにはインデックスがありません";
+"new query" = "新規クエリ";
+"1 column" = "1列";
+"%lld columns" = "%lld列";
+"1 index" = "1個のインデックス";
+"%lld indexes" = "%lld個のインデックス";
+"The query failed" = "クエリが失敗しました";
+"Clear filters" = "フィルタをクリア";
+"No rows yet" = "行はまだありません";
+"No rows match" = "一致する行はありません";
+"Columns" = "列";
+"Columns · %lld hidden" = "列 · %lld列非表示";
+"Copy or save these rows as CSV, JSON, SQL or Markdown" = "これらの行を CSV、JSON、SQL、Markdown 形式でコピーまたは保存";
+"Copied" = "コピーしました";
+
+/* Row panel */
+"No row selected" = "行が選択されていません";
+"new row" = "新しい行";
+"Close (Space)" = "閉じる（スペース）";
+/* open a table (Turkish: %@ tablosunu aç) */
+"open.table" = "テーブル %@ を開く";
+"Referenced by" = "参照元";
+"Open %@ rows whose %@ points here" = "%2$@ がこの行を指す %1$@ の行を開く";
+
+/* Structure tab */
+"Indexes" = "インデックス";
+"column" = "列";
+"type" = "型";
+"null" = "null";
+"keys and checks" = "キーと制約";
+"index" = "インデックス";
+"columns" = "列";
+"kind" = "種類";
+"size" = "サイズ";
+"used" = "使用回数";
+"1 scan" = "1回スキャン";
+"%@ scans" = "%@回スキャン";
+"unique" = "一意";
+"yes" = "はい";
+"no" = "いいえ";
+"none" = "なし";
+"check · 1 value" = "check · 1個の値";
+"check · %lld values" = "check · %lld個の値";
+"proposed by %@" = "%@ が提案";
+"proposed by an agent" = "エージェントが提案";
+"Remove New Column" = "新しい列を削除";
+"Keep Column" = "列を残す";
+"Drop Column" = "列を削除";
+"Undo Changes" = "変更を取り消す";
+"new · not saved" = "新規 · 未保存";
+"dropped · not saved" = "削除予定 · 未保存";
+"No indexes." = "インデックスはありません。";
+"Review %@'s proposal" = "%@ の提案をレビュー";
+"Review proposed index" = "提案されたインデックスをレビュー";
+"Remove New Index" = "新しいインデックスを削除";
+"Keep Index" = "インデックスを残す";
+"Review Proposal" = "提案をレビュー";
+"Drop Index" = "インデックスを削除";
+
+/* Structure side panel */
+"new column" = "新しい列";
+"column %lld of %lld" = "列 %1$lld/%2$lld";
+"name" = "名前";
+"Type" = "型";
+"Default" = "デフォルト";
+"Allows empty" = "空を許可";
+"%@ reads this column, so PostgreSQL won't change its type." = "%@ がこの列を参照しているため、PostgreSQL は型を変更できません。";
+"%@ read this column, so PostgreSQL won't change its type." = "%@ がこの列を参照しているため、PostgreSQL は型を変更できません。";
+"SQLite can only rename a saved column." = "SQLite では、保存済みの列は名前の変更しかできません。";
+"Allowed values" = "許可される値";
+"In the data" = "データ内";
+"Used by" = "使用元";
+"key" = "キー";
+"foreign key" = "外部キー";
+"proposed index" = "提案されたインデックス";
+"Remove new column" = "新しい列を削除";
+"Keep column" = "列を残す";
+"Drop column" = "列を削除";
+"new index" = "新しいインデックス";
+"index %lld of %lld" = "インデックス %1$lld/%2$lld";
+"Unique" = "一意";
+"Kind" = "種類";
+"Size" = "サイズ";
+"Used" = "使用回数";
+"Remove new index" = "新しいインデックスを削除";
+"Keep index" = "インデックスを残す";
+"Review proposal" = "提案をレビュー";
+"Drop index" = "インデックスを削除";
+"Made by the primary key; it goes with the key." = "主キーが作成したインデックスです。キーと一緒に削除されます。";
+"Made by a unique constraint; it goes with the constraint." = "一意制約が作成したインデックスです。制約と一緒に削除されます。";
+"Production: every schema change shows its DDL and lock level before it runs." = "Production：スキーマ変更はすべて、実行前に DDL とロックレベルが表示されます。";
+
+/* Undo menu names ("Geri Al: %@") */
+"Remove New Row" = "新しい行を削除";
+"Undo Change" = "変更の取り消し";
+"Discard Changes" = "変更を破棄";
+"Add Column" = "列を追加";
+"Add Index" = "インデックスを追加";
+"Edit Column" = "列を編集";
+"Edit Index" = "インデックスを編集";
+"Change Column" = "列を変更";
+
+/* Review screen */
+"Nothing waiting" = "保留中の変更なし";
+"Edit a cell, or let an agent propose a change, and it shows up here before anything is written." = "セルを編集するか、エージェントに変更を提案させると、書き込まれる前にここに表示されます。";
+"Discard all %lld changes?" = "%lld件の変更をすべて破棄しますか？";
+"Discard all" = "すべて破棄";
+"Your edits are dropped and the agents' proposals are turned down. Nothing was written." = "あなたの編集は破棄され、エージェントの提案は却下されます。何も書き込まれていません。";
+"Review 1 change" = "1件の変更をレビュー";
+"Review %lld changes" = "%lld件の変更をレビュー";
+"They apply together in one transaction. Nothing is written until you apply." = "1つのトランザクションでまとめて適用されます。適用するまで何も書き込まれません。";
+"Note for %@ if you turn it down (optional)" = "却下する場合の %@ へのメモ（省略可）";
+"Reject proposal" = "提案を却下";
+"Applying…" = "適用中…";
+"Apply 1 change" = "1件の変更を適用";
+"Apply %lld changes" = "%lld件の変更を適用";
+"Edit %@ %@" = "%1$@ %2$@ を編集";
+"Delete %@ %@" = "%1$@ %2$@ を削除";
+"New row in %@" = "%@ に新しい行";
+"SQL on %@" = "%@ に対する SQL";
+"%@ on %@" = "%1$@（%2$@）";
+"Leave out of this apply" = "今回の適用から除外";
+"Include in this apply" = "今回の適用に含める";
+"Applying" = "適用方法";
+"1 row" = "1行";
+"%lld rows" = "%lld行";
+"1 row in %@" = "%@ の1行";
+"%lld rows in %@" = "%2$@ の%1$lld行";
+"in one transaction on %@" = "%@ で1つのトランザクションとして";
+"as %@, not as %@" = "%2$@ ではなく %1$@ として";
+"you" = "あなた";
+"with your own credentials" = "あなた自身の認証情報で";
+/* "rows" when the count is unknown (Turkish: satırlar) */
+"proposal.rows" = "行";
+"Update %@ in %@" = "%2$@ の%1$@を更新";
+"Update %@" = "%@を更新";
+"Delete %@ in %@" = "%2$@ の%1$@を削除";
+"Delete %@" = "%@ を削除";
+"Add %@ in %@" = "%2$@ に%1$@を追加";
+"Add %@" = "%@を追加";
+"Change the schema: %@ in %@" = "スキーマを変更：%2$@ で %1$@";
+"Change the schema: %@" = "スキーマを変更：%@";
+"Run %@ in %@" = "%2$@ で %1$@ を実行";
+"Run %@" = "%@ を実行";
+"proposed at %@" = "%@ に提案";
+"Waiting for you on %@" = "%@ で対応待ち";
+"Agent's note: " = "エージェントのメモ：";
+"After you decide, %@ sees the result the next time it checks its proposals." = "判断後、%@ は次に提案を確認したときに結果を知ります。";
+"Trial run changed 1 row" = "試行で1行が変更されました";
+"Trial run changed %lld rows" = "試行で%lld行が変更されました";
+"Rolled back after the trial" = "試行後にロールバック済み";
+"Showing the first %lld" = "最初の%lld件を表示";
+"Applies to production" = "production に適用";
+"edited at %@" = "%@ に編集";
+/* column header: old value (Turkish: eski) */
+"review.was" = "変更前";
+/* column header: new value (Turkish: yeni) */
+"review.now" = "変更後";
+"The whole row is deleted." = "行全体が削除されます。";
+"Runs as written. The trial run said it %@." = "記述どおりに実行されます。試行結果：%@。";
+"Runs as written." = "記述どおりに実行されます。";
+"Changes the table's structure." = "テーブルの構造を変更します。";
+"Undo this edit" = "この編集を取り消す";
+"1 value" = "1個の値";
+"%lld values" = "%lld個の値";
+"Show SQL" = "SQL を表示";
+
+/* Structure changes and change summaries (Review/ChangeText.swift) */
+"Add column %@" = "列 %@ を追加";
+"Rename column %@ to %@" = "列名を変更：%1$@ → %2$@";
+"Change column %@" = "列 %@ を変更";
+"Drop column %@" = "列 %@ を削除";
+"Add index %@" = "インデックス %@ を追加";
+"Drop index %@" = "インデックス %@ を削除";
+"Rewrites %@; reads and writes wait until it finishes." = "%@ を書き換えます。完了するまで読み書きは待機します。";
+"Scans %@; reads and writes wait until it finishes." = "%@ をスキャンします。完了するまで読み書きは待機します。";
+"Writes to %@ wait while the index builds." = "インデックスの作成中は %@ への書き込みが待機します。";
+"Locks %@ briefly." = "%@ を短時間ロックします。";
+"delete row" = "行を削除";
+"insert a row of defaults" = "デフォルト値で行を挿入";
+"insert %@" = "挿入：%@";
+
+/* Waiting changes bar */
+"Hide your changes" = "自分の変更を非表示";
+"Show your changes" = "自分の変更を表示";
+"%lld yours" = "自分：%lld";
+"%lld from %@" = "%2$@：%1$lld";
+"Discard" = "破棄";
+"Review DDL" = "DDL をレビュー";
+"Review & apply" = "レビューして適用";
+"Runs on %@" = "%@ で実行";
+"Apply to production" = "production に適用";
+"Discard your 1 edit" = "自分の編集1件を破棄";
+"Discard your %lld edits" = "自分の編集%lld件を破棄";
+"Discard everything, and turn down the agents' proposals" = "すべて破棄し、エージェントの提案を却下";
+"Nothing has been written yet. Turned-down proposals are marked rejected, and the agent sees that." = "まだ何も書き込まれていません。却下した提案には「却下」の印が付き、エージェントにも伝わります。";
+"1 schema change waiting" = "スキーマ変更1件が保留中";
+"%lld schema changes waiting" = "スキーマ変更%lld件が保留中";
+"1 change waiting" = "変更1件が保留中";
+"%lld changes waiting" = "変更%lld件が保留中";
+"Discard 1 change?" = "1件の変更を破棄しますか？";
+"Discard %lld changes?" = "%lld件の変更を破棄しますか？";
+"Save 1 change" = "1件の変更を保存";
+"Save %lld changes" = "%lld件の変更を保存";
+"%@ required" = "必須：%@";
+"Undo this change" = "この変更を取り消す";
+"%@'s proposal; review it to apply" = "%@ の提案。適用するにはレビューしてください";
+"New row" = "新しい行";
+
+/* Agent session panel */
+"Session" = "セッション";
+"today on %@" = "今日 · %@";
+"Hide the session (⌥⌘0, or the agents button in the rail)" = "セッションを非表示（⌥⌘0 またはサイドバーのエージェントボタン）";
+"Hide session" = "セッションを非表示";
+"No agent activity today." = "今日のエージェントのアクティビティはありません。";
+"Agents cannot see this connection here." = "エージェントからこの接続は見えません。";
+"Agents only read here." = "ここではエージェントは読み取りのみ可能です。";
+"Agents read and propose here." = "ここではエージェントは読み取りと提案が可能です。";
+"Agents read and write here." = "ここではエージェントは読み書きが可能です。";
+"1 column is masked." = "1列がマスクされています。";
+"%lld columns are masked." = "%lld列がマスクされています。";
+"1 table is hidden." = "1個のテーブルが非表示です。";
+"%lld tables are hidden." = "%lld個のテーブルが非表示です。";
+"read %@" = "%@ を読み取り";
+/* activity line verb: an agent read tables (Turkish: okudu) */
+"session.read" = "読み取り";
+"changed %@" = "%@ を変更";
+"changed" = "変更";
+"wrote %@" = "%@ に書き込み";
+"wrote" = "書き込み";
+"was refused" = "拒否されました";
+"applied a proposed change to %@" = "%@ への提案を適用";
+"applied a proposed change" = "提案を適用";
+"applied %@" = "%@ に適用";
+"applied" = "適用";
+"turned down a proposed change" = "提案を却下";
+/* activity line: an agent request failed (Turkish: başarısız oldu) */
+"session.failed" = "失敗";
+"looked at your saved queries" = "保存済みクエリを確認";
+"read a saved query" = "保存済みクエリを読み取り";
+"suggested a change to %@" = "%@ の修正案を提示";
+"suggested a change to a saved query" = "保存済みクエリの修正案を提示";
+"took the suggestion for %@" = "%@ の修正案を採用";
+"took the suggestion for a saved query" = "保存済みクエリの修正案を採用";
+"dismissed the suggestion for %@" = "%@ の修正案を無視";
+"dismissed the suggestion for a saved query" = "保存済みクエリの修正案を無視";
+"asked %@" = "%@ に質問";
+"asked an agent" = "エージェントに質問";
+"proposed an update to %@" = "%@ の更新を提案";
+"proposed an update" = "更新を提案";
+"proposed a delete to %@" = "%@ の削除を提案";
+"proposed a delete" = "削除を提案";
+"proposed an insert to %@" = "%@ への挿入を提案";
+"proposed an insert" = "挿入を提案";
+"proposed a change to %@" = "%@ の変更を提案";
+"proposed a change" = "変更を提案";
+"and %lld earlier" = "ほか以前の%lld件";
+"waiting for your review" = "レビュー待ち";
+"working…" = "作業中…";
+
+/* Ask (Claude Code from the SQL tab) */
+"Claude Code isn't installed on this Mac. Install it from claude.com/code, then try again." = "この Mac に Claude Code がインストールされていません。claude.com/code からインストールして、もう一度お試しください。";
+"The agentable command is missing from the app." = "App に agentable コマンドがありません。";
+"Stopped after 3 minutes without an answer." = "3分間応答がなかったため停止しました。";
+"Could not start Claude Code: %@" = "Claude Code を起動できませんでした：%@";
+"Claude Code stopped with an error." = "Claude Code がエラーで停止しました。";
+"Claude Code stopped (exit %lld)." = "Claude Code が停止しました（終了コード %lld）。";
+"%@ finished without suggesting a change." = "%@ は修正案を提示せずに終了しました。";
+"listed saved queries" = "保存済みクエリを一覧表示";
+"described %@" = "%@ の構造を確認";
+"described a table" = "テーブルの構造を確認";
+"searched the schema" = "スキーマを検索";
+"ran a query" = "クエリを実行";
+"checked the plan" = "実行計画を確認";
+"suggested a change" = "修正案を提示";
+"used %@" = "%@ を使用";
+"Ask" = "質問";
+"Ask your agent to change or explain this query" = "このクエリの変更や説明をエージェントに依頼";
+"Make it faster" = "高速化する";
+"Explain the plan" = "実行計画を説明";
+"Check for mistakes" = "誤りをチェック";
+"Ask claude-code" = "claude-code に質問";
+"about %@" = "%@ について";
+"this query" = "このクエリ";
+/* placeholder for the file name to save a query as (Turkish: Kayıt adı) */
+"ask.saveAs" = "保存名";
+"What should it do with this query?" = "このクエリをどうしますか？";
+"Runs your Claude Code with Agentable's tools only. It reads and suggests; nothing runs until you accept." = "Agentable のツールだけで Claude Code を実行します。読み取って修正案を提示するだけで、採用するまで何も実行されません。";
+"Claude Code isn't installed on this Mac." = "この Mac に Claude Code がインストールされていません。";
+"Send" = "送信";
+"Stop" = "停止";
+"thinking" = "思考中";
+"%lld s" = "%lld秒";
+"Stopped." = "停止しました。";
+
+/* SQL tab */
+"Run" = "実行";
+"Run the statement under the cursor, or the selected one" = "カーソル位置のステートメント、または選択したステートメントを実行";
+"Explain" = "実行計画";
+"Format" = "整形";
+"Reads run directly. Writes go to review." = "読み取りはそのまま実行され、書き込みはレビューに回ります。";
+"Results" = "結果";
+"Plan" = "実行計画";
+"Messages" = "メッセージ";
+"No plan yet" = "実行計画はまだありません";
+"No messages" = "メッセージなし";
+"Copy as" = "次の形式でコピー";
+"Save as" = "次の形式で保存";
+"Save this query for this connection" = "このクエリをこの接続用に保存";
+"Save query" = "クエリを保存";
+"Each run is its own transaction, so %@ isn't needed here." = "実行ごとに個別のトランザクションになるため、ここでは %@ は不要です。";
+"More than %@ rows; the first %@ are shown." = "%1$@行を超えています。最初の%2$@行を表示しています。";
+"1 row in %lld ms." = "1行（%lld ms）。";
+"%@ rows in %lld ms." = "%1$@行（%2$lld ms）。";
+"ran in a trial" = "問題なく実行";
+"would change 1 row" = "1行を変更予定";
+"would change %@ rows" = "%@行を変更予定";
+"Waiting with your changes: in a trial it %@. ⌘S saves it, after showing you the SQL." = "変更と一緒に保留中です。試行結果：%@。⌘S で SQL を表示してから保存します。";
+"Waiting with your changes: in a trial it %@. ⌘S saves it." = "変更と一緒に保留中です。試行結果：%@。⌘S で保存します。";
+"Nothing to run here." = "実行するものがありません。";
+"That selection holds %lld statements. Select one, or put the cursor in it." = "選択範囲に%lld個のステートメントがあります。1つを選択するか、その中にカーソルを置いてください。";
+"Give the query a name." = "クエリに名前を付けてください。";
+"table" = "テーブル";
+"keyword" = "キーワード";
+"Accept Suggestion" = "修正案を採用";
+"Suggested a new version of this query." = "このクエリの新しいバージョンが提示されました。";
+"Made for an earlier version of this query." = "このクエリの以前のバージョンに対する修正案です。";
+"Accept" = "採用";
+"Dismiss" = "無視";
+
+/* Saved queries sidebar */
+"Search queries" = "クエリを検索";
+"Saved" = "保存済み";
+"New" = "新規";
+"Start an empty query" = "空のクエリを作成";
+"No saved queries" = "保存済みクエリはありません";
+"No matches" = "一致なし";
+"%@ · suggested a new query" = "%@ · 新しいクエリを提示";
+"%@ · suggested a change" = "%@ · 修正案を提示";
+"you · edited %@" = "あなた · 編集：%@";
+"Recent on %@" = "%@ の最近のクエリ";
+"%@ · became a proposal" = "%@ · 提案になりました";
