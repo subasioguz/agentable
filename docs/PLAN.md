@@ -134,8 +134,8 @@ mentions a column with the same name.
    - Renamed to Agentable (2026-11-19, was Tablemate): app, CLI `agentable`, MCP server
      `agentable`, `AGENTABLE_*` variables, bundle `dev.agentable.app`. The old Application Support
      folder, Keychain items (`dev.tablemate.connection`) and preferences move over on first use;
-     connection paths inside the old folder are rewritten. The wordmark SVGs are redrawn. Still to
-     do: the repository folder name, the canvas text (board 13 still says Tablemate).
+     connection paths inside the old folder are rewritten. The wordmark SVGs are redrawn, and the
+     repository is `agentable`. Still to do: the canvas text (board 13 still says Tablemate).
    - Localization (2026-11-19): English plus German, Spanish, French, Italian, Brazilian
      Portuguese, Russian, Turkish, Japanese, Korean, Simplified and Traditional Chinese, in
      `Sources/AgentableApp/Localization/<code>.lproj/Localizable.strings` (excluded from SwiftPM;
