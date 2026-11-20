@@ -1,6 +1,6 @@
 # Security
 
-Tablemate stands between coding agents and databases, so security reports are welcome and taken
+Agentable stands between coding agents and databases, so security reports are welcome and taken
 seriously.
 
 ## Reporting a vulnerability

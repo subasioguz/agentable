@@ -14,9 +14,9 @@ work with the same saved connections through a CLI or an MCP server. They never 
 passwords, they only do what each connection allows, their changes to protected databases wait for
 your approval, and everything they run is logged.
 
-> Status: early development. The core, the CLI and the MCP server work with SQLite and PostgreSQL.
-> The app's first version (browse, filter, edit, review, live agent activity) is in progress.
-> See [docs/PLAN.md](docs/PLAN.md).
+> Status: early development. The app, the CLI and the MCP server work with SQLite and PostgreSQL.
+> There is no signed download yet; build it from source (see Build below).
+> See [docs/PLAN.md](docs/PLAN.md) for what comes next.
 
 ## The app
 
@@ -71,7 +71,9 @@ your approval, and everything they run is logged.
   agent did today.
 - **First launch** offers to add Agentable's MCP server to Claude Code, Codex and Cursor; later,
   "Connect agents" on the Connections screen or in the settings menu does the same.
-- Light and dark themes. The interface is in English; translations come later.
+- Light and dark themes. The interface is in English, German, Spanish, French, Italian, Brazilian
+  Portuguese, Russian, Turkish, Japanese, Korean, and Simplified and Traditional Chinese; it follows
+  your Mac's language, or pick one under Language in the settings menu.
 
 ## Connect your agents
 
