@@ -54,7 +54,9 @@ agent request is logged.
   `Theme/` holds the color tokens (light gray and dark; you = blue, agent = orange) and fonts;
   `Snapshot/` renders screens to PNG and seeds the demo database
 - `scripts/snapshot.sh`: renders every screen in light and dark with a demo database and real
-  agent activity into one folder; `scripts/bundle-app.sh`: builds `.build/Agentable.app`
+  agent activity into one folder; `scripts/bundle-app.sh`: builds `.build/Agentable.app`;
+  `scripts/release.sh <version>`: universal build, Developer ID signature with hardened runtime,
+  notarized and stapled zip in `.build/release-<version>` (needs the `agentable` notarytool profile)
 - `Tests/AgentableCoreTests`: Swift Testing; SQLite fixtures are created in a temp directory per test
 - `docs/PLAN.md`: product decisions, architecture and roadmap
 - `notes/`: private working notes (market research), kept out of git by `.gitignore`; never move them

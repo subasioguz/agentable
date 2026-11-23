@@ -3,17 +3,21 @@
 #
 #   scripts/bundle-app.sh [debug|release]
 #
-# The result is .build/Agentable.app, signed ad hoc for local use. Developer ID signing and
-# notarization come with the release work (docs/PLAN.md, step 6).
+# The result is .build/Agentable.app, signed ad hoc for local use. scripts/release.sh sets:
+#   ARCHS="arm64 x86_64"   build for these architectures (default: this Mac's)
+#   SIGN_IDENTITY="Developer ID Application: ..."   sign with hardened runtime and a timestamp
 set -euo pipefail
 
 ROOT=$(cd "$(dirname "$0")/.." && pwd)
 CONFIG=${1:-debug}
+SIGN_IDENTITY=${SIGN_IDENTITY:--}
 cd "$ROOT"
 
-swift build -c "$CONFIG" --product agentable
-swift build -c "$CONFIG" --product AgentableApp
-BIN="$ROOT/.build/$CONFIG"
+BUILD=(swift build -c "$CONFIG")
+for arch in ${ARCHS:-}; do BUILD+=(--arch "$arch"); done
+"${BUILD[@]}" --product agentable >&2
+"${BUILD[@]}" --product AgentableApp >&2
+BIN=$("${BUILD[@]}" --show-bin-path)
 APP="$ROOT/.build/Agentable.app"
 VERSION=${AGENTABLE_VERSION:-0.1.0}
 
@@ -49,7 +53,12 @@ cat > "$APP/Contents/Info.plist" <<PLIST
 PLIST
 
 # The linker already signs ad hoc; re-signing the whole bundle seals the Info.plist and resources.
-sign() { codesign --force --sign - "$1" 2>/dev/null || { echo "codesign failed for $1" >&2; exit 1; }; }
-sign "$APP/Contents/Helpers/agentable"
+# The helper is signed first, with its own identifier, so the app's seal covers its final form.
+sign() {
+    local flags=(--force --sign "$SIGN_IDENTITY")
+    [ "$SIGN_IDENTITY" = "-" ] || flags+=(--options runtime --timestamp)
+    codesign "${flags[@]}" "$@" || { echo "codesign failed for ${*: -1}" >&2; exit 1; }
+}
+sign --identifier dev.agentable.cli "$APP/Contents/Helpers/agentable"
 sign "$APP"
 echo "$APP"

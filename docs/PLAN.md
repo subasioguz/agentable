@@ -162,7 +162,11 @@ mentions a column with the same name.
      following multi-column foreign keys. For structure: `CREATE INDEX CONCURRENTLY` (it can't run
      inside the apply transaction), table rebuilds for SQLite type changes, foreign keys and checks
      in the editor, and carrying masks over when an agent's own DDL proposal renames a masked column.
-6. **Release**: Developer ID signing, notarization, Sparkle updates, Homebrew cask.
+6. **Release**: the repository is public (2026-11-21). `scripts/release.sh <version>` builds for
+   Apple silicon and Intel, signs the app and its CLI with Developer ID (hardened runtime, no
+   entitlements needed), notarizes, staples and zips it for GitHub Releases. The first one is
+   v0.1.0 (pre-release, 2026-11-23). Still to do: Sparkle updates, a Homebrew cask, a test of the
+   Intel build on an Intel Mac.
 
 ## Research notes (November 2026)
 

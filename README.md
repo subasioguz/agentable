@@ -15,7 +15,9 @@ passwords, they only do what each connection allows, their changes to protected 
 your approval, and everything they run is logged.
 
 > Status: early development. The app, the CLI and the MCP server work with SQLite and PostgreSQL.
-> There is no signed download yet; build it from source (see Build below).
+> Signed and notarized builds for Apple silicon and Intel Macs (macOS 15 or later) are on the
+> [Releases](https://github.com/subasioguz/agentable/releases) page: unzip and move Agentable to
+> Applications. A release can lag behind `main`; build from source for the newest (see Build below).
 > See [docs/PLAN.md](docs/PLAN.md) for what comes next.
 
 ## The app
@@ -173,6 +175,7 @@ swift build
 swift test
 .build/debug/agentable --help
 scripts/bundle-app.sh            # .build/Agentable.app with the CLI and fonts inside
+scripts/release.sh 0.1.0         # signed, notarized zip (needs Developer ID and a notarytool profile)
 scripts/snapshot.sh              # renders every screen to PNG with a demo database
 ```
 
